@@ -1,0 +1,31 @@
+Master MuJoCo Keyboard Demo
+
+Movement:
+  8 / 2 : forward / backward
+  4 / 6 : move left / move right
+  7 / 9 : turn left / turn right
+
+Upper body:
+  O / P : head left / head right
+  K / L : waist left / waist right
+
+Other:
+  5     : LOW / MEDIUM / HIGH speed
+  0     : recenter all joints and stand
+  Space : stop movement and stand
+  R     : reset head and waist
+  Esc   : exit
+
+XML: C:\Users\xinga\Documents\Codex\2026-07-15\files-mentioned-by-the-user-aegis\outputs\Master_MuJoCo\assets\Master\scene_x2_free.xml
+MuJoCo timestep: 0.001000 s
+Degrees of freedom (nv): 36
+Actuators: 30
+Head mapping: O/P -> head_yaw_joint
+Waist mapping: K/L -> waist_yaw_joint
+Initial speed mode: MEDIUM
+Speed values: LOW=0.10m/s forward,0.07m/s lateral,0.22rad/s yaw,0.65Hz, MEDIUM=0.18m/s forward,0.12m/s lateral,0.38rad/s yaw,0.85Hz, HIGH=0.26m/s forward,0.17m/s lateral,0.55rad/s yaw,1.05Hz
+Gait: conservative actuator-only gait implemented in demo.py
+Root-state injection: none
+Keyboard backend: MuJoCo callback + Win32 held-key polling
+Movement input unlocks after 1.5s warmup.
+SAFETY STOP: base pitch 45.1 deg exceeds 45 deg

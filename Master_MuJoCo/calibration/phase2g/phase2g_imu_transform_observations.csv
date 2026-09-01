@@ -1,0 +1,2 @@
+observation,samples,mean_qx,mean_qy,mean_qz,mean_qw,mean_roll_deg,mean_pitch_deg,mean_yaw_deg,angular_dispersion_std_deg,angular_dispersion_max_deg,status
+torso_orientation_relative_to_chest_pre_roll,140,0.03967254392023178,0.0016311564060323969,-0.5612074205905092,-0.8267222385189739,-3.869618759485344,2.3974980961667,68.25900976605598,0.0023171783621191776,0.011372510015483187,PARTIAL_TRANSFORM_OBSERVATION_ONLY

@@ -1,0 +1,16 @@
+{
+  "input_capture": "calibration\\logs\\real\\phase2d_heart_001",
+  "PHASE2D_REPLAY_READY": true,
+  "motion_start_elapsed_seconds": 14.590379783,
+  "motion_end_elapsed_seconds": 20.24979677,
+  "motion_duration_seconds": 5.659416987,
+  "common_start_elapsed_seconds": 0.806536173,
+  "common_end_elapsed_seconds": 31.847762865,
+  "relative_t_start_seconds": -13.78384361,
+  "relative_t_end_seconds": 17.257383082,
+  "target_rate_hz": 50.0,
+  "joint_interpolation": "piecewise linear on receive-monotonic aligned elapsed_seconds",
+  "imu_orientation_interpolation": "quaternion Slerp on receive-monotonic aligned elapsed_seconds",
+  "raw_samples_modified": false,
+  "source_manifest": "source_sha256_manifest.csv"
+}

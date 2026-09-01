@@ -1,0 +1,15 @@
+{
+  "experiment": "free_final_candidate",
+  "duration_s": 10.0,
+  "stable_no_fall": true,
+  "minimum_pelvis_height_m": 0.653107467100735,
+  "maximum_abs_tilt_deg": 2.8346452547890557,
+  "maximum_pelvis_xy_displacement_m": 0.0263862237318582,
+  "maximum_left_foot_slip_proxy_m": 0.006681046157161201,
+  "maximum_right_foot_slip_proxy_m": 0.006077066820636742,
+  "both_feet_contact_fraction": 0.9983,
+  "self_collision_steps": 0,
+  "nonfoot_ground_contact_steps": 0,
+  "persistent_saturation_fraction": 0.0,
+  "warning": "NOT HARDWARE CALIBRATION"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PHASE3AX_SOURCE_LOCKED",
+  "files": 77,
+  "inherited_phase3ar_verification": "68/68 VERIFIED_UNCHANGED",
+  "arm_tracking_status": "INDEPENDENTLY_VALIDATED_ARM_TRACKING",
+  "warning": "SIMULATION CONTROLLER DESIGN; NOT HARDWARE CALIBRATION",
+  "robot_connected": false,
+  "reported_effort_used": false,
+  "mjcf_modified": false,
+  "physical_parameters_modified": false,
+  "hardware_mapping_modified": false
+}

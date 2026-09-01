@@ -1,0 +1,102 @@
+{
+  "phase": "Phase 3B-C",
+  "replay_identity_checks": [
+    {
+      "experiment_id": "phase3bv_original_physical_baseline",
+      "mode": "arm_only",
+      "fields": [
+        "stable_no_fall",
+        "self_collision_samples",
+        "pelvis_hip_contact_samples",
+        "other_self_collision_samples",
+        "nonfoot_ground_contact_samples",
+        "limit_violation_samples",
+        "target_clip_samples"
+      ],
+      "match": true
+    },
+    {
+      "experiment_id": "phase3bv_original_physical_baseline",
+      "mode": "whole_body",
+      "fields": [
+        "stable_no_fall",
+        "self_collision_samples",
+        "pelvis_hip_contact_samples",
+        "other_self_collision_samples",
+        "nonfoot_ground_contact_samples",
+        "limit_violation_samples",
+        "target_clip_samples"
+      ],
+      "match": true
+    },
+    {
+      "experiment_id": "phase3bv_bs_mass_lower_plus08",
+      "mode": "arm_only",
+      "fields": [
+        "stable_no_fall",
+        "self_collision_samples",
+        "pelvis_hip_contact_samples",
+        "other_self_collision_samples",
+        "nonfoot_ground_contact_samples",
+        "limit_violation_samples",
+        "target_clip_samples"
+      ],
+      "match": true
+    },
+    {
+      "experiment_id": "phase3bv_bs_mass_lower_plus08",
+      "mode": "whole_body",
+      "fields": [
+        "stable_no_fall",
+        "self_collision_samples",
+        "pelvis_hip_contact_samples",
+        "other_self_collision_samples",
+        "nonfoot_ground_contact_samples",
+        "limit_violation_samples",
+        "target_clip_samples"
+      ],
+      "match": true
+    }
+  ],
+  "contact_rows": {
+    "original": 1049,
+    "mass_direction": 1047
+  },
+  "source_manifest_verified_before_run": true,
+  "logger_only": true,
+  "controller_modified": false,
+  "source_mjcf_modified": false,
+  "collision_topology_modified": false,
+  "robot_connected": false,
+  "reported_effort_loaded": false,
+  "summaries": [
+    {
+      "experiment_id": "phase3bv_original_physical_baseline",
+      "mode": "arm_only",
+      "self_collision_samples": 28,
+      "other_self_collision_samples": 28,
+      "stable_no_fall": true
+    },
+    {
+      "experiment_id": "phase3bv_original_physical_baseline",
+      "mode": "whole_body",
+      "self_collision_samples": 27,
+      "other_self_collision_samples": 27,
+      "stable_no_fall": true
+    },
+    {
+      "experiment_id": "phase3bv_bs_mass_lower_plus08",
+      "mode": "arm_only",
+      "self_collision_samples": 28,
+      "other_self_collision_samples": 28,
+      "stable_no_fall": true
+    },
+    {
+      "experiment_id": "phase3bv_bs_mass_lower_plus08",
+      "mode": "whole_body",
+      "self_collision_samples": 27,
+      "other_self_collision_samples": 27,
+      "stable_no_fall": true
+    }
+  ]
+}

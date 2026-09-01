@@ -1,0 +1,28 @@
+<mujoco model="FF Master X2 documented limits - free base">
+  <include file="ff_master_ultra_x2_limits.xml"/>
+
+  <statistic center="0 0 0.72" extent="1.35"/>
+
+  <visual>
+    <headlight diffuse="0.65 0.65 0.65" ambient="0.25 0.25 0.25" specular="0.25 0.25 0.25"/>
+    <rgba haze="0.12 0.18 0.25 1"/>
+    <global azimuth="145" elevation="-15"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.22 0.32 0.48" rgb2="0.02 0.03 0.06"
+      width="512" height="3072"/>
+    <texture type="2d" name="x2_ground" builtin="checker" mark="edge"
+      rgb1="0.18 0.22 0.27" rgb2="0.28 0.34 0.40" markrgb="0.75 0.8 0.85"
+      width="512" height="512"/>
+    <material name="x2_ground" texture="x2_ground" texuniform="true" texrepeat="8 8"
+      reflectance="0.12"/>
+  </asset>
+
+  <worldbody>
+    <light name="fill" pos="0.3 -1.2 2.2" dir="-0.1 0.5 -1" diffuse="0.55 0.55 0.55"/>
+    <geom name="floor" size="0 0 0.05" type="plane" material="x2_ground"
+      friction="1.0 0.01 0.001"/>
+  </worldbody>
+</mujoco>
+

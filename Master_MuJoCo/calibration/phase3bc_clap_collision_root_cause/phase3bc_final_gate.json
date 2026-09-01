@@ -1,0 +1,20 @@
+{
+  "CLAP_SELF_COLLISION_ROOT_CAUSE": "CONTROLLER_POSTURE",
+  "CONTACT_PAIR_CLASSIFICATION": "CONTROLLER_POSTURE_SELF_CONTACT",
+  "MASS_DIRECTION_CAUSES_CONTACT": "NO",
+  "MJCF_COLLISION_FILTER_REVIEW_REQUIRED": "NO",
+  "PHYSICAL_DIRECTION_MAGNITUDE_SUPPORT": "PARTIAL",
+  "POSITION_SPACE_PHYSICAL_DIRECTION_VALIDATED": "NO",
+  "DYNAMICS_CALIBRATION_READY": "NO",
+  "body_pair": [
+    "left_wrist_roll_link",
+    "right_wrist_roll_link"
+  ],
+  "geom_pair": [
+    67,
+    80
+  ],
+  "max_penetration_m": 0.0011778933885867,
+  "max_episode_duration_s": 0.1859999999998974,
+  "max_normal_force_n": 10.50015424784128
+}

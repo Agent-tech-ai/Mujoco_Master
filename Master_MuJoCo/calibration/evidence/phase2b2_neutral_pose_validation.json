@@ -1,0 +1,42 @@
+{
+  "current_degrees": {
+    "left_elbow_joint": -67.25187305864311,
+    "left_shoulder_pitch_joint": 22.21950695502192,
+    "left_shoulder_roll_joint": -0.9393149354168335,
+    "left_shoulder_yaw_joint": -0.4229526341638696,
+    "left_wrist_pitch_joint": 0.010928302672020402,
+    "left_wrist_roll_joint": -4.382304012993541,
+    "left_wrist_yaw_joint": 0.6976082010684224,
+    "right_elbow_joint": -67.16398218440338,
+    "right_shoulder_pitch_joint": 22.65898864697722,
+    "right_shoulder_roll_joint": 1.0931307955255207,
+    "right_shoulder_yaw_joint": 0.3900038016077281,
+    "right_wrist_pitch_joint": -0.7103396736813261,
+    "right_wrist_roll_joint": 1.6938869141631623,
+    "right_wrist_yaw_joint": 0.3790208574223476
+  },
+  "target_degrees": {
+    "left_elbow_joint": -67.25187305864311,
+    "left_shoulder_pitch_joint": 22.21950695502192,
+    "left_shoulder_roll_joint": 7.0,
+    "left_shoulder_yaw_joint": -0.4229526341638696,
+    "left_wrist_pitch_joint": 0.010928302672020402,
+    "left_wrist_roll_joint": -4.382304012993541,
+    "left_wrist_yaw_joint": 0.6976082010684224,
+    "right_elbow_joint": -67.16398218440338,
+    "right_shoulder_pitch_joint": 22.65898864697722,
+    "right_shoulder_roll_joint": -7.0,
+    "right_shoulder_yaw_joint": 0.3900038016077281,
+    "right_wrist_pitch_joint": -0.7103396736813261,
+    "right_wrist_roll_joint": 1.6938869141631623,
+    "right_wrist_yaw_joint": 0.3790208574223476
+  },
+  "validation": {
+    "collision_model_scope_warning": "The supplied MJCF ends at wrist-roll links and has some collision geoms commented out. Zero contacts is model-only evidence, not physical clearance proof.",
+    "contact_pairs": [],
+    "coordinate_assumption": "Hardware control coordinates were applied numerically to same-name MuJoCo joints. Hardware-to-MuJoCo sign/zero is still UNKNOWN.",
+    "maximum_contact_count": 0,
+    "model_limit_violations": [],
+    "samples": 201
+  }
+}

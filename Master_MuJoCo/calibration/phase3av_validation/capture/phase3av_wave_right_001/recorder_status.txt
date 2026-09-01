@@ -1,0 +1,4 @@
+status=PRE_ROLL_COMPLETE_OPERATOR_GO
+target=run@192.168.4.114
+capture_id=phase3av_wave_right_001
+local_operator_go_utc=2026-08-20T19:45:52.5450101Z

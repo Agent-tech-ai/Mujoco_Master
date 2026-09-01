@@ -1,0 +1,29 @@
+scenario,first_contact_sim_s,first_over_tolerance_sim_s,last_contact_sim_s,contact_sample_count,over_tolerance_sample_count,maximum_penetration_m,event,sim_time_s,reference_time_s,details
+current_07__heart__standing,,,,0.0,0.0,0.0,,,,
+current_07__wave__standing,0.5600000000000004,0.8000000000000006,9.999999999999895,473.0,461.0,0.0007331565968104,,,,
+current_07__heart__arm_only,,,,0.0,0.0,0.0,,,,
+current_07__wave__arm_only,0.5600000000000004,0.8000000000000006,14.340999999997493,690.0,678.0,0.0012885963129362,,,,
+current_07__wave__whole_body,0.5400000000000004,0.7800000000000006,8.440000000000762,396.0,382.0,0.0024243720107237,,,,
+legacy_phase3av__wave__arm_only,0.4800000000000003,0.6600000000000005,3.939999999999677,158.0,141.0,0.0025673939265506,,,,
+phase3ar_final_candidate__heart__standing,,,,0.0,0.0,0.0,,,,
+phase3ar_final_candidate__wave__standing,0.6200000000000004,,9.999999999999895,470.0,0.0,0.0004944125175742,,,,
+phase3ar_final_candidate__heart__arm_only,,,,0.0,0.0,0.0,,,,
+phase3ar_final_candidate__wave__arm_only,0.6200000000000004,,14.340999999997493,687.0,0.0,0.0004863819352201,,,,
+phase3ar_final_candidate__wave__whole_body,0.5800000000000004,1.0000000000000009,7.540000000000853,341.0,67.0,0.0010323081200163,,,,
+current_07__wave__arm_only,,,,,,,FIRST_LARGE_TRACKING_ERROR,0.001,-4.999,joint=left_knee_joint; error=-0.104221 rad
+current_07__wave__arm_only,,,,,,,FIRST_PELVIS_HIP_CONTACT,0.5600000000000004,-4.44,side=left; dist=-0.000032034 m
+current_07__wave__arm_only,,,,,,,FIRST_CONTACT_OVER_TOLERANCE,0.8000000000000006,-4.199999999999999,side=left; dist=-0.000509343 m
+current_07__wave__whole_body,,,,,,,FIRST_LARGE_TRACKING_ERROR,0.12,-4.88,joint=right_knee_joint; error=-0.104160 rad
+current_07__wave__whole_body,,,,,,,FIRST_PELVIS_HIP_CONTACT,0.5400000000000004,-4.46,side=left; dist=-0.000054285 m
+current_07__wave__whole_body,,,,,,,FIRST_CONTACT_OVER_TOLERANCE,0.7800000000000006,-4.22,side=left; dist=-0.000516290 m
+current_07__wave__whole_body,,,,,,,FIRST_LIMIT_VIOLATION,3.399999999999737,-1.6000000000002634,joint=left_ankle_roll_joint; margin=-0.000149 rad
+current_07__wave__whole_body,,,,,,,FIRST_BALANCE_EXCURSION_GT_10_DEG,6.300000000000439,1.3000000000004386,roll=-0.175890; pitch=0.091308
+current_07__wave__whole_body,,,,,,,FIRST_ACTUATOR_SATURATION,7.160000000000726,2.160000000000726,joint=left_ankle_pitch_joint; fraction=0.981778
+current_07__wave__whole_body,,,,,,,FALL_THRESHOLD,8.040000000000983,3.0400000000009832,z=0.507768; roll=-0.792345; pitch=0.514636
+phase3ar_final_candidate__wave__whole_body,,,,,,,FIRST_LARGE_TRACKING_ERROR,0.1400000000000001,-4.86,joint=right_knee_joint; error=-0.107355 rad
+phase3ar_final_candidate__wave__whole_body,,,,,,,FIRST_PELVIS_HIP_CONTACT,0.5800000000000004,-4.42,side=left; dist=-0.000005346 m
+phase3ar_final_candidate__wave__whole_body,,,,,,,FIRST_CONTACT_OVER_TOLERANCE,1.0000000000000009,-3.999999999999999,side=left; dist=-0.000500920 m
+phase3ar_final_candidate__wave__whole_body,,,,,,,FIRST_BALANCE_EXCURSION_GT_10_DEG,6.140000000000385,1.1400000000003851,roll=-0.025816; pitch=0.174573
+phase3ar_final_candidate__wave__whole_body,,,,,,,FIRST_ACTUATOR_SATURATION,6.860000000000626,1.8600000000006256,joint=left_ankle_pitch_joint; fraction=0.985166
+phase3ar_final_candidate__wave__whole_body,,,,,,,FIRST_LIMIT_VIOLATION,7.220000000000746,2.220000000000746,joint=right_ankle_pitch_joint; margin=-0.012811 rad
+phase3ar_final_candidate__wave__whole_body,,,,,,,FALL_THRESHOLD,7.460000000000826,2.460000000000826,z=0.278733; roll=0.617416; pitch=0.776386

@@ -1,0 +1,55 @@
+Master MuJoCo Contact-Driven Single-Step Demo
+
+Single-step commands (one key press, ignored while a step is active):
+  8 / 2 : one forward / backward step
+  4 / 6 : one left / right lateral step
+  7 / 9 : one left / right turning step
+
+Upper body:
+  O / P : head left / head right
+  K / L : waist left / waist right
+
+Other:
+  5     : report that continuous speed modes are disabled
+  0     : abort active step and smoothly enter RECOVER
+  Space : smoothly enter RECOVER
+  R     : center head and waist
+  Esc   : exit
+
+XML: C:\Users\xinga\Documents\Codex\2026-07-15\files-mentioned-by-the-user-aegis\outputs\Master_MuJoCo\assets\Master\scene_x2_free.xml
+MuJoCo timestep: 0.001000s
+DoF/actuators: 36/30
+Head yaw joint: head_yaw_joint
+Waist yaw joint: waist_yaw_joint
+Speed mode: SAFE single-step only
+Continuous speed modes disabled until stable stepping is validated.
+Floor geom: floor (id=0, body=world)
+Left foot collision geoms:
+  - <unnamed geom id=15, body=left_ankle_roll_link>
+  - <unnamed geom id=16, body=left_ankle_roll_link>
+  - <unnamed geom id=17, body=left_ankle_roll_link>
+  - <unnamed geom id=18, body=left_ankle_roll_link>
+  - <unnamed geom id=19, body=left_ankle_roll_link>
+  - <unnamed geom id=20, body=left_ankle_roll_link>
+  - <unnamed geom id=21, body=left_ankle_roll_link>
+  - <unnamed geom id=22, body=left_ankle_roll_link>
+  - <unnamed geom id=23, body=left_ankle_roll_link>
+  - <unnamed geom id=24, body=left_ankle_roll_link>
+  - <unnamed geom id=25, body=left_ankle_roll_link>
+  - <unnamed geom id=26, body=left_ankle_roll_link>
+Right foot collision geoms:
+  - <unnamed geom id=38, body=right_ankle_roll_link>
+  - <unnamed geom id=39, body=right_ankle_roll_link>
+  - <unnamed geom id=40, body=right_ankle_roll_link>
+  - <unnamed geom id=41, body=right_ankle_roll_link>
+  - <unnamed geom id=42, body=right_ankle_roll_link>
+  - <unnamed geom id=43, body=right_ankle_roll_link>
+  - <unnamed geom id=44, body=right_ankle_roll_link>
+  - <unnamed geom id=45, body=right_ankle_roll_link>
+  - <unnamed geom id=46, body=right_ankle_roll_link>
+  - <unnamed geom id=47, body=right_ankle_roll_link>
+  - <unnamed geom id=48, body=right_ankle_roll_link>
+  - <unnamed geom id=49, body=right_ankle_roll_link>
+Gait state -> SHIFT_TO_LEFT; contacts L/R=True/True; forces L/R=211.0/215.5N
+Gait state -> RECOVER (0 recenter requested); contacts L/R=True/True; forces L/R=152.2/273.5N
+Gait state -> STAND (recovery complete)

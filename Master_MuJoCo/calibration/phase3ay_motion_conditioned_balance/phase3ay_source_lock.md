@@ -1,0 +1,28 @@
+# Phase 3A-Y Source Lock
+
+Status: **LOCKED AND VERIFIED**
+
+- Robot connection/control: **NONE**
+- Reported effort loaded: **NO**
+- MJCF or physical parameter edits: **NONE**
+- Hardware mapping edits: **NONE**
+- Frozen safety baseline: Phase 3A-X contact/limit/saturation/rate/pitch-roll architecture
+- Frozen arm tracking: Phase 3A-X shoulder/wrist gain candidate
+
+| path | bytes | sha256 |
+|---|---|---|
+| calibration\phase2e_replay\phase2e_heart_measured_reference.csv | 3803578 | bdb883357fab5c15948dc15404477b5d70f844371f0abdfa14d7f77514a3ce1b |
+| calibration\phase2e_replay\phase2e_aligned_joint_data.csv | 5599549 | 7f59b5454e0e102a2f57ed8683063fcee9ec0c6623a5085a8e57377fd3d143e8 |
+| calibration\phase2e_replay\phase2e_aligned_imu_data.csv | 1110830 | a2e9e16291747cf8891cb1d2d0d8296f8452dc8bfbd143ce9b34bc9fee6254b0 |
+| calibration\phase3av_validation\phase3av_measured_reference.csv | 3653152 | bd10471f360fd1eed64c63b8ddd5ee44b5e1ff1bd277af15431b628f8d3899b7 |
+| calibration\phase3av_validation\phase3av_aligned_joint_data.csv | 1936249 | a0b57924719d65d71ed58d8d6e38a4cc64c8b755e1409763e027e8bf366253b4 |
+| calibration\phase3av_validation\phase3av_aligned_imu_data.csv | 339723 | 705e8851db8a3726c6e174ec9f3c2074b606456a5e49059794451302c9cf3f05 |
+| calibration\phase3ax_constraint_balance\phase3ax_core.py | 41362 | 7a1aef562fcf40ca376a8a79e111ca3bb4688a6a95773d7834a5fa85d1b37d00 |
+| calibration\phase3ax_constraint_balance\simulation_constraint_aware_controller_candidate.json | 2422 | 2c3f9b2dbb7150c1557c500d4b02bfcc679b327d7df4e4d54c26ca4837b92b40 |
+| calibration\phase3ax_constraint_balance\phase3ax_final_validation.json | 64931 | 8a23630e531a260902c22cb874b437cafc5eb8cd6bbd4f6b6bc43930d48a106c |
+| assets\Master\ff_master_ultra.xml | 39960 | 89619295fcc372c57473224130865b2fe4f22e0741f72925fac243805f4353db |
+| calibration\phase3ay_motion_conditioned_balance\phase3ay_core.py | 13434 | 09a21d7a40b3d9a531ebb59a32f5fbcb2977bb9bdc335b01587af697f18204a2 |
+| calibration\phase3ay_motion_conditioned_balance\run_phase3ay_candidate_smoke.py | 1602 | dff8e2a5b9ae793e4edd532e5702ff479f0a4d20c1587b1c9dfb9548f37f6772 |
+| calibration\phase3ay_motion_conditioned_balance\run_phase3ay_final_validation.py | 3099 | 743b9cc9a8a75b3c14597782f9157e18e5bc87cac41755dc7d904ad3ece7afb3 |
+
+The Phase 2/3 source files were read only. Generated Phase 3A-Y artifacts live only in this directory.

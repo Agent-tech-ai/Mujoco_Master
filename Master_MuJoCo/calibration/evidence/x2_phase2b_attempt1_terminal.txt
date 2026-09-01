@@ -1,0 +1,187 @@
+PS C:\Users\xinga> powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\run_x2_phase2b_readonly.ps1"
+Phase 2B-1 read-only script: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\x2_phase2b_decode_and_capture_readonly.sh
+SSH target: run@192.168.4.66
+Local evidence output: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\x2_phase2b_readonly_capture.txt
+You will be prompted for the run user's password in this visible terminal.
+No publisher or service/action call is present in the remote script.
+run@192.168.4.66's password:
+
+### SAFETY_DECLARATION
+PHASE=2B-1
+READ_ONLY_DISCOVERY_AND_SUBSCRIPTION=1
+NO_TOPIC_PUBLISH=1
+NO_SERVICE_OR_ACTION_CALL=1
+NO_CONTROL_MODE_OR_ACTUATOR_OPERATION=1
+NO_PROCESS_CONTROL=1
+NO_PACKAGE_INSTALL_OR_SYSTEM_ENV_MODIFICATION=1
+NO_REMOTE_FILE_WRITE=1
+PASSIVE_CAPTURE_DURATION_SECONDS=30
+PASSIVE_CAPTURE_MAX_SERIALIZATION_RATE_HZ_PER_TOPIC=50
+
+### BASE_ENVIRONMENT
+
+$ hostname
+agi
+
+$ id
+uid=1000(run) gid=1000(run) groups=1000(run),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),44(video),46(plugdev),100(users),106(input),109(render),114(netdev),122(i2c),400(manager),999(gpio),1001(agi)
+
+$ date --iso-8601=ns
+2026-08-11T20:41:32,039067718-04:00
+LD_LIBRARY_PATH=/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib
+PYTHONPATH=/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages
+
+### AIMA_READ_ONLY_HELP
+
+$ aima --version
+0.2.28rc9
+
+$ aima topic --help
+
+ Usage: aima topic [OPTIONS] COMMAND [ARGS]...
+
+ µƒÑΦ»óaimrt topicΣ┐íµü»
+
+Γò¡ΓöÇ Options ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé --help          Show this message and exit.                                  Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+Γò¡ΓöÇ Commands ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé echo  echo topic                                                             Γöé
+Γöé list  µƒÑτ£ïτ│╗τ╗ƒΣ╕¡Φ»¥ΘóÿσêùΦí¿                                                     Γöé
+Γöé info  µƒÑτ£ïσà╖Σ╜ôΦ»¥ΘóÿΣ┐íµü»                                                       Γöé
+Γöé hz    µƒÑτ£ïσà╖Σ╜ôΦ»¥ΘóÿΣ┐íµü»                                                       Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+
+
+$ aima find --help
+
+ Usage: aima find [OPTIONS] COMMAND [ARGS]...
+
+ µƒÑµë╛µûçΣ╗╢σæ╜Σ╗ñ
+
+Γò¡ΓöÇ Options ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé --help          Show this message and exit.                                  Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+Γò¡ΓöÇ Commands ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé config  τ╝ûΦ╛æµûçΣ╗╢                                                             Γöé
+Γöé sh      τ╝ûΦ╛æµûçΣ╗╢                                                             Γöé
+Γöé log     ΘÇëµï⌐µùÑσ┐ù                                                             Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+
+
+### RUNNING_ROBOT_PROCESS_PATH_ENVIRONMENT
+PROCESS pid=1231 owner=run comm=python3 exe=/usr/bin/python3.10 cwd=/agibot/software/brain-blocks-bridge
+PROCESS_ENV pid=1231 AMENT_PREFIX_PATH=/agibot/software/common:/opt/ros/humble
+PROCESS_ENV pid=1231 PYTHONPATH=/agibot/software/common/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages
+PROCESS_ENV pid=1231 LD_LIBRARY_PATH=/agibot/software/common/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib
+PROCESS_ENV pid=1231 ROS_DISTRO=humble
+PROCESS_MAP pid=1231 ffff6f7a0000-ffff6f7ad000 r-xp 00000000 00:18 63826                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7ad000-ffff6f7bd000 ---p 0000d000 00:18 63826                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7bd000-ffff6f7be000 r--p 0000d000 00:18 63826                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7be000-ffff6f7c0000 rw-p 0000e000 00:18 63826                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7d0000-ffff6f7db000 r-xp 00000000 00:18 63615                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7db000-ffff6f7eb000 ---p 0000b000 00:18 63615                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7eb000-ffff6f7ec000 r--p 0000b000 00:18 63615                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff6f7ec000-ffff6f7ef000 rw-p 0000c000 00:18 63615                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c020000-ffff8c027000 r-xp 00000000 00:18 63685                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c027000-ffff8c036000 ---p 00007000 00:18 63685                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c036000-ffff8c037000 r--p 00006000 00:18 63685                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c037000-ffff8c039000 rw-p 00007000 00:18 63685                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c040000-ffff8c057000 r-xp 00000000 00:18 63798                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c057000-ffff8c067000 ---p 00017000 00:18 63798                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c067000-ffff8c068000 r--p 00017000 00:18 63798                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c068000-ffff8c06d000 rw-p 00018000 00:18 63798                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c070000-ffff8c13e000 r-xp 00000000 00:27 247                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c13e000-ffff8c14e000 ---p 000ce000 00:27 247                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c14e000-ffff8c155000 r--p 000ce000 00:27 247                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c155000-ffff8c184000 rw-p 000d5000 00:27 247                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff8c190000-ffff8c19f000 r-xp 00000000 00:18 63824                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c19f000-ffff8c1ae000 ---p 0000f000 00:18 63824                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1ae000-ffff8c1af000 r--p 0000e000 00:18 63824                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1af000-ffff8c1b0000 rw-p 0000f000 00:18 63824                      /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1c0000-ffff8c1d0000 r-xp 00000000 00:18 63613                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1d0000-ffff8c1e0000 ---p 00010000 00:18 63613                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1e0000-ffff8c1e1000 r--p 00010000 00:18 63613                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1e1000-ffff8c1e2000 rw-p 00011000 00:18 63613                      /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1f0000-ffff8c1fa000 r-xp 00000000 00:18 63683                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c1fa000-ffff8c209000 ---p 0000a000 00:18 63683                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c209000-ffff8c20a000 r--p 00009000 00:18 63683                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c20a000-ffff8c20b000 rw-p 0000a000 00:18 63683                      /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c210000-ffff8c225000 r-xp 00000000 00:18 63796                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c225000-ffff8c234000 ---p 00015000 00:18 63796                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c234000-ffff8c235000 r--p 00014000 00:18 63796                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c235000-ffff8c236000 rw-p 00015000 00:18 63796                      /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c240000-ffff8c358000 r-xp 00000000 00:27 245                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c358000-ffff8c368000 ---p 00118000 00:27 245                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c368000-ffff8c369000 r--p 00118000 00:27 245                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c369000-ffff8c377000 rw-p 00119000 00:27 245                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff8c510000-ffff8c6e3000 r-xp 00000000 00:27 241                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_c.so
+PROCESS_MAP pid=1231 ffff8c6e3000-ffff8c6f3000 ---p 001d3000 00:27 241                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_c.so
+PROCESS_MAP pid=1231 ffff8c6f3000-ffff8c6f4000 r--p 001d3000 00:27 241                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_c.so
+PROCESS_MAP pid=1231 ffff8c6f4000-ffff8c6fa000 rw-p 001d4000 00:27 241                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_c.so
+PROCESS_MAP pid=1231 ffff8c700000-ffff8c766000 r-xp 00000000 00:27 243                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff8c766000-ffff8c775000 ---p 00066000 00:27 243                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff8c775000-ffff8c781000 r--p 00065000 00:27 243                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff8c781000-ffff8c785000 rw-p 00071000 00:27 243                        /agibot/software/common/lib/libaimdk_msgs__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff94030000-ffff940f1000 r-xp 00000000 00:27 242                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_py.so
+PROCESS_MAP pid=1231 ffff940f1000-ffff94101000 ---p 000c1000 00:27 242                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_py.so
+PROCESS_MAP pid=1231 ffff94101000-ffff94102000 r--p 000c1000 00:27 242                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_py.so
+PROCESS_MAP pid=1231 ffff94102000-ffff94103000 rw-p 000c2000 00:27 242                        /agibot/software/common/lib/libaimdk_msgs__rosidl_generator_py.so
+PROCESS_MAP pid=1231 ffff94110000-ffff941d0000 r-xp 00000000 00:27 465                        /agibot/software/common/local/lib/python3.10/dist-packages/aimdk_msgs/aimdk_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff941d0000-ffff941e0000 ---p 000c0000 00:27 465                        /agibot/software/common/local/lib/python3.10/dist-packages/aimdk_msgs/aimdk_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff941e0000-ffff941e2000 r--p 000c0000 00:27 465                        /agibot/software/common/local/lib/python3.10/dist-packages/aimdk_msgs/aimdk_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff941e2000-ffff941e7000 rw-p 000c2000 00:27 465                        /agibot/software/common/local/lib/python3.10/dist-packages/aimdk_msgs/aimdk_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff941f0000-ffff941f1000 r-xp 00000000 00:18 63544                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff941f1000-ffff94200000 ---p 00001000 00:18 63544                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff94200000-ffff94201000 r--p 00000000 00:18 63544                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff94201000-ffff94202000 rw-p 00001000 00:18 63544                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+PROCESS_MAP pid=1231 ffff94210000-ffff94212000 r-xp 00000000 00:18 65779                      /opt/ros/humble/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff94212000-ffff94221000 ---p 00002000 00:18 65779                      /opt/ros/humble/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff94221000-ffff94222000 r--p 00001000 00:18 65779                      /opt/ros/humble/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff94222000-ffff94223000 rw-p 00002000 00:18 65779                      /opt/ros/humble/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff94280000-ffff9428a000 r-xp 00000000 00:18 66441                      /opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/rcl_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff9428a000-ffff9429a000 ---p 0000a000 00:18 66441                      /opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/rcl_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff9429a000-ffff9429b000 r--p 0000a000 00:18 66441                      /opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/rcl_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff9429b000-ffff9429c000 rw-p 0000b000 00:18 66441                      /opt/ros/humble/local/lib/python3.10/dist-packages/rcl_interfaces/rcl_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+PROCESS_MAP pid=1231 ffff943a0000-ffff943a1000 r-xp 00000000 00:18 63548                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943a1000-ffff943b1000 ---p 00001000 00:18 63548                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943b1000-ffff943b2000 r--p 00001000 00:18 63548                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943b2000-ffff943b3000 rw-p 00002000 00:18 63548                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943c0000-ffff943d3000 r-xp 00000000 00:18 63734                      /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943d3000-ffff943e2000 ---p 00013000 00:18 63734                      /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943e2000-ffff943e3000 r--p 00012000 00:18 63734                      /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943e3000-ffff943e6000 rw-p 00013000 00:18 63734                      /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+PROCESS_MAP pid=1231 ffff943f0000-ffff943f2000 r-xp 00000000 00:18 63546                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff943f2000-ffff94401000 ---p 00002000 00:18 63546                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff94401000-ffff94402000 r--p 00001000 00:18 63546                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+PROCESS_MAP pid=1231 ffff94402000-ffff94403000 rw-p 00002000 00:18 63546                      /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+PROCESS pid=1295 owner=root comm=nfs_for_soc.sh exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1295 UNREADABLE
+PROCESS pid=1347 owner=root comm=nfs_for_soc.sh exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1347 UNREADABLE
+PROCESS pid=146192 owner=root comm=atop exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=146192 UNREADABLE
+PROCESS pid=1581 owner=root comm=phc_time_sync_t exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1581 UNREADABLE
+PROCESS pid=1606 owner=root comm=phc_time_sync_t exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1606 UNREADABLE
+PROCESS pid=1607 owner=root comm=phc_time_sync_t exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1607 UNREADABLE
+PROCESS pid=1608 owner=root comm=ptp4l exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1608 UNREADABLE
+PROCESS pid=1616 owner=root comm=software.sh exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1616 UNREADABLE
+PROCESS pid=1620 owner=root comm=run_agibot.sh exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=1620 UNREADABLE
+PROCESS pid=2057 owner=root comm=em-server exe=UNREADABLE cwd=UNREADABLE
+PROCESS_ENV pid=2057 UNREADABLE
+PROCESS pid=2119 owner=run comm=soc1_hds..aster exe=UNREADABLE cwd=UNREADABLE
+ssh.exe : bash: line 100: /proc/2119/environ: Permission denied
+At C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\run_x2_phase2b_readonly.ps1:23
+char:12
++ $payload | & ssh $Target "bash -s" 2>&1 | Tee-Object -Variable captur ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bash: line 100:...rmission denied:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+PS C:\Users\xinga>

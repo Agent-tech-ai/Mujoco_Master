@@ -1,0 +1,27 @@
+{
+  "status": "SIM_CONTROLLER_ALIGNMENT_CANDIDATE",
+  "warning": "NOT HARDWARE CALIBRATION",
+  "physical_parameters_modified": false,
+  "candidates": [
+    {
+      "category": "reference timing",
+      "value": {
+        "common_reference_advance_s": 0.3
+      },
+      "result": "reduces wrist/shoulder lag but cannot align both exactly"
+    },
+    {
+      "category": "simulation balance gains",
+      "value": {
+        "gain_scale": 0.6
+      },
+      "result": "reduces ankle/hip/torso pitch over-response; over-corrects left ankle"
+    },
+    {
+      "category": "standing equilibrium targets",
+      "value": "per-joint one-shot baseline correction in experiment log",
+      "result": "reduces knee absolute offset; worsens ankle equilibrium"
+    }
+  ],
+  "adopted": false
+}

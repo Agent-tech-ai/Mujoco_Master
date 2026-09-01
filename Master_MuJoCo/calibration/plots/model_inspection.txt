@@ -1,0 +1,1043 @@
+================================================================================================
+MODEL: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\Master_MuJoCo\assets\Master\ff_master_ultra.xml
+COUNTS: joints=32 qpos=38 dofs=37 actuators=31 sensors=67 bodies=33
+------------------------------------------------------------------------------------------------
+JOINTS (compiled/effective values; angular quantities use radians)
+[00] floating_base_joint | body/link=pelvis | type=mjJNT_FREE
+     axis=N/A | range=unlimited [0, 0]
+     damping=[0, 0, 0, 0, 0, 0] | armature=[0, 0, 0, 0, 0, 0] | frictionloss=[0, 0, 0, 0, 0, 0]
+     joint actuatorfrcrange=unlimited [0, 0]
+     actuator=N/A | ctrlrange=N/A | actuator forcerange=N/A
+     sensors=NONE
+[01] left_hip_pitch_joint | body/link=left_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.704, 2.556]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_left_hip_pitch_joint
+[02] left_hip_roll_joint | body/link=left_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.235, 2.906]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_roll_joint, mjSENS_JOINTVEL:jointvel_left_hip_roll_joint
+[03] left_hip_yaw_joint | body/link=left_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-1.684, 3.43]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_left_hip_yaw_joint
+[04] left_knee_joint | body/link=left_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.4073]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_knee_joint, mjSENS_JOINTVEL:jointvel_left_knee_joint
+[05] left_ankle_pitch_joint | body/link=left_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.803, 0.453]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_left_ankle_pitch_joint
+[06] left_ankle_roll_joint | body/link=left_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.262, 0.262]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_left_ankle_roll_joint
+[07] right_hip_pitch_joint | body/link=right_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.704, 2.556]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_right_hip_pitch_joint
+[08] right_hip_roll_joint | body/link=right_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-2.906, 0.235]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_roll_joint, mjSENS_JOINTVEL:jointvel_right_hip_roll_joint
+[09] right_hip_yaw_joint | body/link=right_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.43, 1.684]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_right_hip_yaw_joint
+[10] right_knee_joint | body/link=right_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.4073]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_knee_joint, mjSENS_JOINTVEL:jointvel_right_knee_joint
+[11] right_ankle_pitch_joint | body/link=right_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.803, 0.453]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_right_ankle_pitch_joint
+[12] right_ankle_roll_joint | body/link=right_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.2625, 0.2625]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_right_ankle_roll_joint
+[13] waist_yaw_joint | body/link=waist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.43, 2.382]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_waist_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_yaw_joint, mjSENS_JOINTVEL:jointvel_waist_yaw_joint
+[14] waist_pitch_joint | body/link=waist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.314, 0.314]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_pitch_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_pitch_joint, mjSENS_JOINTVEL:jointvel_waist_pitch_joint
+[15] waist_roll_joint | body/link=torso_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.488, 0.488]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_roll_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_roll_joint, mjSENS_JOINTVEL:jointvel_waist_roll_joint
+[16] left_shoulder_pitch_joint | body/link=left_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.08, 2.04]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_pitch_joint
+[17] left_shoulder_roll_joint | body/link=left_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.061, 2.993]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_roll_joint
+[18] left_shoulder_yaw_joint | body/link=left_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556, 2.556]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_yaw_joint
+[19] left_elbow_joint | body/link=left_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.3556, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_elbow_joint, mjSENS_JOINTVEL:jointvel_left_elbow_joint
+[20] left_wrist_yaw_joint | body/link=left_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556, 2.556]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_left_wrist_yaw_joint
+[21] left_wrist_pitch_joint | body/link=left_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.558, 0.558]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_left_wrist_pitch_joint
+[22] left_wrist_roll_joint | body/link=left_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-1.571, 0.724]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_left_wrist_roll_joint
+[23] right_shoulder_pitch_joint | body/link=right_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.08, 2.04]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_pitch_joint
+[24] right_shoulder_roll_joint | body/link=right_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-2.993, 0.061]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_roll_joint
+[25] right_shoulder_yaw_joint | body/link=right_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556, 2.556]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_yaw_joint
+[26] right_elbow_joint | body/link=right_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.3556, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_elbow_joint, mjSENS_JOINTVEL:jointvel_right_elbow_joint
+[27] right_wrist_yaw_joint | body/link=right_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556, 2.556]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_right_wrist_yaw_joint
+[28] right_wrist_pitch_joint | body/link=right_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.558, 0.558]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_right_wrist_pitch_joint
+[29] right_wrist_roll_joint | body/link=right_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.724, 1.571]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_right_wrist_roll_joint
+[30] head_yaw_joint | body/link=head_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-0.366, 0.366]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-2.6, 2.6]
+     actuator=motor_head_yaw_joint | ctrlrange=limited [-2.6, 2.6] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_head_yaw_joint, mjSENS_JOINTVEL:jointvel_head_yaw_joint
+[31] head_pitch_joint | body/link=head_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.3838, 0.3838]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-0.6, 0.6]
+     actuator=motor_head_pitch_joint | ctrlrange=limited [-0.6, 0.6] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_head_pitch_joint, mjSENS_JOINTVEL:jointvel_head_pitch_joint
+------------------------------------------------------------------------------------------------
+ALL SENSORS
+[00] body-orientation | type=mjSENS_FRAMEQUAT | dim=4 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[01] body-angular-velocity | type=mjSENS_GYRO | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[02] body-linear-pos | type=mjSENS_FRAMEPOS | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[03] body-linear-vel | type=mjSENS_VELOCIMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[04] body-linear-acceleration | type=mjSENS_ACCELEROMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[05] jointpos_left_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[06] jointpos_left_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[07] jointpos_left_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[08] jointpos_left_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[09] jointpos_left_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[10] jointpos_left_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[11] jointpos_right_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[12] jointpos_right_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[13] jointpos_right_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[14] jointpos_right_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[15] jointpos_right_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[16] jointpos_right_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[17] jointpos_waist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[18] jointpos_waist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[19] jointpos_waist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[20] jointpos_head_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[21] jointpos_head_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:head_pitch_joint | noise=0 | cutoff=0
+[22] jointpos_left_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[23] jointpos_left_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[24] jointpos_left_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[25] jointpos_left_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[26] jointpos_left_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[27] jointpos_left_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[28] jointpos_left_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[29] jointpos_right_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[30] jointpos_right_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[31] jointpos_right_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[32] jointpos_right_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[33] jointpos_right_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[34] jointpos_right_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[35] jointpos_right_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+[36] jointvel_left_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[37] jointvel_left_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[38] jointvel_left_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[39] jointvel_left_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[40] jointvel_left_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[41] jointvel_left_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[42] jointvel_right_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[43] jointvel_right_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[44] jointvel_right_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[45] jointvel_right_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[46] jointvel_right_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[47] jointvel_right_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[48] jointvel_waist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[49] jointvel_waist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[50] jointvel_waist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[51] jointvel_head_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[52] jointvel_head_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:head_pitch_joint | noise=0 | cutoff=0
+[53] jointvel_left_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[54] jointvel_left_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[55] jointvel_left_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[56] jointvel_left_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[57] jointvel_left_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[58] jointvel_left_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[59] jointvel_left_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[60] jointvel_right_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[61] jointvel_right_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[62] jointvel_right_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[63] jointvel_right_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[64] jointvel_right_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[65] jointvel_right_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[66] jointvel_right_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+
+================================================================================================
+MODEL: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\Master_MuJoCo\assets\Master\ff_master_ultra_x2_limits.xml
+COUNTS: joints=31 qpos=37 dofs=36 actuators=30 sensors=65 bodies=33
+------------------------------------------------------------------------------------------------
+JOINTS (compiled/effective values; angular quantities use radians)
+[00] floating_base_joint | body/link=pelvis | type=mjJNT_FREE
+     axis=N/A | range=unlimited [0, 0]
+     damping=[0, 0, 0, 0, 0, 0] | armature=[0, 0, 0, 0, 0, 0] | frictionloss=[0, 0, 0, 0, 0, 0]
+     joint actuatorfrcrange=unlimited [0, 0]
+     actuator=N/A | ctrlrange=N/A | actuator forcerange=N/A
+     sensors=NONE
+[01] left_hip_pitch_joint | body/link=left_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_left_hip_pitch_joint
+[02] left_hip_roll_joint | body/link=left_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.235619, 2.905973]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_roll_joint, mjSENS_JOINTVEL:jointvel_left_hip_roll_joint
+[03] left_hip_yaw_joint | body/link=left_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-1.684242, 3.429572]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_left_hip_yaw_joint
+[04] left_knee_joint | body/link=left_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.408554]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_knee_joint, mjSENS_JOINTVEL:jointvel_left_knee_joint
+[05] left_ankle_pitch_joint | body/link=left_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.802851, 0.453786]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_left_ankle_pitch_joint
+[06] left_ankle_roll_joint | body/link=left_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.261799, 0.261799]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_left_ankle_roll_joint
+[07] right_hip_pitch_joint | body/link=right_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_right_hip_pitch_joint
+[08] right_hip_roll_joint | body/link=right_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-2.905973, 0.235619]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_roll_joint, mjSENS_JOINTVEL:jointvel_right_hip_roll_joint
+[09] right_hip_yaw_joint | body/link=right_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.429572, 1.684242]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_right_hip_yaw_joint
+[10] right_knee_joint | body/link=right_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.408554]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_knee_joint, mjSENS_JOINTVEL:jointvel_right_knee_joint
+[11] right_ankle_pitch_joint | body/link=right_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.802851, 0.453786]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_right_ankle_pitch_joint
+[12] right_ankle_roll_joint | body/link=right_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.261799, 0.261799]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_right_ankle_roll_joint
+[13] waist_yaw_joint | body/link=waist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.429572, 2.207842]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_waist_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_yaw_joint, mjSENS_JOINTVEL:jointvel_waist_yaw_joint
+[14] waist_pitch_joint | body/link=waist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.314159, 0.314159]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_pitch_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_pitch_joint, mjSENS_JOINTVEL:jointvel_waist_pitch_joint
+[15] waist_roll_joint | body/link=torso_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.488692, 0.488692]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_roll_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_roll_joint, mjSENS_JOINTVEL:jointvel_waist_roll_joint
+[16] left_shoulder_pitch_joint | body/link=left_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.080506, 2.033309]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_pitch_joint
+[17] left_shoulder_roll_joint | body/link=left_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.061087, 3.0456]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_roll_joint
+[18] left_shoulder_yaw_joint | body/link=left_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_yaw_joint
+[19] left_elbow_joint | body/link=left_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.356194, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_elbow_joint, mjSENS_JOINTVEL:jointvel_left_elbow_joint
+[20] left_wrist_yaw_joint | body/link=left_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_left_wrist_yaw_joint
+[21] left_wrist_pitch_joint | body/link=left_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.575959, 0.575959]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_left_wrist_pitch_joint
+[22] left_wrist_roll_joint | body/link=left_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-1.50971, 0.724312]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_left_wrist_roll_joint
+[23] right_shoulder_pitch_joint | body/link=right_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.080506, 2.033309]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_pitch_joint
+[24] right_shoulder_roll_joint | body/link=right_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-3.0456, 0.061087]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_roll_joint
+[25] right_shoulder_yaw_joint | body/link=right_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_yaw_joint
+[26] right_elbow_joint | body/link=right_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.356194, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_elbow_joint, mjSENS_JOINTVEL:jointvel_right_elbow_joint
+[27] right_wrist_yaw_joint | body/link=right_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_right_wrist_yaw_joint
+[28] right_wrist_pitch_joint | body/link=right_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.575959, 0.575959]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_right_wrist_pitch_joint
+[29] right_wrist_roll_joint | body/link=right_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.724312, 1.50971]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_right_wrist_roll_joint
+[30] head_yaw_joint | body/link=head_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-0.349066, 0.349066]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-2.6, 2.6]
+     actuator=motor_head_yaw_joint | ctrlrange=limited [-2.6, 2.6] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_head_yaw_joint, mjSENS_JOINTVEL:jointvel_head_yaw_joint
+------------------------------------------------------------------------------------------------
+ALL SENSORS
+[00] body-orientation | type=mjSENS_FRAMEQUAT | dim=4 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[01] body-angular-velocity | type=mjSENS_GYRO | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[02] body-linear-pos | type=mjSENS_FRAMEPOS | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[03] body-linear-vel | type=mjSENS_VELOCIMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[04] body-linear-acceleration | type=mjSENS_ACCELEROMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[05] jointpos_left_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[06] jointpos_left_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[07] jointpos_left_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[08] jointpos_left_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[09] jointpos_left_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[10] jointpos_left_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[11] jointpos_right_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[12] jointpos_right_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[13] jointpos_right_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[14] jointpos_right_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[15] jointpos_right_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[16] jointpos_right_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[17] jointpos_waist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[18] jointpos_waist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[19] jointpos_waist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[20] jointpos_head_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[21] jointpos_left_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[22] jointpos_left_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[23] jointpos_left_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[24] jointpos_left_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[25] jointpos_left_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[26] jointpos_left_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[27] jointpos_left_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[28] jointpos_right_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[29] jointpos_right_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[30] jointpos_right_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[31] jointpos_right_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[32] jointpos_right_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[33] jointpos_right_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[34] jointpos_right_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+[35] jointvel_left_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[36] jointvel_left_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[37] jointvel_left_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[38] jointvel_left_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[39] jointvel_left_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[40] jointvel_left_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[41] jointvel_right_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[42] jointvel_right_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[43] jointvel_right_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[44] jointvel_right_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[45] jointvel_right_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[46] jointvel_right_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[47] jointvel_waist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[48] jointvel_waist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[49] jointvel_waist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[50] jointvel_head_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[51] jointvel_left_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[52] jointvel_left_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[53] jointvel_left_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[54] jointvel_left_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[55] jointvel_left_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[56] jointvel_left_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[57] jointvel_left_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[58] jointvel_right_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[59] jointvel_right_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[60] jointvel_right_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[61] jointvel_right_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[62] jointvel_right_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[63] jointvel_right_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[64] jointvel_right_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+
+================================================================================================
+MODEL: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\Master_MuJoCo\assets\Master\scene_x2_fixed.xml
+COUNTS: joints=31 qpos=37 dofs=36 actuators=30 sensors=65 bodies=33
+------------------------------------------------------------------------------------------------
+JOINTS (compiled/effective values; angular quantities use radians)
+[00] floating_base_joint | body/link=pelvis | type=mjJNT_FREE
+     axis=N/A | range=unlimited [0, 0]
+     damping=[0, 0, 0, 0, 0, 0] | armature=[0, 0, 0, 0, 0, 0] | frictionloss=[0, 0, 0, 0, 0, 0]
+     joint actuatorfrcrange=unlimited [0, 0]
+     actuator=N/A | ctrlrange=N/A | actuator forcerange=N/A
+     sensors=NONE
+[01] left_hip_pitch_joint | body/link=left_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_left_hip_pitch_joint
+[02] left_hip_roll_joint | body/link=left_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.235619, 2.905973]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_roll_joint, mjSENS_JOINTVEL:jointvel_left_hip_roll_joint
+[03] left_hip_yaw_joint | body/link=left_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-1.684242, 3.429572]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_left_hip_yaw_joint
+[04] left_knee_joint | body/link=left_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.408554]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_knee_joint, mjSENS_JOINTVEL:jointvel_left_knee_joint
+[05] left_ankle_pitch_joint | body/link=left_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.802851, 0.453786]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_left_ankle_pitch_joint
+[06] left_ankle_roll_joint | body/link=left_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.261799, 0.261799]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_left_ankle_roll_joint
+[07] right_hip_pitch_joint | body/link=right_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_right_hip_pitch_joint
+[08] right_hip_roll_joint | body/link=right_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-2.905973, 0.235619]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_roll_joint, mjSENS_JOINTVEL:jointvel_right_hip_roll_joint
+[09] right_hip_yaw_joint | body/link=right_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.429572, 1.684242]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_right_hip_yaw_joint
+[10] right_knee_joint | body/link=right_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.408554]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_knee_joint, mjSENS_JOINTVEL:jointvel_right_knee_joint
+[11] right_ankle_pitch_joint | body/link=right_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.802851, 0.453786]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_right_ankle_pitch_joint
+[12] right_ankle_roll_joint | body/link=right_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.261799, 0.261799]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_right_ankle_roll_joint
+[13] waist_yaw_joint | body/link=waist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.429572, 2.207842]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_waist_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_yaw_joint, mjSENS_JOINTVEL:jointvel_waist_yaw_joint
+[14] waist_pitch_joint | body/link=waist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.314159, 0.314159]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_pitch_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_pitch_joint, mjSENS_JOINTVEL:jointvel_waist_pitch_joint
+[15] waist_roll_joint | body/link=torso_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.488692, 0.488692]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_roll_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_roll_joint, mjSENS_JOINTVEL:jointvel_waist_roll_joint
+[16] left_shoulder_pitch_joint | body/link=left_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.080506, 2.033309]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_pitch_joint
+[17] left_shoulder_roll_joint | body/link=left_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.061087, 3.0456]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_roll_joint
+[18] left_shoulder_yaw_joint | body/link=left_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_yaw_joint
+[19] left_elbow_joint | body/link=left_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.356194, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_elbow_joint, mjSENS_JOINTVEL:jointvel_left_elbow_joint
+[20] left_wrist_yaw_joint | body/link=left_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_left_wrist_yaw_joint
+[21] left_wrist_pitch_joint | body/link=left_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.575959, 0.575959]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_left_wrist_pitch_joint
+[22] left_wrist_roll_joint | body/link=left_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-1.50971, 0.724312]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_left_wrist_roll_joint
+[23] right_shoulder_pitch_joint | body/link=right_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.080506, 2.033309]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_pitch_joint
+[24] right_shoulder_roll_joint | body/link=right_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-3.0456, 0.061087]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_roll_joint
+[25] right_shoulder_yaw_joint | body/link=right_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_yaw_joint
+[26] right_elbow_joint | body/link=right_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.356194, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_elbow_joint, mjSENS_JOINTVEL:jointvel_right_elbow_joint
+[27] right_wrist_yaw_joint | body/link=right_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_right_wrist_yaw_joint
+[28] right_wrist_pitch_joint | body/link=right_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.575959, 0.575959]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_right_wrist_pitch_joint
+[29] right_wrist_roll_joint | body/link=right_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.724312, 1.50971]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_right_wrist_roll_joint
+[30] head_yaw_joint | body/link=head_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-0.349066, 0.349066]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-2.6, 2.6]
+     actuator=motor_head_yaw_joint | ctrlrange=limited [-2.6, 2.6] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_head_yaw_joint, mjSENS_JOINTVEL:jointvel_head_yaw_joint
+------------------------------------------------------------------------------------------------
+ALL SENSORS
+[00] body-orientation | type=mjSENS_FRAMEQUAT | dim=4 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[01] body-angular-velocity | type=mjSENS_GYRO | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[02] body-linear-pos | type=mjSENS_FRAMEPOS | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[03] body-linear-vel | type=mjSENS_VELOCIMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[04] body-linear-acceleration | type=mjSENS_ACCELEROMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[05] jointpos_left_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[06] jointpos_left_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[07] jointpos_left_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[08] jointpos_left_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[09] jointpos_left_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[10] jointpos_left_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[11] jointpos_right_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[12] jointpos_right_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[13] jointpos_right_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[14] jointpos_right_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[15] jointpos_right_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[16] jointpos_right_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[17] jointpos_waist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[18] jointpos_waist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[19] jointpos_waist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[20] jointpos_head_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[21] jointpos_left_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[22] jointpos_left_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[23] jointpos_left_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[24] jointpos_left_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[25] jointpos_left_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[26] jointpos_left_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[27] jointpos_left_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[28] jointpos_right_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[29] jointpos_right_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[30] jointpos_right_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[31] jointpos_right_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[32] jointpos_right_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[33] jointpos_right_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[34] jointpos_right_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+[35] jointvel_left_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[36] jointvel_left_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[37] jointvel_left_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[38] jointvel_left_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[39] jointvel_left_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[40] jointvel_left_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[41] jointvel_right_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[42] jointvel_right_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[43] jointvel_right_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[44] jointvel_right_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[45] jointvel_right_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[46] jointvel_right_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[47] jointvel_waist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[48] jointvel_waist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[49] jointvel_waist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[50] jointvel_head_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[51] jointvel_left_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[52] jointvel_left_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[53] jointvel_left_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[54] jointvel_left_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[55] jointvel_left_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[56] jointvel_left_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[57] jointvel_left_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[58] jointvel_right_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[59] jointvel_right_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[60] jointvel_right_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[61] jointvel_right_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[62] jointvel_right_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[63] jointvel_right_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[64] jointvel_right_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+
+================================================================================================
+MODEL: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\Master_MuJoCo\assets\Master\scene_x2_free.xml
+COUNTS: joints=31 qpos=37 dofs=36 actuators=30 sensors=65 bodies=33
+------------------------------------------------------------------------------------------------
+JOINTS (compiled/effective values; angular quantities use radians)
+[00] floating_base_joint | body/link=pelvis | type=mjJNT_FREE
+     axis=N/A | range=unlimited [0, 0]
+     damping=[0, 0, 0, 0, 0, 0] | armature=[0, 0, 0, 0, 0, 0] | frictionloss=[0, 0, 0, 0, 0, 0]
+     joint actuatorfrcrange=unlimited [0, 0]
+     actuator=N/A | ctrlrange=N/A | actuator forcerange=N/A
+     sensors=NONE
+[01] left_hip_pitch_joint | body/link=left_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_left_hip_pitch_joint
+[02] left_hip_roll_joint | body/link=left_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.235619, 2.905973]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_roll_joint, mjSENS_JOINTVEL:jointvel_left_hip_roll_joint
+[03] left_hip_yaw_joint | body/link=left_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-1.684242, 3.429572]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_left_hip_yaw_joint
+[04] left_knee_joint | body/link=left_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.408554]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_left_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_knee_joint, mjSENS_JOINTVEL:jointvel_left_knee_joint
+[05] left_ankle_pitch_joint | body/link=left_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.802851, 0.453786]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_left_ankle_pitch_joint
+[06] left_ankle_roll_joint | body/link=left_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.261799, 0.261799]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_left_ankle_roll_joint
+[07] right_hip_pitch_joint | body/link=right_hip_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_pitch_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_pitch_joint, mjSENS_JOINTVEL:jointvel_right_hip_pitch_joint
+[08] right_hip_roll_joint | body/link=right_hip_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-2.905973, 0.235619]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_roll_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_roll_joint, mjSENS_JOINTVEL:jointvel_right_hip_roll_joint
+[09] right_hip_yaw_joint | body/link=right_hip_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.429572, 1.684242]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_hip_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_hip_yaw_joint, mjSENS_JOINTVEL:jointvel_right_hip_yaw_joint
+[10] right_knee_joint | body/link=right_knee_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [0, 2.408554]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_right_knee_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_knee_joint, mjSENS_JOINTVEL:jointvel_right_knee_joint
+[11] right_ankle_pitch_joint | body/link=right_ankle_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.802851, 0.453786]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_ankle_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_pitch_joint, mjSENS_JOINTVEL:jointvel_right_ankle_pitch_joint
+[12] right_ankle_roll_joint | body/link=right_ankle_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.261799, 0.261799]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_ankle_roll_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_ankle_roll_joint, mjSENS_JOINTVEL:jointvel_right_ankle_roll_joint
+[13] waist_yaw_joint | body/link=waist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-3.429572, 2.207842]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-120, 120]
+     actuator=motor_waist_yaw_joint | ctrlrange=limited [-118, 118] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_yaw_joint, mjSENS_JOINTVEL:jointvel_waist_yaw_joint
+[14] waist_pitch_joint | body/link=waist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.314159, 0.314159]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_pitch_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_pitch_joint, mjSENS_JOINTVEL:jointvel_waist_pitch_joint
+[15] waist_roll_joint | body/link=torso_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.488692, 0.488692]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-48, 48]
+     actuator=motor_waist_roll_joint | ctrlrange=limited [-48, 48] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_waist_roll_joint, mjSENS_JOINTVEL:jointvel_waist_roll_joint
+[16] left_shoulder_pitch_joint | body/link=left_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.080506, 2.033309]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_pitch_joint
+[17] left_shoulder_roll_joint | body/link=left_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.061087, 3.0456]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_left_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_roll_joint
+[18] left_shoulder_yaw_joint | body/link=left_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_left_shoulder_yaw_joint
+[19] left_elbow_joint | body/link=left_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.356194, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_elbow_joint, mjSENS_JOINTVEL:jointvel_left_elbow_joint
+[20] left_wrist_yaw_joint | body/link=left_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_left_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_left_wrist_yaw_joint
+[21] left_wrist_pitch_joint | body/link=left_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.575959, 0.575959]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_left_wrist_pitch_joint
+[22] left_wrist_roll_joint | body/link=left_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-1.50971, 0.724312]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_left_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_left_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_left_wrist_roll_joint
+[23] right_shoulder_pitch_joint | body/link=right_shoulder_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-3.080506, 2.033309]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_pitch_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_pitch_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_pitch_joint
+[24] right_shoulder_roll_joint | body/link=right_shoulder_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-3.0456, 0.061087]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-36, 36]
+     actuator=motor_right_shoulder_roll_joint | ctrlrange=limited [-36, 36] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_roll_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_roll_joint
+[25] right_shoulder_yaw_joint | body/link=right_shoulder_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_shoulder_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_shoulder_yaw_joint, mjSENS_JOINTVEL:jointvel_right_shoulder_yaw_joint
+[26] right_elbow_joint | body/link=right_elbow_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-2.356194, 0]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_elbow_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_elbow_joint, mjSENS_JOINTVEL:jointvel_right_elbow_joint
+[27] right_wrist_yaw_joint | body/link=right_wrist_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-2.556908, 2.556908]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-24, 24]
+     actuator=motor_right_wrist_yaw_joint | ctrlrange=limited [-24, 24] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_yaw_joint, mjSENS_JOINTVEL:jointvel_right_wrist_yaw_joint
+[28] right_wrist_pitch_joint | body/link=right_wrist_pitch_link | type=mjJNT_HINGE
+     axis=[0, 1, 0] | range=limited [-0.575959, 0.575959]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_pitch_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_pitch_joint, mjSENS_JOINTVEL:jointvel_right_wrist_pitch_joint
+[29] right_wrist_roll_joint | body/link=right_wrist_roll_link | type=mjJNT_HINGE
+     axis=[1, 0, 0] | range=limited [-0.724312, 1.50971]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-4.8, 4.8]
+     actuator=motor_right_wrist_roll_joint | ctrlrange=limited [-2.2, 2.2] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_right_wrist_roll_joint, mjSENS_JOINTVEL:jointvel_right_wrist_roll_joint
+[30] head_yaw_joint | body/link=head_yaw_link | type=mjJNT_HINGE
+     axis=[0, 0, 1] | range=limited [-0.349066, 0.349066]
+     damping=[0] | armature=[0.03] | frictionloss=[0.3]
+     joint actuatorfrcrange=limited [-2.6, 2.6]
+     actuator=motor_head_yaw_joint | ctrlrange=limited [-2.6, 2.6] | actuator forcerange=unlimited [0, 0]
+     sensors=mjSENS_JOINTPOS:jointpos_head_yaw_joint, mjSENS_JOINTVEL:jointvel_head_yaw_joint
+------------------------------------------------------------------------------------------------
+ALL SENSORS
+[00] body-orientation | type=mjSENS_FRAMEQUAT | dim=4 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[01] body-angular-velocity | type=mjSENS_GYRO | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[02] body-linear-pos | type=mjSENS_FRAMEPOS | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[03] body-linear-vel | type=mjSENS_VELOCIMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0 | cutoff=0
+[04] body-linear-acceleration | type=mjSENS_ACCELEROMETER | dim=3 | target=mjOBJ_SITE:imu_0 | noise=0.001 | cutoff=0
+[05] jointpos_left_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[06] jointpos_left_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[07] jointpos_left_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[08] jointpos_left_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[09] jointpos_left_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[10] jointpos_left_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[11] jointpos_right_hip_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[12] jointpos_right_hip_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[13] jointpos_right_hip_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[14] jointpos_right_knee_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[15] jointpos_right_ankle_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[16] jointpos_right_ankle_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[17] jointpos_waist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[18] jointpos_waist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[19] jointpos_waist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[20] jointpos_head_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[21] jointpos_left_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[22] jointpos_left_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[23] jointpos_left_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[24] jointpos_left_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[25] jointpos_left_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[26] jointpos_left_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[27] jointpos_left_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[28] jointpos_right_shoulder_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[29] jointpos_right_shoulder_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[30] jointpos_right_shoulder_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[31] jointpos_right_elbow_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[32] jointpos_right_wrist_yaw_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[33] jointpos_right_wrist_pitch_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[34] jointpos_right_wrist_roll_joint | type=mjSENS_JOINTPOS | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0
+[35] jointvel_left_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_pitch_joint | noise=0 | cutoff=0
+[36] jointvel_left_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_roll_joint | noise=0 | cutoff=0
+[37] jointvel_left_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_hip_yaw_joint | noise=0 | cutoff=0
+[38] jointvel_left_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_knee_joint | noise=0 | cutoff=0
+[39] jointvel_left_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_pitch_joint | noise=0 | cutoff=0
+[40] jointvel_left_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_ankle_roll_joint | noise=0 | cutoff=0
+[41] jointvel_right_hip_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_pitch_joint | noise=0 | cutoff=0
+[42] jointvel_right_hip_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_roll_joint | noise=0 | cutoff=0
+[43] jointvel_right_hip_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_hip_yaw_joint | noise=0 | cutoff=0
+[44] jointvel_right_knee_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_knee_joint | noise=0 | cutoff=0
+[45] jointvel_right_ankle_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_pitch_joint | noise=0 | cutoff=0
+[46] jointvel_right_ankle_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_ankle_roll_joint | noise=0 | cutoff=0
+[47] jointvel_waist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_yaw_joint | noise=0 | cutoff=0
+[48] jointvel_waist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_pitch_joint | noise=0 | cutoff=0
+[49] jointvel_waist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:waist_roll_joint | noise=0 | cutoff=0
+[50] jointvel_head_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:head_yaw_joint | noise=0 | cutoff=0
+[51] jointvel_left_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_pitch_joint | noise=0 | cutoff=0
+[52] jointvel_left_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_roll_joint | noise=0 | cutoff=0
+[53] jointvel_left_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_shoulder_yaw_joint | noise=0 | cutoff=0
+[54] jointvel_left_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_elbow_joint | noise=0 | cutoff=0
+[55] jointvel_left_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_yaw_joint | noise=0 | cutoff=0
+[56] jointvel_left_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_pitch_joint | noise=0 | cutoff=0
+[57] jointvel_left_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:left_wrist_roll_joint | noise=0 | cutoff=0
+[58] jointvel_right_shoulder_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_pitch_joint | noise=0 | cutoff=0
+[59] jointvel_right_shoulder_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_roll_joint | noise=0 | cutoff=0
+[60] jointvel_right_shoulder_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_shoulder_yaw_joint | noise=0 | cutoff=0
+[61] jointvel_right_elbow_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_elbow_joint | noise=0 | cutoff=0
+[62] jointvel_right_wrist_yaw_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_yaw_joint | noise=0 | cutoff=0
+[63] jointvel_right_wrist_pitch_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_pitch_joint | noise=0 | cutoff=0
+[64] jointvel_right_wrist_roll_joint | type=mjSENS_JOINTVEL | dim=1 | target=mjOBJ_JOINT:right_wrist_roll_joint | noise=0 | cutoff=0

@@ -1,0 +1,7 @@
+motion=clap
+preset_id=3017
+preset_area=11
+operator_safety_confirmed=true
+confirmed_utc=2026-08-27T21:51:28.7148473Z
+codex_invokes_motion=false
+recorder_subscription_only=true

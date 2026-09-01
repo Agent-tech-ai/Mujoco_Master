@@ -1,0 +1,4 @@
+category,value,result
+reference timing,{'common_reference_advance_s': 0.3},reduces wrist/shoulder lag but cannot align both exactly
+simulation balance gains,{'gain_scale': 0.6},reduces ankle/hip/torso pitch over-response; over-corrects left ankle
+standing equilibrium targets,per-joint one-shot baseline correction in experiment log,reduces knee absolute offset; worsens ankle equilibrium

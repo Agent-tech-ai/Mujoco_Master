@@ -1,0 +1,256 @@
+{
+  "experiment_id": "phase3ay_joint_candidate",
+  "family": "AY_MOTION_CONDITIONED_RESPONSE",
+  "dataset": "wave",
+  "mode": "whole_body",
+  "design": {
+    "experiment_id": "phase3ay_joint_candidate",
+    "family": "AY_MOTION_CONDITIONED_RESPONSE",
+    "hypothesis": "Continuous activity/asymmetry schedule with exact frozen fallback at rest",
+    "limit_aware": true,
+    "contact_aware": true,
+    "rate_aware": true,
+    "saturation_aware": true,
+    "split_pitch_roll": true,
+    "dynamic_allocation": true,
+    "tracking_gate": true,
+    "safe_standing_reference": true,
+    "pitch_kp": 140.0,
+    "pitch_kd": 21.0,
+    "roll_kp": 70.0,
+    "roll_kd": 14.0,
+    "ankle_pitch_weight": 0.7,
+    "hip_pitch_weight": 0.1,
+    "knee_pitch_weight": 0.15,
+    "waist_pitch_weight": 0.0,
+    "ankle_roll_weight": 0.7,
+    "hip_roll_weight": 0.0,
+    "waist_roll_weight": 0.0,
+    "standing_reference_scale": 1.0,
+    "left_hip_roll_standing_offset_rad": 0.025,
+    "right_hip_roll_standing_offset_rad": 0.0,
+    "joint_limit_safety_margin_rad": 0.05,
+    "joint_limit_warning_width_rad": 0.12,
+    "contact_warning_m": 0.003,
+    "contact_hard_m": 0.00075,
+    "contact_avoidance_cap_rad": 0.07,
+    "contact_avoidance_gain": 2.0,
+    "saturation_warning_fraction": 0.75,
+    "saturation_hard_fraction": 0.95,
+    "reference_slew_rad_s": 0.35,
+    "tracking_error_warning_rad": 0.06,
+    "tracking_error_hard_rad": 0.18,
+    "shoulder_gain_scale": 8.0,
+    "wrist_gain_scale": 8.0,
+    "warning": "SIMULATION CONTROLLER DESIGN; NOT HARDWARE CALIBRATION",
+    "response_model": "CONTINUOUS_ASYMMETRY_GAIN_SCHEDULE",
+    "pitch_symmetric": [
+      1.0,
+      0.05,
+      0.05,
+      0.0
+    ],
+    "pitch_asymmetric": [
+      0.7,
+      0.1,
+      0.15,
+      0.0
+    ],
+    "roll_symmetric": [
+      0.2,
+      0.0,
+      0.8
+    ],
+    "roll_asymmetric": [
+      0.7,
+      0.0,
+      0.0
+    ],
+    "pitch_authority": 1.9,
+    "roll_authority": 1.4,
+    "pitch_total_scale_symmetric": 1.25,
+    "pitch_total_scale_asymmetric": 1.0,
+    "roll_total_scale_symmetric": 3.0,
+    "roll_total_scale_asymmetric": 1.0,
+    "asymmetry_midpoint": 0.5,
+    "asymmetry_width": 0.35,
+    "feature_filter_tau_s": 0.12,
+    "motion_energy_threshold_rad_s": 0.03,
+    "feature_source": "LIVE_SIM_ARM_AND_BASE_STATE_NO_MOTION_ID"
+  },
+  "perturbation": {},
+  "time_window_s": [
+    -5.0,
+    9.339999999999694
+  ],
+  "reported_effort_loaded": false,
+  "robot_connected": false,
+  "physical_parameters_modified": false,
+  "mjcf_modified": false,
+  "hardware_mapping_modified": false,
+  "stable_no_fall": true,
+  "fall_time_s": null,
+  "self_collision_samples": 0,
+  "pelvis_hip_contact_samples": 0,
+  "pelvis_hip_contact_duration_s": 0.0,
+  "other_self_collision_samples": 0,
+  "maximum_pelvis_hip_penetration_m": 0.0,
+  "minimum_positive_precontact_distance_m": 0.0011354817248913948,
+  "distance_to_numerical_tolerance_m": 0.0006354817248913948,
+  "nonfoot_ground_contact_samples": 0,
+  "minimum_limit_margin_rad": 0.04619177669894308,
+  "limit_violation_samples": 0,
+  "target_clip_samples": 0,
+  "persistent_saturation_fraction": 0.0,
+  "max_consecutive_saturation_s": 0.0,
+  "maximum_saturation_fraction": 0.4468552559285469,
+  "both_feet_contact_fraction": 0.9972144846796658,
+  "minimum_com_support_margin_m": 0.029463374685900545,
+  "maximum_left_foot_slip_proxy_m": 0.010481364206680537,
+  "maximum_right_foot_slip_proxy_m": 0.0058809321808855255,
+  "maximum_abs_tilt_deg": 8.098733160794579,
+  "tracking_metrics": [
+    {
+      "joint_name": "left_shoulder_roll_joint",
+      "rmse_rad": 3.152983018581462e-05,
+      "mae_rad": 2.4091195499209368e-05,
+      "lag_s": null,
+      "peak_error_rad": 8.505333118947328e-05,
+      "settling_error_rad": 3.037546140229573e-05,
+      "real_excursion_rad": 0.0
+    },
+    {
+      "joint_name": "right_shoulder_roll_joint",
+      "rmse_rad": 0.026545282701946036,
+      "mae_rad": 0.022650480105088848,
+      "lag_s": 0.08,
+      "peak_error_rad": 0.06723427926714765,
+      "settling_error_rad": 0.0025015104047750028,
+      "real_excursion_rad": 0.34667491912830106
+    },
+    {
+      "joint_name": "left_shoulder_yaw_joint",
+      "rmse_rad": 0.0001064046616243957,
+      "mae_rad": 6.417901782613356e-05,
+      "lag_s": 0.14,
+      "peak_error_rad": 0.0004954952454284123,
+      "settling_error_rad": 1.3625465131346381e-05,
+      "real_excursion_rad": 0.0005755424499511008
+    },
+    {
+      "joint_name": "right_shoulder_yaw_joint",
+      "rmse_rad": 0.05705165992547287,
+      "mae_rad": 0.03838204599716336,
+      "lag_s": 0.08,
+      "peak_error_rad": 0.12587880992433131,
+      "settling_error_rad": 9.473907874427492e-05,
+      "real_excursion_rad": 0.5489500728523302
+    },
+    {
+      "joint_name": "left_wrist_yaw_joint",
+      "rmse_rad": 2.3257925968223314e-06,
+      "mae_rad": 1.8187833567491837e-06,
+      "lag_s": null,
+      "peak_error_rad": 5.536024029839312e-06,
+      "settling_error_rad": 1.28704252940013e-06,
+      "real_excursion_rad": 0.0
+    },
+    {
+      "joint_name": "right_wrist_yaw_joint",
+      "rmse_rad": 0.14992127198827512,
+      "mae_rad": 0.11365667735426747,
+      "lag_s": 0.16,
+      "peak_error_rad": 0.2535933645156946,
+      "settling_error_rad": 0.049125405177338766,
+      "real_excursion_rad": 1.556201457977295
+    },
+    {
+      "joint_name": "left_wrist_roll_joint",
+      "rmse_rad": 8.366615180275657e-06,
+      "mae_rad": 6.760195698464417e-06,
+      "lag_s": null,
+      "peak_error_rad": 2.086889022553679e-05,
+      "settling_error_rad": 3.558530382593607e-06,
+      "real_excursion_rad": 0.0
+    },
+    {
+      "joint_name": "right_wrist_roll_joint",
+      "rmse_rad": 0.00012527537602005428,
+      "mae_rad": 9.611889577258473e-05,
+      "lag_s": null,
+      "peak_error_rad": 0.00030055259463059557,
+      "settling_error_rad": 4.824273951413807e-05,
+      "real_excursion_rad": 0.0
+    }
+  ],
+  "balance_metrics": [
+    {
+      "joint_name": "left_ankle_pitch_joint",
+      "real_excursion_rad": 0.030104160308833616,
+      "sim_excursion_rad": 0.049246891877331916,
+      "excursion_ratio": 1.6358832590617434,
+      "relative_rmse_rad": 0.02027473947371704,
+      "lag_s": 0.36
+    },
+    {
+      "joint_name": "right_ankle_pitch_joint",
+      "real_excursion_rad": 0.02799463272094721,
+      "sim_excursion_rad": 0.04936053081385064,
+      "excursion_ratio": 1.763214088424751,
+      "relative_rmse_rad": 0.01713703916852356,
+      "lag_s": 0.48
+    },
+    {
+      "joint_name": "left_hip_pitch_joint",
+      "real_excursion_rad": 0.013997554779052679,
+      "sim_excursion_rad": 0.058257999321295995,
+      "excursion_ratio": 4.162012597262988,
+      "relative_rmse_rad": 0.0316224184543637,
+      "lag_s": -0.82
+    },
+    {
+      "joint_name": "right_hip_pitch_joint",
+      "real_excursion_rad": 0.017065525054931696,
+      "sim_excursion_rad": 0.05887867158527707,
+      "excursion_ratio": 3.4501529484592073,
+      "relative_rmse_rad": 0.026420450827915595,
+      "lag_s": -0.66
+    },
+    {
+      "joint_name": "left_knee_joint",
+      "real_excursion_rad": 0.00728607177734375,
+      "sim_excursion_rad": 0.07773045988092192,
+      "excursion_ratio": 10.668363180641045,
+      "relative_rmse_rad": 0.03236942429640243,
+      "lag_s": 0.78
+    },
+    {
+      "joint_name": "right_knee_joint",
+      "real_excursion_rad": 0.01015363739679781,
+      "sim_excursion_rad": 0.06478470650403712,
+      "excursion_ratio": 6.380443182309081,
+      "relative_rmse_rad": 0.027259959914483097,
+      "lag_s": -1.0
+    },
+    {
+      "joint_name": "waist_pitch_joint",
+      "real_excursion_rad": 0.02804057533074444,
+      "sim_excursion_rad": 0.033279592122584474,
+      "excursion_ratio": 1.1868369935368563,
+      "relative_rmse_rad": 0.007691519128483184,
+      "lag_s": 0.08
+    },
+    {
+      "joint_name": "waist_roll_joint",
+      "real_excursion_rad": 0.03862691020103646,
+      "sim_excursion_rad": 0.04857644267727922,
+      "excursion_ratio": 1.2575803351720272,
+      "relative_rmse_rad": 0.007029799944394995,
+      "lag_s": 0.12
+    }
+  ],
+  "contact_safety_pass": true,
+  "limit_management_pass": true,
+  "saturation_management_pass": true,
+  "safety_pass": true
+}

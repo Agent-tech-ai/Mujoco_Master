@@ -1,0 +1,18 @@
+item,status,evidence_level,strongest_evidence,blocking_gap,phase3c_gate
+current_mjcf_inertial_inventory,READY,D,"Resolved MuJoCo body mass/CoM/inertia plus explicit XML provenance","Hardware applicability remains unproven",INVENTORY_ONLY
+current_mjcf_source_lineage,PARTIAL,A/E,"AimDK X2 SDK x2.xml excerpts match sample inertials; same-family URDF matches 31 bodies","No metrology or documented conversion provenance for all values",SOURCE_LINEAGE_ONLY
+pelvis_inertial_provenance,PARTIAL,D/E,"MJCF compile proves mesh-derived 5.03181065927 kg; same-bundle URDF says 3.523487 kg","Neither value is independently verified against physical X2",MODEL_CONVERSION_DISCREPANCY
+lower_limb_mass_magnitude,BLOCKED,D,"Heart/Wave/Clap sensitivity direction generalizes","No independent A/B/C mass measurement",MASS_PARAMETER_EVIDENCE_READY_NO
+link_com_magnitude,BLOCKED,E,"Asset-family values only","No independent X2 CoM source",EVIDENCE_BACKED_UPDATE_NO
+link_inertia_tensor,BLOCKED,E,"Asset-family values and SDK simulator lineage only","No independent X2 inertia source",INERTIA_PARAMETER_EVIDENCE_READY_NO
+joint_name_and_array_index,READY,A/B/C,"Official naming/order plus passive live JointStateArray names",None for name/index use,NAME_MAPPING_ONLY
+physical_joint_sign,BLOCKED,C/D,"Mirrored preset relationships and motion response","No isolated physical-axis or documented frame evidence",PHYSICAL_SIGN_READY_NO
+physical_joint_zero,BLOCKED,D,"Standing and preset observations","No defined physical datum/encoder offset evidence",PHYSICAL_ZERO_READY_NO
+imu_message_frame,PARTIAL,B/C,"Live frame_id base_link and SDK simulator IMU sites","Numeric output transform and physical mounting chain incomplete",IMU_TRANSFORM_READY_NO
+effort_units,PARTIAL,A/B,"AimDK field documentation labels N*m","Source signal and conversion semantics unknown",EFFORT_SEMANTICS_READY_NO
+effort_semantics,BLOCKED,B,"HAL publisher boundary identified","Assignment chain/formula/sign/filtering unavailable",EFFORT_SEMANTICS_READY_NO
+mc_state_and_preset_state,READY,B/C,"Readable MC/common and preset execution state",Does not expose time-indexed joint target,STATE_ONLY
+mc_internal_joint_command,BLOCKED,B,"No verified existing read-only joint-reference stream","Post-arbitration/interpolation/balance-blend target unavailable",MC_COMMAND_OBSERVABLE_NO
+cross_motion_physical_sensitivity_direction,READY,D,"Heart Wave and blind Clap position-space validation","Magnitude is not a physical parameter",DIRECTION_ONLY
+evidence_backed_physical_model_update,BLOCKED,A/B/C,"No complete parameter evidence chain","Mass inertia CoM sign zero IMU and effort gates remain open",EVIDENCE_BACKED_PHYSICAL_MODEL_UPDATE_READY_NO
+

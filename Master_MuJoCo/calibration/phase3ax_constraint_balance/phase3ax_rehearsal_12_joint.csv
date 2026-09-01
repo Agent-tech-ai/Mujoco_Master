@@ -1,0 +1,13 @@
+joint_name,tracking_status,maximum_position_error_deg,return_error_deg,self_collision_steps,joint_limit_violation_steps,persistent_saturation_fraction
+left_wrist_roll_joint,SETTLED,0.4749378010108136,-0.0029710437142106286,0,0,0.0
+right_wrist_roll_joint,SETTLED,0.4748397753097247,-0.002964632349120849,0,0,0.0
+left_wrist_yaw_joint,SETTLED,0.47464445568884117,-0.002238739047772622,0,0,0.0
+right_wrist_yaw_joint,SETTLED,0.47464811044705235,-0.002228736932952456,0,0,0.0
+left_wrist_pitch_joint,SETTLED,0.6796297788118193,-0.01946520044825526,0,0,0.0
+right_wrist_pitch_joint,SETTLED,0.6795107096984747,-0.019433841762323264,0,0,0.0
+left_elbow_joint,SETTLED,0.6100221346275854,-0.02056390637442138,0,0,0.0
+right_elbow_joint,SETTLED,0.6103343382517719,-0.020644437479165015,0,0,0.0
+left_shoulder_yaw_joint,SETTLED,0.314310543364736,6.961069108198845e-05,0,0,0.0
+right_shoulder_yaw_joint,SETTLED,0.31420469151789704,-0.00014771799039404066,0,0,0.0
+left_shoulder_pitch_joint,SETTLED,0.6278935838003575,-0.0589463202836996,0,0,0.0
+right_shoulder_pitch_joint,SETTLED,0.6285990462478667,-0.058846341276727124,0,0,0.0

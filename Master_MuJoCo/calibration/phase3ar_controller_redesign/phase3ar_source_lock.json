@@ -1,0 +1,11 @@
+{
+  "status": "PHASE3AR_SOURCE_LOCKED",
+  "files": 68,
+  "warning": "SIMULATION CONTROLLER DESIGN; NOT HARDWARE CALIBRATION",
+  "phase2_or_phase3_inputs_overwritten": false,
+  "mjcf_modified": false,
+  "hardware_mapping_modified": false,
+  "reported_effort_used_for_fitting": false,
+  "physical_parameters_modified": false,
+  "manifest": "phase3ar_source_manifest.csv"
+}

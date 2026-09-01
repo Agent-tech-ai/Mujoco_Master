@@ -1,0 +1,34 @@
+{
+  "selected_motion": "wave_right",
+  "heart_motion": "heart_both",
+  "current_active_joint_set": [
+    "left_shoulder_pitch_joint",
+    "right_elbow_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "heart_active_joint_set": [
+    "left_elbow_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_wrist_roll_joint",
+    "left_wrist_yaw_joint",
+    "right_elbow_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "active_set_jaccard": 0.5,
+  "excursion_vector_cosine_similarity": 0.3353107688911552,
+  "current_duration_s": 4.349152725999998,
+  "heart_duration_s": 5.640000000000004,
+  "current_left_arm_excursion_sum_rad": 0.011696338653564453,
+  "current_right_arm_excursion_sum_rad": 5.977835178375244,
+  "left_right_excursion_asymmetry": 0.9960944061750704,
+  "decision": "SUFFICIENTLY_INDEPENDENT_VALIDATION_MOTION"
+}

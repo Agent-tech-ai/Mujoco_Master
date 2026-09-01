@@ -1,0 +1,348 @@
+{
+  "phase": "2D",
+  "capture_id": "phase2d_heart_001",
+  "robot_identity": {
+    "REMOTE_HOSTNAME": "agi",
+    "REMOTE_HOST_ADDRESSES": "192.168.4.114 10.0.1.41 10.11.1.1 10.0.200.41 100.94.200.26 fd13:49ec:df4e:1:d70c:4493:a8d2:dd2e fd13:49ec:df4e:1:baf8:987b:5318:ea88 ",
+    "REMOTE_AGIBOT_SN": "",
+    "REMOTE_USER": "run",
+    "REMOTE_UNAME": "Linux agi 5.15.148-tegra #1 SMP PREEMPT Wed Jan 14 06:13:48 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux",
+    "REMOTE_START_UTC": "2026-08-13T23:32:07.490334004Z"
+  },
+  "recorder": {
+    "recorder_version": "phase2d_side_channel_v1",
+    "capture_id": "phase2d_heart_001",
+    "hostname": "agi",
+    "pid": 156800,
+    "capture_seconds": 180.0,
+    "minimum_serialization_interval_seconds": 0.02,
+    "required_pre_roll_seconds": 5.0,
+    "required_topics": [
+      "/aima/hal/joint/arm/state",
+      "/aima/hal/joint/head/state",
+      "/aima/hal/joint/leg/state",
+      "/aima/hal/joint/waist/state",
+      "/aima/hal/imu/chest/state",
+      "/aima/hal/imu/torso/state"
+    ],
+    "optional_mc_topics": [
+      "/aima/mc/common/state"
+    ],
+    "start_wall_ns": 1786663929589474710,
+    "start_monotonic_ns": 14066664564729,
+    "actual_sample_duration_seconds": 31.866009736
+  },
+  "capture_summary": {},
+  "raw_markers": {
+    "recording_started_line": "PHASE2D_RECORDING_STARTED=1 UTC_NS=1786663930396277467 HOST=agi"
+  },
+  "startup_safety_declarations": {
+    "SUBSCRIPTION_ONLY": "1",
+    "NO_TOPIC_PUBLISH": "1",
+    "NO_SERVICE_OR_ACTION_CALL": "1",
+    "NO_CONTROL_MODE_OR_ACTUATOR_OPERATION": "1",
+    "NO_PROCESS_CONTROL": "1",
+    "NO_REMOTE_FILE_WRITE": "1"
+  },
+  "topic_graph": {
+    "/agent/process_audio_output": [
+      "aimdk_msgs/msg/ProcessedAudioOutput"
+    ],
+    "/aima/battery_state/pb_3Aaimdk_2Eprotocol_2EBmsState": [
+      "ros2_plugin_proto/msg/RosMsgWrapper"
+    ],
+    "/aima/hal/audio/playback": [
+      "aimdk_msgs/msg/AudioPlayback"
+    ],
+    "/aima/hal/imu/chest/state": [
+      "sensor_msgs/msg/Imu"
+    ],
+    "/aima/hal/imu/torso/state": [
+      "sensor_msgs/msg/Imu"
+    ],
+    "/aima/hal/joint/arm/command": [
+      "aimdk_msgs/msg/JointCommandArray"
+    ],
+    "/aima/hal/joint/arm/state": [
+      "aimdk_msgs/msg/JointStateArray"
+    ],
+    "/aima/hal/joint/hand/command": [
+      "aimdk_msgs/msg/HandCommandArray"
+    ],
+    "/aima/hal/joint/hand/state": [
+      "aimdk_msgs/msg/HandStateArray"
+    ],
+    "/aima/hal/joint/head/command": [
+      "aimdk_msgs/msg/JointCommandArray"
+    ],
+    "/aima/hal/joint/head/state": [
+      "aimdk_msgs/msg/JointStateArray"
+    ],
+    "/aima/hal/joint/leg/command": [
+      "aimdk_msgs/msg/JointCommandArray"
+    ],
+    "/aima/hal/joint/leg/state": [
+      "aimdk_msgs/msg/JointStateArray"
+    ],
+    "/aima/hal/joint/waist/command": [
+      "aimdk_msgs/msg/JointCommandArray"
+    ],
+    "/aima/hal/joint/waist/state": [
+      "aimdk_msgs/msg/JointStateArray"
+    ],
+    "/aima/hal/monitor/ddcu": [
+      "aimdk_msgs/msg/DcuMonitorData"
+    ],
+    "/aima/hal/monitor/udcu": [
+      "aimdk_msgs/msg/DcuMonitorData"
+    ],
+    "/aima/hal/pmu/led_state": [
+      "aimdk_msgs/msg/PmuLedState"
+    ],
+    "/aima/hal/pmu/state": [
+      "aimdk_msgs/msg/PmuState"
+    ],
+    "/aima/hal/sensor/module_info": [
+      "aimdk_msgs/msg/ModuleInfo"
+    ],
+    "/aima/hal/sensor/rgb_head_front_center/camera_info": [
+      "sensor_msgs/msg/CameraInfo"
+    ],
+    "/aima/hal/sensor/rgb_head_front_center/rgb_image": [
+      "sensor_msgs/msg/Image"
+    ],
+    "/aima/hal/sensor/rgb_head_front_center/rgb_image/compressed": [
+      "sensor_msgs/msg/CompressedImage"
+    ],
+    "/aima/hal/sensor/touch_head": [
+      "aimdk_msgs/msg/TouchState"
+    ],
+    "/aima/hds/alert_code_list": [
+      "aimdk_msgs/msg/AlertCodeArray"
+    ],
+    "/aima/hds/process/info/soc0": [
+      "aimdk_msgs/msg/ProcessInfo"
+    ],
+    "/aima/hds/process/info/soc1": [
+      "aimdk_msgs/msg/ProcessInfo"
+    ],
+    "/aima/hds/process/info/soc2": [
+      "aimdk_msgs/msg/ProcessInfo"
+    ],
+    "/aima/internal/event/probe/soc0/hal_485": [
+      "aimdk_msgs/msg/EventProbeInfoArray"
+    ],
+    "/aima/internal/event/probe/soc0/hal_ethercat": [
+      "aimdk_msgs/msg/EventProbeInfoArray"
+    ],
+    "/aima/internal/event/probe/soc0/hal_imu": [
+      "aimdk_msgs/msg/EventProbeInfoArray"
+    ],
+    "/aima/internal/event/probe/soc0/mc": [
+      "aimdk_msgs/msg/EventProbeInfoArray"
+    ],
+    "/aima/internal/hds/diagnostics/soc0": [
+      "aimdk_msgs/msg/DiagnosticInfoArray"
+    ],
+    "/aima/internal/hds/diagnostics/soc2": [
+      "aimdk_msgs/msg/DiagnosticInfoArray"
+    ],
+    "/aima/internal/hds/slave/diagnostics": [
+      "aimdk_msgs/msg/DiagnosticInfoArray"
+    ],
+    "/aima/internal/hds/slave/monitor/process_info": [
+      "aimdk_msgs/msg/HdsMonitor"
+    ],
+    "/aima/mc/body_pose": [
+      "aimdk_msgs/msg/McBodyPose"
+    ],
+    "/aima/mc/common/state": [
+      "aimdk_msgs/msg/McCommonState"
+    ],
+    "/aima/mc/locomotion/velocity": [
+      "aimdk_msgs/msg/McLocomotionVelocity"
+    ],
+    "/aima/mc/manipulation": [
+      "aimdk_msgs/msg/ManipulationCommandArray"
+    ],
+    "/aima/mc/rl/debug": [
+      "aimdk_msgs/msg/McRLDebug"
+    ],
+    "/aima/sm/monitor_info": [
+      "aimdk_msgs/msg/SmSystemNode"
+    ],
+    "/aima/sm/system_state": [
+      "aimdk_msgs/msg/SmSystemState"
+    ],
+    "/aima/teleop_bridge/vr_data": [
+      "aimdk_msgs/msg/VRData"
+    ],
+    "/aimrte/sm/node_state/pb_3Aaimdk_2Eprotocol_2ESmNodeStateChannel": [
+      "ros2_plugin_proto/msg/RosMsgWrapper"
+    ],
+    "/face_ui_proxy/status": [
+      "aimdk_msgs/msg/FaceEmojiStatus"
+    ],
+    "/interaction/tts_status": [
+      "aimdk_msgs/msg/TtsStatus"
+    ],
+    "/ota/gateway/heartbeat/pb_3Aaimdk_2Eprotocol_2EOTAGatewayHeartbeatChannel": [
+      "ros2_plugin_proto/msg/RosMsgWrapper"
+    ],
+    "/parameter_events": [
+      "rcl_interfaces/msg/ParameterEvent"
+    ],
+    "/rosout": [
+      "rcl_interfaces/msg/Log"
+    ],
+    "/task_master/response": [
+      "std_msgs/msg/UInt8MultiArray"
+    ],
+    "/task_master/robot_info": [
+      "std_msgs/msg/UInt8MultiArray"
+    ],
+    "/task_master/state": [
+      "aimdk_msgs/msg/TaskMasterState"
+    ],
+    "/tf_static": [
+      "tf2_msgs/msg/TFMessage"
+    ],
+    "/x2robot/net/isfiveg": [
+      "aimdk_msgs/msg/IsFiveG"
+    ],
+    "/x2robot/scan/bluetooth": [
+      "aimdk_msgs/msg/BluetoothInfoArray"
+    ]
+  },
+  "topic_quality": {
+    "/aima/hal/joint/arm/state": {
+      "messages": 1497,
+      "duration_seconds": 31.591653426001358,
+      "mean_rate_hz": 47.3542799367609,
+      "median_gap_seconds": 0.020945285000379954,
+      "max_gap_seconds": 0.051372654999795486,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_arm": 1497
+      },
+      "first_elapsed_seconds": 0.256109439,
+      "last_elapsed_seconds": 31.847762865
+    },
+    "/aima/hal/joint/head/state": {
+      "messages": 1456,
+      "duration_seconds": 31.59637037399989,
+      "mean_rate_hz": 46.04959312659832,
+      "median_gap_seconds": 0.021284570000716485,
+      "max_gap_seconds": 0.0453087610003422,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_head": 1456
+      },
+      "first_elapsed_seconds": 0.258012965,
+      "last_elapsed_seconds": 31.854383339
+    },
+    "/aima/hal/joint/leg/state": {
+      "messages": 1494,
+      "duration_seconds": 31.592653666999468,
+      "mean_rate_hz": 47.25782188912903,
+      "median_gap_seconds": 0.020977856998797506,
+      "max_gap_seconds": 0.05758709699875908,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_leg": 1494
+      },
+      "first_elapsed_seconds": 0.259568085,
+      "last_elapsed_seconds": 31.852221752
+    },
+    "/aima/hal/joint/waist/state": {
+      "messages": 1495,
+      "duration_seconds": 31.593945860999156,
+      "mean_rate_hz": 47.287540675451176,
+      "median_gap_seconds": 0.02100356149912841,
+      "max_gap_seconds": 0.04860724599893729,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_waist": 1495
+      },
+      "first_elapsed_seconds": 0.261226978,
+      "last_elapsed_seconds": 31.855172839
+    },
+    "/aima/hal/imu/chest/state": {
+      "messages": 1470,
+      "duration_seconds": 31.05534626000008,
+      "mean_rate_hz": 47.30264437244746,
+      "median_gap_seconds": 0.02099595700019563,
+      "max_gap_seconds": 0.040037472999756574,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "base_link": 1470
+      },
+      "first_elapsed_seconds": 0.804021146,
+      "last_elapsed_seconds": 31.859367406
+    },
+    "/aima/hal/imu/torso/state": {
+      "messages": 1469,
+      "duration_seconds": 31.05947356300021,
+      "mean_rate_hz": 47.26416231821663,
+      "median_gap_seconds": 0.020990612500099814,
+      "max_gap_seconds": 0.040500637000150164,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "base_link": 1469
+      },
+      "first_elapsed_seconds": 0.806536173,
+      "last_elapsed_seconds": 31.866009736
+    }
+  },
+  "event_detection": {
+    "velocity_threshold_rad_s": 0.05,
+    "heart_start_elapsed_seconds": 14.590379783,
+    "heart_end_elapsed_seconds": 20.24979677,
+    "all_required_coverage_start_elapsed_seconds": 0.806536173,
+    "all_required_coverage_end_elapsed_seconds": 31.847762865,
+    "verified_pre_roll_seconds": 13.78384361,
+    "verified_post_roll_seconds": 11.597966095,
+    "termination_classification": "MANUAL_OR_CONNECTION_END_AFTER_POST_ROLL",
+    "excluded_out_of_window_operator_markers": [
+      {
+        "event": "HEART_COMMAND_REQUESTED_APPROX",
+        "source": "codex_operator_notification",
+        "local_wall_utc": "2026-08-12T23:49:23.7386375Z",
+        "note": "Recorder ready; operator notified to execute one verified standing heart after safety confirmation",
+        "receive_wall_ns": 1786578563738637056,
+        "receive_monotonic_ns": null
+      },
+      {
+        "event": "HEART_FINISHED_APPROX",
+        "source": "operator_chat_confirmation",
+        "local_wall_utc": "2026-08-13T00:08:57.5319437Z",
+        "note": "Operator reported heart complete; robot instructed to remain safely stationary for post-roll",
+        "receive_wall_ns": 1786579737531943168,
+        "receive_monotonic_ns": null
+      }
+    ]
+  },
+  "PHASE2D_REPLAY_READY": true,
+  "replay_readiness_evidence": [
+    "all six required streams present",
+    "no clean footer; all required streams still cover full motion and >=5 s post-roll",
+    "heart motion detected from arm velocity",
+    "pre-roll >=5 s",
+    "post-roll >=5 s",
+    "required source timestamps monotonic",
+    "required receive gaps <0.5 s"
+  ],
+  "safety": {
+    "capture_is_subscription_only": true,
+    "robot_command_sent_by_recorder": false,
+    "mjcf_modified": false,
+    "joint_mapping_modified": false,
+    "dynamics_calibrated": false
+  }
+}

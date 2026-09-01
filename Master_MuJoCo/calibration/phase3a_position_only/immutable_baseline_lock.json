@@ -1,0 +1,12 @@
+{
+  "status": "IMMUTABLE_BASELINE_LOCKED",
+  "warning": "NOT HARDWARE CALIBRATION",
+  "phase2_data_overwritten": false,
+  "reported_effort_used_for_fitting": false,
+  "physical_parameters_modified": false,
+  "hardware_mapping_modified": false,
+  "absolute_imu_used_for_fitting": false,
+  "manifest": "immutable_baseline_sha256.csv",
+  "source_rate_hz": 50.0,
+  "motion_end_seconds": 5.659416987
+}

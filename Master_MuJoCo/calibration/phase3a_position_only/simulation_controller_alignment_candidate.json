@@ -1,0 +1,59 @@
+{
+  "classification": "ACCEPTED_SIM_CONTROLLER_ALIGNMENT",
+  "warning": "NOT HARDWARE CALIBRATION",
+  "source_controller_modified": false,
+  "mjcf_modified": false,
+  "physical_parameters_modified": false,
+  "hardware_mapping_modified": false,
+  "reported_effort_used_for_fitting": false,
+  "absolute_imu_used_for_fitting": false,
+  "parameters": {
+    "name": "free_final_candidate",
+    "parent": "free_standing_reference_scale_1p0",
+    "free_base": true,
+    "changed_category": "simulation standing equilibrium targets",
+    "classification": "ACCEPTED_SIM_CONTROLLER_ALIGNMENT",
+    "interpolation": "linear",
+    "reference_rate_hz": 50.0,
+    "controller_rate_hz": 1000.0,
+    "timestep_s": 0.001,
+    "shoulder_gain_scale": 8.0,
+    "wrist_gain_scale": 8.0,
+    "balance_gain_scale": 0.7,
+    "standing_reference_scale": 1.0,
+    "velocity_limit_rad_s": null
+  },
+  "standing_reference_offsets_rad": {
+    "left_ankle_pitch_joint": 0.038480805262590234,
+    "right_ankle_pitch_joint": 0.0659125741132981,
+    "left_hip_pitch_joint": 0.03685788964070452,
+    "right_hip_pitch_joint": 0.012304937903883373,
+    "left_knee_joint": -0.10433494804811128,
+    "right_knee_joint": -0.10933652882841571,
+    "waist_pitch_joint": 7.044263005715617e-05,
+    "waist_roll_joint": 7.692674347224856e-05
+  },
+  "gain_definition": "simulation kp multiplied by scale; simulation kd multiplied by sqrt(scale)",
+  "selected_from": {
+    "shoulder": "fixed_shoulders_scale_8p0",
+    "wrist": "fixed_wrists_scale_8p0",
+    "balance": "free_balance_scale_0p7",
+    "standing": "free_standing_reference_scale_1p0"
+  },
+  "free_base_10s_standing": {
+    "experiment": "free_final_candidate",
+    "duration_s": 10.0,
+    "stable_no_fall": true,
+    "minimum_pelvis_height_m": 0.653107467100735,
+    "maximum_abs_tilt_deg": 2.8346452547890557,
+    "maximum_pelvis_xy_displacement_m": 0.0263862237318582,
+    "maximum_left_foot_slip_proxy_m": 0.006681046157161201,
+    "maximum_right_foot_slip_proxy_m": 0.006077066820636742,
+    "both_feet_contact_fraction": 0.9983,
+    "self_collision_steps": 0,
+    "nonfoot_ground_contact_steps": 0,
+    "persistent_saturation_fraction": 0.0,
+    "warning": "NOT HARDWARE CALIBRATION"
+  },
+  "rehearsal_settled": "12/12"
+}

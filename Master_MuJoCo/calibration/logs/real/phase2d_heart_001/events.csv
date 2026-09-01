@@ -1,0 +1,6 @@
+event,note,receive_wall_ns,receive_monotonic_ns,source,receive_wall_utc
+CAPTURE_STARTED,recorder process entered subscription loop,1786663929841651278,14066916750321,remote_recorder,2026-08-13T23:32:09.841651+00:00
+REQUIRED_TOPICS_READY,all six required topics received,1786663930396248795,14067471344542,remote_recorder,2026-08-13T23:32:10.396249+00:00
+PRE_ROLL_COMPLETE,five seconds retained after all required topics became ready,1786663935396547300,14072471643047,remote_recorder,2026-08-13T23:32:15.396547+00:00
+HEART_STARTED_AUTO,first arm sample above 0.050000 rad/s,1786663944179854592,14081254944512,joint_velocity_detector,2026-08-13T23:32:24.179855+00:00
+HEART_FINISHED_AUTO,last arm sample above 0.050000 rad/s,1786663949839271680,14086914361499,joint_velocity_detector,2026-08-13T23:32:29.839272+00:00

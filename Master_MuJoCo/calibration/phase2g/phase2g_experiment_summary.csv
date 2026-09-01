@@ -1,0 +1,7 @@
+experiment,classification,changed_category,mean_arm_rmse_rad,median_arm_phase_lag_s,mean_balance_delta_rmse,stable_no_fall,maximum_ctrl_saturation_fraction,physical_parameters_modified,status
+free_baseline,EXISTING_BASELINE,none,0.1955485853760914,0.24,0.0211346951824574,True,0.40615079338276155,False,NOT HARDWARE CALIBRATION
+fixed_base_baseline,DIAGNOSTIC_BASELINE,base constraint,0.1954589832861778,0.24,,True,0.27342913288959947,False,NOT HARDWARE CALIBRATION
+fixed_base_50hz_zoh,DIAGNOSTIC_BASELINE,reference interpolation,0.20182432010514786,0.26,,True,0.251098628293158,False,NOT HARDWARE CALIBRATION
+free_reference_advance_030,SIM_CONTROLLER_ALIGNMENT_CANDIDATE,reference timing,0.06875663361549306,-0.06,0.02179158877784404,True,0.4065417454123148,False,NOT HARDWARE CALIBRATION
+free_balance_gain_scale_060,SIM_CONTROLLER_ALIGNMENT_CANDIDATE,simulation balance gains,0.19552290490545032,0.24,0.0171547533887321,True,0.4810283652763657,False,NOT HARDWARE CALIBRATION
+free_equilibrium_target_compensation,SIM_CONTROLLER_ALIGNMENT_CANDIDATE,standing equilibrium targets,0.19554940252957254,0.24,0.021598406309868014,True,0.39315224224581335,False,NOT HARDWARE CALIBRATION

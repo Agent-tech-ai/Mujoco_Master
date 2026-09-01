@@ -1,0 +1,2 @@
+{"event":"HEART_COMMAND_REQUESTED_APPROX","source":"codex_operator_notification","local_wall_utc":"2026-08-12T23:49:23.7386375Z","note":"Recorder ready; operator notified to execute one verified standing heart after safety confirmation"}
+{"event":"HEART_FINISHED_APPROX","source":"operator_chat_confirmation","local_wall_utc":"2026-08-13T00:08:57.5319437Z","note":"Operator reported heart complete; robot instructed to remain safely stationary for post-roll"}

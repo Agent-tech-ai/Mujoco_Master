@@ -1,0 +1,115 @@
+{
+  "warning": "SIMULATION CONTROLLER DESIGN; NOT HARDWARE CALIBRATION",
+  "results": [
+    {
+      "joint_name": "left_wrist_roll_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.4749378010108136,
+      "return_error_deg": -0.0029710437142106286,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "right_wrist_roll_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.4748397753097247,
+      "return_error_deg": -0.002964632349120849,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "left_wrist_yaw_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.47464445568884117,
+      "return_error_deg": -0.002238739047772622,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "right_wrist_yaw_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.47464811044705235,
+      "return_error_deg": -0.002228736932952456,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "left_wrist_pitch_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.6796297788118193,
+      "return_error_deg": -0.01946520044825526,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "right_wrist_pitch_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.6795107096984747,
+      "return_error_deg": -0.019433841762323264,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "left_elbow_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.6100221346275854,
+      "return_error_deg": -0.02056390637442138,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "right_elbow_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.6103343382517719,
+      "return_error_deg": -0.020644437479165015,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "left_shoulder_yaw_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.314310543364736,
+      "return_error_deg": 6.961069108198845e-05,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "right_shoulder_yaw_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.31420469151789704,
+      "return_error_deg": -0.00014771799039404066,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "left_shoulder_pitch_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.6278935838003575,
+      "return_error_deg": -0.0589463202836996,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    },
+    {
+      "joint_name": "right_shoulder_pitch_joint",
+      "tracking_status": "SETTLED",
+      "maximum_position_error_deg": 0.6285990462478667,
+      "return_error_deg": -0.058846341276727124,
+      "self_collision_steps": 0,
+      "joint_limit_violation_steps": 0,
+      "persistent_saturation_fraction": 0.0
+    }
+  ],
+  "settled_count": 12,
+  "total": 12
+}

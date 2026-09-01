@@ -1,0 +1,9 @@
+experiment_id,family,dataset,mode,stable_no_fall,fall_time_s,contact_safety_pass,pelvis_hip_contact_samples,minimum_positive_precontact_distance_m,maximum_pelvis_hip_penetration_m,limit_management_pass,minimum_limit_margin_rad,saturation_management_pass,persistent_saturation_fraction,max_consecutive_saturation_s,minimum_com_support_margin_m,arm_tracking_retained,balance_shape_score,safety_pass
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,heart,standing,True,,True,0,0.0028715165839174775,0.0,True,0.04814407585810129,True,0.0,0.0,0.04840515283872459,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,heart,standing,True,,True,0,0.002888994386990691,0.0,True,0.04814414804751254,True,0.0,0.0,0.04795038026782303,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,wave,standing,True,,True,0,0.0009910339128073541,0.0,True,0.04612751928429219,True,0.0,0.0,0.06312986084584288,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,wave,standing,True,,True,0,0.001298475561137422,0.0,True,0.04628422401817258,True,0.0,0.0,0.06280704561347628,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,wave,standing,True,,True,0,0.0011650657540020059,0.0,True,0.046215088728417855,True,0.0,0.0,0.062224517722966034,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,wave,standing,True,,True,0,0.0011086830807370092,0.0,True,0.04625011749013355,True,0.0,0.0,0.06269288801512901,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,wave,standing,True,,True,0,0.001182243168338338,0.0,True,0.04618512963174326,True,0.0,0.0,0.06277746851245974,True,,True
+phase3ay_final_candidate_v3,AY_MOTION_CONDITIONED_RESPONSE,wave,standing,True,,True,0,0.0008204455528950467,0.0,True,0.04625559451886502,True,0.0,0.0,0.0633950933937267,True,,True

@@ -1,0 +1,47 @@
+# Phase 3B-C source lock
+
+All inputs below were hashed **before** the diagnostic replay. Phase 3B-V's full source manifest was also verified before execution.
+
+| Item | Locked value |
+|---|---|
+| Real motion | `CLAP` |
+| Capture | `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\capture\phase3bv_clap_001\raw_serialized_evidence.txt` |
+| Processed replay input | `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\phase3bv_measured_reference.csv` |
+| Original physical condition | `phase3bv_original_physical_baseline` |
+| Candidate physical condition | `bs_mass_lower_plus08` / total-mass-preserving runtime lower-limb scale `1.08` |
+| Candidate meaning | `SHARED_PHYSICAL_SENSITIVITY_DIRECTION — NOT IDENTIFIED HARDWARE PARAMETER` |
+| Controller | frozen Phase 3A-Y; configuration hash `f54965194e276771fc0a8cb8ed9e4edbfb126bed9c3860e05d060c3e4ba5b015` |
+| Controller equality | `IDENTICAL` between physical conditions (experiment ID excluded) |
+| MJCF | `Master_MuJoCo\assets\Master\ff_master_ultra.xml` |
+| Replay modes | `arm_only`, `whole_body` |
+| Timestep / control update | `0.001 s / 0.001 s` |
+| Instrumentation | post-`mj_step` read-only contact sampling |
+
+The logger does not change simulation state. It creates no robot connection, publisher, client, or motion command. It does not load `reported_effort`; tune controller, mass, inertia, friction, damping, armature, gear, or limits; or edit MJCF/collision masks.
+
+## Runtime-spec hashes
+
+- baseline: `abbb63375382cd596e7a26165a063c388e8f8778a7e37df5df915d69bfc1ee0e`
+- lower-limb +8% candidate: `fc8e2f51773a8eac8778ac1ffee3d70884189c9c9981ab02d0ec8c2d7f13e495`
+
+## File manifest
+
+| path | bytes | SHA-256 |
+|---|---:|---|
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\capture\phase3bv_clap_001\raw_serialized_evidence.txt` | 8597267 | `37a56c53c0d9c769eb90e2ef495269826a49c8614f768769cd6198f53b19f513` |
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\phase3bv_measured_reference.csv` | 3470463 | `97a617884b6f64e9de704b7c4e739306cec733fa3e83c23d1d650e9a3a686495` |
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\phase3bv_aligned_joint_data.csv` | 2080575 | `6e3f622065704156944b6f7bf6d98967df68c3de0792a7a64e94c709b0c5d99f` |
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\phase3bv_capture_metadata.json` | 3861 | `937c0eb295d1a7aa20b94f583b041b9c5819a71315bef9dc61b0ef4306c7fed4` |
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\phase3bv_independence.json` | 1455 | `ea32ccc5fb07a34a600fe788b2758d2f65fe09c364e018f2883cada2d07295c3` |
+| `Master_MuJoCo\assets\Master\ff_master_ultra.xml` | 39960 | `89619295fcc372c57473224130865b2fe4f22e0741f72925fac243805f4353db` |
+| `Master_MuJoCo\assets\Master\scene_x2_free.xml` | 1025 | `88483553e15173d09d69f4fca32a466bb022d6dbb805f074ffa89447fc876d0b` |
+| `Master_MuJoCo\calibration\phase3ar_controller_redesign\phase3ar_core.py` | 29122 | `e3f126c8be4d34c1e0c1b78af90ca600cf04fe08aa8432b0456ea4b183efa435` |
+| `Master_MuJoCo\calibration\phase3ax_constraint_balance\phase3ax_core.py` | 41362 | `7a1aef562fcf40ca376a8a79e111ca3bb4688a6a95773d7834a5fa85d1b37d00` |
+| `Master_MuJoCo\calibration\phase3ay_motion_conditioned_balance\phase3ay_core.py` | 13434 | `09a21d7a40b3d9a531ebb59a32f5fbcb2977bb9bdc335b01587af697f18204a2` |
+| `Master_MuJoCo\calibration\phase3ay_motion_conditioned_balance\simulation_motion_conditioned_balance_candidate.json` | 3614 | `53a693e8a02a34034c1a4124544ab87085c822e8835edbfb9998edd9e728f9ad` |
+| `Master_MuJoCo\calibration\phase3bs_physical_sensitivity\phase3bs_core.py` | 11746 | `288233bcdba015bda24e86991ab89eb7742cebeca39a64181a3c240ce654594d` |
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\run_phase3bv_replays.py` | 6086 | `ca3765d62a8faf93c795bb7dd34bcdf1def786e0cba4193c5ec1545231f011ec` |
+| `Master_MuJoCo\calibration\phase3bv_physical_direction_validation\phase3bv_source_manifest.csv` | 5385 | `073b6c4ca16c86810cd32f766778c4dad8df11e65161a14a19a8a3dc2142dac5` |
+| `Master_MuJoCo\calibration\phase3bc_clap_collision_root_cause\run_phase3bc_contact_diagnostics.py` | 22649 | `d5674cdc049035bb66d723b60cd46999dda7150c6c559b15618312f0044a34ea` |
+
+`DYNAMICS_CALIBRATION_READY = NO`

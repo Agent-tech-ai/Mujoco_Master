@@ -1,0 +1,6 @@
+status=CAPTURE_FAILED
+target=run@192.168.4.66
+capture_seconds=120
+local_finished_utc=2026-08-12T23:44:47.0240497Z
+ssh_exit_code=255
+recording_started=False

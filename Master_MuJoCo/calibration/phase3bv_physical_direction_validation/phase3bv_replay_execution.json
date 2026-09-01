@@ -1,0 +1,58 @@
+{
+  "controller_config_identical": true,
+  "source_mjcf_modified": false,
+  "reported_effort_loaded": false,
+  "robot_connected": false,
+  "baseline": {
+    "experiment_id": "phase3bv_original_physical_baseline",
+    "family": "BASELINE",
+    "parameter": "none",
+    "level": "baseline",
+    "parameter_value": 1.0,
+    "normalized_parameter_change": 0.0,
+    "hypothesis": "Frozen original physical baseline",
+    "classification": "BLIND_VALIDATION_BASELINE_NOT_HARDWARE_CALIBRATION",
+    "controller_mode": "FROZEN_PHASE3AY",
+    "base_mode": "FREE",
+    "contact_mode": "RETAINED"
+  },
+  "mass_direction": {
+    "experiment_id": "phase3bv_bs_mass_lower_plus08",
+    "family": "MASS_DISTRIBUTION",
+    "parameter": "lower_limb_mass_scale_total_mass_preserved",
+    "level": "plus",
+    "parameter_value": 1.08,
+    "normalized_parameter_change": 0.08,
+    "hypothesis": "Phase 3B-S shared sensitivity direction; not an identified hardware parameter",
+    "classification": "SHARED_PHYSICAL_SENSITIVITY_DIRECTION_NOT_IDENTIFIED_HARDWARE_PARAMETER",
+    "controller_mode": "FROZEN_PHASE3AY",
+    "base_mode": "FREE",
+    "contact_mode": "RETAINED"
+  },
+  "results": [
+    {
+      "experiment_id": "phase3bv_original_physical_baseline",
+      "mode": "arm_only",
+      "safety_pass": false,
+      "stable_no_fall": true
+    },
+    {
+      "experiment_id": "phase3bv_original_physical_baseline",
+      "mode": "whole_body",
+      "safety_pass": false,
+      "stable_no_fall": true
+    },
+    {
+      "experiment_id": "phase3bv_bs_mass_lower_plus08",
+      "mode": "arm_only",
+      "safety_pass": false,
+      "stable_no_fall": true
+    },
+    {
+      "experiment_id": "phase3bv_bs_mass_lower_plus08",
+      "mode": "whole_body",
+      "safety_pass": false,
+      "stable_no_fall": true
+    }
+  ]
+}

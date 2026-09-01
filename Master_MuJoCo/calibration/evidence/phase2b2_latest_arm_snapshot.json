@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source": "READ_ONLY_PREFLIGHT: ../../work/x2_phase2b2_preflight.txt",
+  "ssh_target": "run@192.168.4.114",
+  "capture_host_time": "2026-08-12T16:35:06.797402172-04:00",
+  "state_header_stamp_sec": 1786566906,
+  "state_header_stamp_nanosec": 797402172,
+  "state_frame_id": "x2_arm",
+  "joint_state_domain_error_value": 0,
+  "units": {
+    "position": "rad",
+    "velocity": "rad/s",
+    "effort": "N*m_documented_physical_origin_UNKNOWN",
+    "coil_temp": "message_field_unit_UNKNOWN",
+    "motor_temp": "message_field_unit_UNKNOWN",
+    "motor_vol": "message_field_unit_UNKNOWN"
+  },
+  "command_graph": {
+    "topic": "/aima/hal/joint/arm/command",
+    "publisher_count": 1,
+    "publishers": ["mc_ros2_node2263"],
+    "subscriber_count": 1,
+    "subscribers": ["hal_ethercat_x21455"],
+    "evidence_fresh_for_motion": false
+  },
+  "control_state": {
+    "mc_action_desc": "STAND_DEFAULT",
+    "mc_action_status_value": 100,
+    "mc_action_status_semantics": "UNKNOWN",
+    "input_source_name": "",
+    "input_source_priority": 0,
+    "input_source_timeout_ms": 0,
+    "get_current_input_source_task_state_value": 0,
+    "get_current_input_source_task_state_semantics": "UNKNOWN",
+    "evidence_fresh_for_motion": false
+  },
+  "joints": [
+    {"name":"left_shoulder_pitch_joint","position":0.3878035545349121,"velocity":-0.0061054229736328125,"effort":0.4981689453125,"coil_temp":39,"motor_temp":34,"motor_vol":53},
+    {"name":"left_shoulder_roll_joint","position":-0.01639413833618164,"velocity":-0.0061054229736328125,"effort":0.7325973510742188,"coil_temp":37,"motor_temp":33,"motor_vol":53},
+    {"name":"left_shoulder_yaw_joint","position":-0.007381916046142578,"velocity":0.0061054229736328125,"effort":0.4981689453125,"coil_temp":39,"motor_temp":34,"motor_vol":53},
+    {"name":"left_elbow_joint","position":-1.1737666130065918,"velocity":-0.0061054229736328125,"effort":-1.377288818359375,"coil_temp":40,"motor_temp":37,"motor_vol":52},
+    {"name":"left_wrist_yaw_joint","position":0.012175559997558594,"velocity":0.0061054229736328125,"effort":-0.08791351318359375,"coil_temp":45,"motor_temp":39,"motor_vol":52},
+    {"name":"left_wrist_pitch_joint","position":0.00019073486328125,"velocity":-0.0073261260986328125,"effort":-0.023443222045898438,"coil_temp":41,"motor_temp":0,"motor_vol":25},
+    {"name":"left_wrist_roll_joint","position":-0.07648563385009766,"velocity":-0.0073261260986328125,"effort":0.3516502380371094,"coil_temp":38,"motor_temp":0,"motor_vol":25},
+    {"name":"right_shoulder_pitch_joint","position":0.3954739570617676,"velocity":0.0061054229736328125,"effort":0.26373291015625,"coil_temp":36,"motor_temp":32,"motor_vol":53},
+    {"name":"right_shoulder_roll_joint","position":0.019078731536865234,"velocity":-0.0061054229736328125,"effort":-1.0256423950195312,"coil_temp":36,"motor_temp":33,"motor_vol":53},
+    {"name":"right_shoulder_yaw_joint","position":0.006806850433349609,"velocity":0.0061054229736328125,"effort":-0.26373291015625,"coil_temp":39,"motor_temp":34,"motor_vol":53},
+    {"name":"right_elbow_joint","position":-1.1722326278686523,"velocity":0.0061054229736328125,"effort":-1.3186798095703125,"coil_temp":41,"motor_temp":37,"motor_vol":53},
+    {"name":"right_wrist_yaw_joint","position":0.006615161895751953,"velocity":0.0061054229736328125,"effort":-0.02930450439453125,"coil_temp":47,"motor_temp":40,"motor_vol":53},
+    {"name":"right_wrist_pitch_joint","position":-0.01239776611328125,"velocity":0.0073261260986328125,"effort":0.07032966613769531,"coil_temp":41,"motor_temp":0,"motor_vol":25},
+    {"name":"right_wrist_roll_joint","position":0.02956390380859375,"velocity":-0.0073261260986328125,"effort":-0.16410255432128906,"coil_temp":38,"motor_temp":0,"motor_vol":25}
+  ]
+}

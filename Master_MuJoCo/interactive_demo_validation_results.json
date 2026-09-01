@@ -1,0 +1,233 @@
+{
+  "classification": "SIMULATION_ONLY_INTERACTIVE_DEMO_NOT_HARDWARE_CALIBRATION",
+  "timestep_s": 0.001,
+  "controller_rate_hz": 1000.0,
+  "locomotion_available": false,
+  "frozen_source_sha256": {
+    "model": "89619295fcc372c57473224130865b2fe4f22e0741f72925fac243805f4353db",
+    "limits_include": "6d5940490d93f89929af8983a0de900c9e6c0351839163463ae0881d1b9399dd",
+    "free_scene": "88483553e15173d09d69f4fca32a466bb022d6dbb805f074ffa89447fc876d0b",
+    "controller": "eae1b320d4ace99fe79bd123d70398ff6ac1446b2c33191ae8a68f5a31691c6e",
+    "phase3ay_candidate": "53a693e8a02a34034c1a4124544ab87085c822e8835edbfb9998edd9e728f9ad",
+    "heart_reference": "bdb883357fab5c15948dc15404477b5d70f844371f0abdfa14d7f77514a3ce1b",
+    "wave_reference": "bd10471f360fd1eed64c63b8ddd5ee44b5e1ff1bd277af15431b628f8d3899b7",
+    "clap_reference": "97a617884b6f64e9de704b7c4e739306cec733fa3e83c23d1d650e9a3a686495"
+  },
+  "results": [
+    {
+      "number": 1,
+      "name": "10 s free-base standing",
+      "status": "PASS",
+      "note": "",
+      "metrics": {
+        "steps": 10000,
+        "maximum_abs_roll_deg": 0.49602220159051585,
+        "maximum_abs_pitch_deg": 3.231972222113574,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.048144129845176936,
+        "maximum_saturation_fraction": 0.35796558406727325,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 0,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.007274572373177332,
+        "maximum_right_foot_slip_m": 0.006715660801809087,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 2,
+      "name": "Heart playback and return",
+      "status": "PASS",
+      "note": "measured trajectory -> smooth standing return",
+      "metrics": {
+        "steps": 12661,
+        "maximum_abs_roll_deg": 0.5668946084563466,
+        "maximum_abs_pitch_deg": 3.62048748842884,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.04801168032745967,
+        "maximum_saturation_fraction": 0.35796558406727325,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 0,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.007627417287880554,
+        "maximum_right_foot_slip_m": 0.007359542389560227,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 3,
+      "name": "Wave playback and return",
+      "status": "PASS",
+      "note": "measured trajectory -> smooth standing return",
+      "metrics": {
+        "steps": 11351,
+        "maximum_abs_roll_deg": 0.49602220159051585,
+        "maximum_abs_pitch_deg": 9.27680389030062,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.04639417427163054,
+        "maximum_saturation_fraction": 0.5105004307310331,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 0,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.007400330717825272,
+        "maximum_right_foot_slip_m": 0.007451721758227794,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 4,
+      "name": "Clap playback and return",
+      "status": "PASS",
+      "note": "measured trajectory -> smooth standing return; expected wrist contact exception scoped to frozen closure windows",
+      "metrics": {
+        "steps": 12445,
+        "maximum_abs_roll_deg": 0.6122532972173611,
+        "maximum_abs_pitch_deg": 4.232376090724862,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.036321056034674476,
+        "maximum_saturation_fraction": 0.6848758242729304,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 526,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.007660935662588511,
+        "maximum_right_foot_slip_m": 0.007294288616094392,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 5,
+      "name": "Heart SPACE interrupt",
+      "status": "PASS",
+      "note": "controlled smooth return",
+      "metrics": {
+        "steps": 9831,
+        "maximum_abs_roll_deg": 0.5660445279318118,
+        "maximum_abs_pitch_deg": 3.4191144197731704,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.0481486835503482,
+        "maximum_saturation_fraction": 0.35796558406727325,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 0,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.0071147604097441045,
+        "maximum_right_foot_slip_m": 0.00676398637112297,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 6,
+      "name": "Wave manual R reset",
+      "status": "PASS",
+      "note": "explicit mj_resetData demo reset only",
+      "metrics": {
+        "steps": 14000,
+        "maximum_abs_roll_deg": 0.49602220159051585,
+        "maximum_abs_pitch_deg": 5.472833627312124,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.046574403990190125,
+        "maximum_saturation_fraction": 0.38072826057874865,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 0,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.007274572373177332,
+        "maximum_right_foot_slip_m": 0.006715660801809087,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 7,
+      "name": "Heart -> Wave -> Clap sequence",
+      "status": "PASS",
+      "note": "no teleport between actions",
+      "metrics": {
+        "steps": 31457,
+        "maximum_abs_roll_deg": 0.5989561194651135,
+        "maximum_abs_pitch_deg": 9.164028047946388,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.03632596117996899,
+        "maximum_saturation_fraction": 0.6848767450542081,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 527,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.011154330752879592,
+        "maximum_right_foot_slip_m": 0.011474580786991387,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 8,
+      "name": "Safety monitor continuous operation",
+      "status": "PASS",
+      "note": "evaluations=10000",
+      "metrics": {
+        "steps": 10000,
+        "maximum_abs_roll_deg": 0.49602220159051585,
+        "maximum_abs_pitch_deg": 3.231972222113574,
+        "minimum_pelvis_height_m": 0.6536222407757423,
+        "minimum_joint_margin_rad": 0.048144129845176936,
+        "maximum_saturation_fraction": 0.35796558406727325,
+        "maximum_saturation_duration_s": 0.0,
+        "unexpected_self_contact_samples": 0,
+        "expected_clap_contact_samples": 0,
+        "nonfoot_ground_contact_samples": 0,
+        "maximum_contact_penetration_m": 0.0015534215096144012,
+        "maximum_left_foot_slip_m": 0.007274572373177332,
+        "maximum_right_foot_slip_m": 0.006715660801809087,
+        "safety_hold_entered": false
+      }
+    },
+    {
+      "number": 9,
+      "name": "continuous forward/backward",
+      "status": "SKIP",
+      "note": "LOCOMOTION_NOT_AVAILABLE",
+      "metrics": {}
+    },
+    {
+      "number": 10,
+      "name": "continuous lateral",
+      "status": "SKIP",
+      "note": "LOCOMOTION_NOT_AVAILABLE",
+      "metrics": {}
+    },
+    {
+      "number": 11,
+      "name": "continuous turning",
+      "status": "SKIP",
+      "note": "LOCOMOTION_NOT_AVAILABLE",
+      "metrics": {}
+    },
+    {
+      "number": 12,
+      "name": "locomotion stop/release",
+      "status": "SKIP",
+      "note": "LOCOMOTION_NOT_AVAILABLE",
+      "metrics": {}
+    }
+  ],
+  "gates": {
+    "INTERACTIVE_DEMO_READY": "YES",
+    "STANDING_READY": "YES",
+    "HEART_READY": "YES",
+    "WAVE_READY": "YES",
+    "CLAP_READY": "YES",
+    "LOCOMOTION_READY": "NO",
+    "TURNING_READY": "NO",
+    "SAFETY_MONITOR_READY": "YES",
+    "DYNAMICS_CALIBRATION_READY": "NO"
+  }
+}

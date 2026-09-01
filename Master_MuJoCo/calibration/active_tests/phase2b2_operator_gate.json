@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "overall_status": "NO-GO",
+  "robot_serial_or_asset_id": "UNKNOWN",
+  "approved_by": "UNKNOWN",
+  "approved_at": "UNKNOWN",
+  "confirmations": {
+    "estop_tested": false,
+    "operator_beside_robot": false,
+    "workspace_clear": false,
+    "robot_pose_stable": false,
+    "mc_ownership_plan_approved": false,
+    "command_source_unique": false,
+    "joint_velocity_limit_known": false,
+    "joint_acceleration_limit_known": false,
+    "position_safety_margin_known": false,
+    "effort_protection_known": false,
+    "abort_command_known": false,
+    "communication_loss_behavior_known": false,
+    "control_restore_steps_known": false
+  },
+  "limits": {
+    "screening_reserve_deg": 5.0,
+    "minimum_useful_amplitude_deg": 1.0,
+    "max_joint_velocity_rad_s": null,
+    "max_joint_acceleration_rad_s2": null,
+    "max_abs_effort_n_m": null,
+    "max_effort_change_n_m": null,
+    "max_state_age_s": null,
+    "max_imu_orientation_change_deg": null
+  },
+  "ownership": {
+    "method": "UNKNOWN",
+    "expected_command_publishers_before_test": 0,
+    "native_mc_stop_separately_authorized": false,
+    "native_mc_stop_performed_by_this_script": false,
+    "release_or_restore_procedure": "UNKNOWN"
+  },
+  "abort": {
+    "approved_strategy": "UNKNOWN",
+    "hold_duration_s": null,
+    "loss_of_command_behavior": "UNKNOWN"
+  },
+  "arm_command_parameters": {
+    "source": "UNKNOWN",
+    "stiffness_by_joint": {},
+    "damping_by_joint": {}
+  },
+  "notes": "Template is intentionally NO-GO. Do not copy passively observed MC gains or invent missing limits."
+}

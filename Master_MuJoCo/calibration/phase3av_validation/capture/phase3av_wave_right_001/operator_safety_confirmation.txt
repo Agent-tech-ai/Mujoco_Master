@@ -1,0 +1,7 @@
+motion=wave_right
+preset_id=1002
+preset_area=2
+operator_safety_confirmed=true
+confirmed_utc=2026-08-20T19:45:43.7733785Z
+codex_invokes_motion=false
+recorder_subscription_only=true

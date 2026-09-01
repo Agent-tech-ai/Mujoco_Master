@@ -1,0 +1,69 @@
+=== Stage 1: idle and isolated foot lift/land ===
+Gait state -> SHIFT_TO_LEFT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_RIGHT; contacts L/R=True/True; forces L/R=347.8/77.5N
+Gait state -> SWING_RIGHT; contacts L/R=True/False; forces L/R=429.3/0.0N
+Gait state -> LAND_RIGHT; contacts L/R=True/True; forces L/R=368.0/74.9N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=299.6/133.3N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=230.3/193.7N
+Gait state -> STAND (recovery complete)
+Gait state -> SHIFT_TO_RIGHT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_LEFT; contacts L/R=True/True; forces L/R=53.1/373.4N
+Gait state -> SWING_LEFT; contacts L/R=False/True; forces L/R=0.0/433.6N
+Gait state -> LAND_LEFT; contacts L/R=False/True; forces L/R=0.0/421.8N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=185.6/243.6N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=172.3/251.9N
+Gait state -> STAND (recovery complete)
+idle        PASS | dxy=(+0.0008,+0.0000)m dyaw=-0.019deg max_rp=(0.00,2.86)deg min_z=0.674m contact_ratio=(1.000,1.000) lift=(0.0000,0.0000)m both_off=False sat=False fallen=False completed=True
+lift_right  PASS | dxy=(+0.0050,-0.0152)m dyaw=+3.561deg max_rp=(3.85,6.73)deg min_z=0.665m contact_ratio=(1.000,0.962) lift=(0.0053,0.0080)m both_off=False sat=False fallen=False completed=True
+lift_left   PASS | dxy=(+0.0123,-0.0004)m dyaw=-0.995deg max_rp=(2.17,6.67)deg min_z=0.669m contact_ratio=(0.905,1.000) lift=(0.0168,0.0033)m both_off=False sat=False fallen=False completed=True
+=== Stage 2: forward and backward ===
+Gait state -> SHIFT_TO_LEFT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_RIGHT; contacts L/R=True/True; forces L/R=341.9/83.6N
+Gait state -> SWING_RIGHT; contacts L/R=True/False; forces L/R=430.4/0.0N
+Gait state -> LAND_RIGHT; contacts L/R=True/True; forces L/R=396.4/28.9N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=300.4/146.6N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=232.0/195.6N
+Gait state -> STAND (recovery complete)
+Gait state -> SHIFT_TO_LEFT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_RIGHT; contacts L/R=True/True; forces L/R=385.3/39.6N
+Gait state -> SWING_RIGHT; contacts L/R=True/False; forces L/R=430.1/0.0N
+Gait state -> LAND_RIGHT; contacts L/R=True/True; forces L/R=302.4/120.8N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=277.9/152.3N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=231.6/194.9N
+Gait state -> STAND (recovery complete)
+forward     PASS | dxy=(+0.0529,-0.0145)m dyaw=+1.454deg max_rp=(3.95,8.50)deg min_z=0.664m contact_ratio=(1.000,0.948) lift=(0.0066,0.0086)m both_off=False sat=False fallen=False completed=True
+backward    PASS | dxy=(-0.0440,-0.0167)m dyaw=+4.504deg max_rp=(3.62,7.39)deg min_z=0.667m contact_ratio=(1.000,0.955) lift=(0.0023,0.0114)m both_off=False sat=False fallen=False completed=True
+=== Stage 3: lateral ===
+Gait state -> SHIFT_TO_RIGHT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_LEFT; contacts L/R=True/True; forces L/R=53.1/373.4N
+Gait state -> SWING_LEFT; contacts L/R=False/True; forces L/R=0.0/433.6N
+Gait state -> LAND_LEFT; contacts L/R=False/True; forces L/R=0.0/424.3N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=220.7/213.6N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=197.0/227.7N
+Gait state -> STAND (recovery complete)
+Gait state -> SHIFT_TO_LEFT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_RIGHT; contacts L/R=True/True; forces L/R=347.8/77.5N
+Gait state -> SWING_RIGHT; contacts L/R=True/False; forces L/R=429.3/0.0N
+Gait state -> LAND_RIGHT; contacts L/R=True/True; forces L/R=310.8/114.8N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=261.6/173.6N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=228.1/218.1N
+Gait state -> STAND (recovery complete)
+left        PASS | dxy=(+0.0166,+0.0326)m dyaw=-0.702deg max_rp=(2.47,7.99)deg min_z=0.667m contact_ratio=(0.894,1.000) lift=(0.0170,0.0071)m both_off=False sat=False fallen=False completed=True
+right       PASS | dxy=(+0.0058,-0.0399)m dyaw=+3.356deg max_rp=(4.87,8.24)deg min_z=0.663m contact_ratio=(1.000,0.968) lift=(0.0083,0.0080)m both_off=False sat=False fallen=False completed=True
+=== Stage 4: turning ===
+Gait state -> SHIFT_TO_RIGHT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_LEFT; contacts L/R=True/True; forces L/R=53.1/373.4N
+Gait state -> SWING_LEFT; contacts L/R=False/True; forces L/R=0.0/433.6N
+Gait state -> LAND_LEFT; contacts L/R=False/True; forces L/R=0.0/425.0N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=193.4/256.2N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=189.1/218.5N
+Gait state -> STAND (recovery complete)
+Gait state -> SHIFT_TO_LEFT; contacts L/R=True/True; forces L/R=213.6/212.9N
+Gait state -> LIFT_RIGHT; contacts L/R=True/True; forces L/R=347.8/77.5N
+Gait state -> SWING_RIGHT; contacts L/R=True/False; forces L/R=429.3/0.0N
+Gait state -> LAND_RIGHT; contacts L/R=True/True; forces L/R=316.4/109.3N
+Gait state -> DOUBLE_SUPPORT; contacts L/R=True/True; forces L/R=266.2/169.7N
+Gait state -> RECOVER; contacts L/R=True/True; forces L/R=224.9/204.8N
+Gait state -> STAND (recovery complete)
+turn_left   PASS | dxy=(+0.0148,+0.0037)m dyaw=+5.931deg max_rp=(2.18,7.47)deg min_z=0.668m contact_ratio=(0.903,1.000) lift=(0.0166,0.0052)m both_off=False sat=False fallen=False completed=True
+turn_right  PASS | dxy=(+0.0091,-0.0299)m dyaw=-5.790deg max_rp=(4.82,8.36)deg min_z=0.663m contact_ratio=(1.000,0.965) lift=(0.0088,0.0082)m both_off=False sat=False fallen=False completed=True

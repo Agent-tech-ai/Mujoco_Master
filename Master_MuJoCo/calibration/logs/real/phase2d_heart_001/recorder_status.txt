@@ -1,0 +1,13 @@
+status=CAPTURE_ACCEPTED_OFFLINE
+target=run@192.168.4.114
+capture_id=phase2d_heart_001
+capture_seconds=180
+local_operator_go_utc=2026-08-13T23:32:15.1633319Z
+remote_marker=PHASE2D_PRE_ROLL_READY=1 UTC_NS=1786663935396577188 HOST=agi
+actual_last_sample_elapsed_seconds=31.866009736
+heart_start_elapsed_seconds=14.590379783
+heart_end_elapsed_seconds=20.249796770
+verified_all_required_pre_roll_seconds=13.783843610
+verified_all_required_post_roll_seconds=11.597966095
+termination=MANUAL_OR_CONNECTION_END_AFTER_POST_ROLL
+PHASE2D_REPLAY_READY=YES

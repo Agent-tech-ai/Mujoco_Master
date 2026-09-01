@@ -1,0 +1,77 @@
+{
+  "gates": {
+    "PHYSICAL_SENSITIVITY_INFORMATIVE": "YES",
+    "SHARED_PHYSICAL_SENSITIVITY_DIRECTION": "YES",
+    "CONTROLLER_BASELINE_PRESERVED": "YES",
+    "SAFETY_BASELINE_PRESERVED": "YES",
+    "POSITION_SPACE_PHYSICAL_SENSITIVITY_READY": "YES",
+    "DYNAMICS_CALIBRATION_READY": "NO"
+  },
+  "rank": [
+    {
+      "physical_family": "MASS_DISTRIBUTION",
+      "wave_right_knee_excursion_normalized_sensitivity": -0.8196698761268144,
+      "absolute_sensitivity": 0.8196698761268144,
+      "ranking_class": "PRIMARY_PHYSICAL_SENSITIVITY"
+    },
+    {
+      "physical_family": "CONTACT_FRICTION",
+      "wave_right_knee_excursion_normalized_sensitivity": 0.22827024840736235,
+      "absolute_sensitivity": 0.22827024840736235,
+      "ranking_class": "SECONDARY_PHYSICAL_SENSITIVITY"
+    },
+    {
+      "physical_family": "ROTATIONAL_INERTIA",
+      "wave_right_knee_excursion_normalized_sensitivity": 0.15338709522125862,
+      "absolute_sensitivity": 0.15338709522125862,
+      "ranking_class": "LOW_SENSITIVITY"
+    },
+    {
+      "physical_family": "ARMATURE",
+      "wave_right_knee_excursion_normalized_sensitivity": 0.04534409695323436,
+      "absolute_sensitivity": 0.04534409695323436,
+      "ranking_class": "LOW_SENSITIVITY"
+    },
+    {
+      "physical_family": "JOINT_DAMPING",
+      "wave_right_knee_excursion_normalized_sensitivity": -0.017662637779009352,
+      "absolute_sensitivity": 0.017662637779009352,
+      "ranking_class": "LOW_SENSITIVITY"
+    },
+    {
+      "physical_family": "CONTACT_COMPLIANCE",
+      "wave_right_knee_excursion_normalized_sensitivity": -0.009137149203066594,
+      "absolute_sensitivity": 0.009137149203066594,
+      "ranking_class": "RULED_OUT_AT_TESTED_LOCAL_SCALE"
+    }
+  ],
+  "shared": [
+    {
+      "experiment_id": "bs_mass_lower_plus08",
+      "family": "MASS_DISTRIBUTION",
+      "level": "plus",
+      "wave_knee_absolute_error_improvement_rad": 0.00590845563824266,
+      "heart_ankle_absolute_error_regression_rad": -0.0004331568751523851,
+      "heart_waist_roll_absolute_error_regression_rad": 1.5936267154900013e-05,
+      "mean_arm_tracking_rmse_ratio_to_baseline": 0.999834878952022,
+      "heart_wave_safety_pass": true,
+      "shared_direction_criteria_pass": true,
+      "classification": "SHARED_PHYSICAL_SENSITIVITY_DIRECTION"
+    }
+  ],
+  "knee": {
+    "experiment_id": "bs_baseline",
+    "dataset": "wave",
+    "joint_name": "right_knee_joint",
+    "real_excursion_rad": 0.0101536373968025,
+    "sim_excursion_rad": 0.08209201692684065,
+    "excursion_ratio": 8.084986071365163,
+    "absolute_excursion_error_rad": 0.07193837953003815,
+    "position_rmse_rad": 0.044772875409674784,
+    "velocity_rmse_rad_s": 0.06323476009434416,
+    "onset_delta_s": 0.4600000000003926,
+    "peak_timing_delta_s": 0.2800000000006806,
+    "xcorr_lag_s": -1.0,
+    "recovery_delta_s": NaN
+  }
+}

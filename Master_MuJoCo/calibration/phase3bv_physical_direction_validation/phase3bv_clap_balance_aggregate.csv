@@ -1,0 +1,3 @@
+plane,valid_channels,improved,unchanged,degraded,baseline_mean_abs_error_rad,mass_mean_abs_error_rad,aggregate_abs_error_improvement_percent,baseline_mean_rmse_rad,mass_mean_rmse_rad,status
+SAGITTAL,7,6,0,1,0.030213531606041465,0.027315617462900975,9.591444591538668,0.026070588988441803,0.02453626004226824,MEANINGFUL
+LATERAL,1,1,0,0,0.0004305704410086,0.0002427836336685,43.61349257980049,0.0017896293208798,0.00163405666549,LIMITED_CHANNEL_COUNT

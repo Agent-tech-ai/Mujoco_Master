@@ -1,0 +1,467 @@
+PS C:\Users\xinga> powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\run_x2_phase2b_readonly.ps1"
+Phase 2B-1 read-only script: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\x2_phase2b_decode_and_capture_readonly.sh
+SSH target: run@192.168.4.66
+Local evidence output: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\x2_phase2b_readonly_capture.txt
+You will be prompted for the run user's password in this visible terminal.
+No publisher or service/action call is present in the remote script.
+run@192.168.4.66's password:
+
+### SAFETY_DECLARATION
+PHASE=2B-1
+READ_ONLY_DISCOVERY_AND_SUBSCRIPTION=1
+NO_TOPIC_PUBLISH=1
+NO_SERVICE_OR_ACTION_CALL=1
+NO_CONTROL_MODE_OR_ACTUATOR_OPERATION=1
+NO_PROCESS_CONTROL=1
+NO_PACKAGE_INSTALL_OR_SYSTEM_ENV_MODIFICATION=1
+NO_REMOTE_FILE_WRITE=1
+PASSIVE_CAPTURE_DURATION_SECONDS=30
+PASSIVE_CAPTURE_MAX_SERIALIZATION_RATE_HZ_PER_TOPIC=50
+
+### BASE_ENVIRONMENT
+
+$ hostname
+agi
+
+$ id
+uid=1000(run) gid=1000(run) groups=1000(run),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),44(video),46(plugdev),100(users),106(input),109(render),114(netdev),122(i2c),400(manager),999(gpio),1001(agi)
+
+$ date --iso-8601=ns
+2026-08-11T21:08:44,564440849-04:00
+LD_LIBRARY_PATH=/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib
+PYTHONPATH=/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages
+
+### AIMA_READ_ONLY_HELP
+
+$ aima --version
+0.2.28rc9
+
+$ aima topic --help
+
+ Usage: aima topic [OPTIONS] COMMAND [ARGS]...
+
+ µƒÑΦ»óaimrt topicΣ┐íµü»
+
+Γò¡ΓöÇ Options ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé --help          Show this message and exit.                                  Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+Γò¡ΓöÇ Commands ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé echo  echo topic                                                             Γöé
+Γöé list  µƒÑτ£ïτ│╗τ╗ƒΣ╕¡Φ»¥ΘóÿσêùΦí¿                                                     Γöé
+Γöé info  µƒÑτ£ïσà╖Σ╜ôΦ»¥ΘóÿΣ┐íµü»                                                       Γöé
+Γöé hz    µƒÑτ£ïσà╖Σ╜ôΦ»¥ΘóÿΣ┐íµü»                                                       Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+
+
+$ aima find --help
+
+ Usage: aima find [OPTIONS] COMMAND [ARGS]...
+
+ µƒÑµë╛µûçΣ╗╢σæ╜Σ╗ñ
+
+Γò¡ΓöÇ Options ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé --help          Show this message and exit.                                  Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+Γò¡ΓöÇ Commands ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò«
+Γöé config  τ╝ûΦ╛æµûçΣ╗╢                                                             Γöé
+Γöé sh      τ╝ûΦ╛æµûçΣ╗╢                                                             Γöé
+Γöé log     ΘÇëµï⌐µùÑσ┐ù                                                             Γöé
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»
+
+
+### KNOWN_RUNTIME_PREFIX_FAST_VALIDATION
+VALID_ENV_MODE=PROCESS_ENV_RECONSTRUCTION
+VALID_AMENT_PREFIX=/agibot/software/common
+ENV_SOURCE=READ_ONLY_RUNNING_PROCESS_ENVIRONMENT_EVIDENCE
+
+### DECODE_RESULT
+AIMDK_MSGS_TYPE_SUPPORT=CONFIRMED
+ENV_MODE=PROCESS_ENV_RECONSTRUCTION
+VALID_SETUP=NOT_APPLICABLE
+
+$ ros2 pkg prefix aimdk_msgs
+/agibot/software/common
+
+$ python3 -c import\ aimdk_msgs\;\ from\ aimdk_msgs.msg\ import\ JointStateArray\;\ print\(\"aimdk_msgs=\"\ +\ str\(aimdk_msgs.__file__\)\)\;\ print\(\"JointStateArray=\"\ +\ str\(JointStateArray\)\)
+aimdk_msgs=/agibot/software/common/local/lib/python3.10/dist-packages/aimdk_msgs/__init__.py
+JointStateArray=<class 'aimdk_msgs.msg._joint_state_array.JointStateArray'>
+
+### INTERFACE_DEFINITIONS
+
+INTERFACE=aimdk_msgs/msg/JointStateArray
+MessageHeader header
+        builtin_interfaces/Time stamp
+                int32 sec
+                uint32 nanosec
+        string frame_id
+        uint32 sequence
+        builtin_interfaces/Time meas_stamp
+                int32 sec
+                uint32 nanosec
+
+DomainErrorState state
+        uint8 value
+        uint8 NONE=0x00
+        uint8 DAMPING=0x01
+        uint8 POWERDOWN=0x02
+        uint8 DISABLE=0x03
+        uint8 DISCONNECT=0x04
+JointState[] joints
+        string name
+        float64 position
+        float64 velocity
+        float64 effort
+        uint8 coil_temp
+        uint8 motor_temp
+        uint8 motor_vol
+
+INTERFACE=aimdk_msgs/msg/JointState
+string name
+float64 position
+float64 velocity
+float64 effort
+uint8 coil_temp
+uint8 motor_temp
+uint8 motor_vol
+
+INTERFACE=aimdk_msgs/msg/MessageHeader
+# World time stamp, which is expressed as seconds and nanoseconds.
+builtin_interfaces/Time stamp
+        int32 sec
+        uint32 nanosec
+
+# Transform frame with which this data is associated.
+string frame_id
+
+# Message's consecutively increasing ID
+uint32 sequence
+
+# Time of receive data, Measurement time stamp, which is expressed as seconds and nanoseconds.
+builtin_interfaces/Time meas_stamp
+        int32 sec
+        uint32 nanosec
+
+INTERFACE=aimdk_msgs/msg/DomainErrorState
+uint8 value
+
+# 0: µùáτè╢µÇü, 1: Θÿ╗σ░╝µ¿íσ╝Å, 2: Σ╕ïτö╡µ¿íσ╝Å, 3: Σ╕ïΣ╜┐Φâ╜µ¿íσ╝Å, 4: CANΘÇÜΣ┐íµû¡Φ┐₧µ¿íσ╝Å, σà╢Σ╗û∩╝Üτ¡ëσÉîΣ║Äµùáτè╢µÇü
+
+# µùáτè╢µÇü
+uint8 NONE=0x00
+
+# Θÿ╗σ░╝µ¿íσ╝Å
+uint8 DAMPING=0x01
+
+# Σ╕ïτö╡µ¿íσ╝Å
+uint8 POWERDOWN=0x02
+
+# Σ╕ïΣ╜┐Φâ╜µ¿íσ╝Å
+uint8 DISABLE=0x03
+
+# ΘÇÜΣ┐íµû¡Φ┐₧µ¿íσ╝Å
+uint8 DISCONNECT=0x04
+
+### ONE_MESSAGE_JOINT_ECHOES
+
+TOPIC_ECHO_ONCE=/aima/hal/joint/arm/state
+header:
+  stamp:
+    sec: 1786496939
+    nanosec: 442291762
+  frame_id: x2_arm
+  sequence: 7503280
+  meas_stamp:
+    sec: 0
+    nanosec: 0
+state:
+  value: 0
+joints:
+- name: left_shoulder_pitch_joint
+  position: 0.39298105239868164
+  velocity: -0.0061054229736328125
+  effort: 0.4981689453125
+  coil_temp: 53
+  motor_temp: 48
+  motor_vol: 53
+- name: left_shoulder_roll_joint
+  position: -0.03441810607910156
+  velocity: -0.0061054229736328125
+  effort: 1.3186798095703125
+  coil_temp: 52
+  motor_temp: 47
+  motor_vol: 53
+- name: left_shoulder_yaw_joint
+  position: -0.009299278259277344
+  velocity: 0.0061054229736328125
+  effort: 0.4395599365234375
+  coil_temp: 54
+  motor_temp: 49
+  motor_vol: 52
+- name: left_elbow_joint
+  position: -1.1678218841552734
+  velocity: -0.0061054229736328125
+  effort: -1.377288818359375
+  coil_temp: 56
+  motor_temp: 53
+  motor_vol: 52
+- name: left_wrist_yaw_joint
+  position: 0.009299278259277344
+  velocity: 0.0061054229736328125
+  effort: -0.3223419189453125
+  coil_temp: 61
+  motor_temp: 55
+  motor_vol: 52
+- name: left_wrist_pitch_joint
+  position: 0.00133514404296875
+  velocity: -0.0073261260986328125
+  effort: -0.08595848083496094
+  coil_temp: 54
+  motor_temp: 0
+  motor_vol: 25
+- name: left_wrist_roll_joint
+  position: -0.00400543212890625
+  velocity: -0.0073261260986328125
+  effort: 0.117218017578125
+  coil_temp: 45
+  motor_temp: 0
+  motor_vol: 25
+- name: right_shoulder_pitch_joint
+  position: 0.37169742584228516
+  velocity: 0.0061054229736328125
+  effort: 0.380950927734375
+  coil_temp: 45
+  motor_temp: 41
+  motor_vol: 52
+- name: right_shoulder_roll_joint
+  position: 0.05340099334716797
+  velocity: -0.0061054229736328125
+  effort: -0.7325973510742188
+  coil_temp: 47
+  motor_temp: 43
+  motor_vol: 53
+- name: right_shoulder_yaw_joint
+  position: 0.05551004409790039
+  velocity: 0.0061054229736328125
+  effort: -0.5567779541015625
+  coil_temp: 52
+  motor_temp: 47
+  motor_vol: 52
+- name: right_elbow_joint
+  position: -1.1022453308105469
+  velocity: 0.0061054229736328125
+  effort: -1.0842514038085938
+  coil_temp: 56
+  motor_temp: 52
+  motor_vol: 52
+- name: right_wrist_yaw_joint
+  position: 0.021763324737548828
+  velocity: 0.0061054229736328125
+  effort: -0.14652252197265625
+  coil_temp: 61
+  motor_temp: 55
+  motor_vol: 53
+- name: right_wrist_pitch_joint
+  position: 0.01239776611328125
+  velocity: 0.0073261260986328125
+  effort: -0.117218017578125
+  coil_temp: 54
+  motor_temp: 0
+  motor_vol: 25
+- name: right_wrist_roll_joint
+  position: -0.00667572021484375
+  velocity: -0.0073261260986328125
+  effort: 0.039073944091796875
+  coil_temp: 45
+  motor_temp: 0
+  motor_vol: 25
+---
+
+TOPIC_ECHO_ONCE=/aima/hal/joint/head/state
+header:
+  stamp:
+    sec: 1786496941
+    nanosec: 793238555
+  frame_id: x2_head
+  sequence: 1497228
+  meas_stamp:
+    sec: 0
+    nanosec: 0
+state:
+  value: 0
+joints:
+- name: head_yaw_joint
+  position: 0.0001437664031982422
+  velocity: 0.0030689239501953125
+  effort: -0.0015873312950134277
+  coil_temp: 0
+  motor_temp: 148
+  motor_vol: 23
+- name: head_pitch_joint
+  position: 0.0
+  velocity: 0.0
+  effort: 0.0
+  coil_temp: 0
+  motor_temp: 0
+  motor_vol: 0
+---
+
+TOPIC_ECHO_ONCE=/aima/hal/joint/leg/state
+header:
+  stamp:
+    sec: 1786496944
+    nanosec: 182875806
+  frame_id: x2_leg
+  sequence: 7504911
+  meas_stamp:
+    sec: 0
+    nanosec: 0
+state:
+  value: 0
+joints:
+- name: left_hip_pitch_joint
+  position: -0.25128173828125
+  velocity: -0.0061054229736328125
+  effort: -6.124542236328125
+  coil_temp: 40
+  motor_temp: 36
+  motor_vol: 53
+- name: left_hip_roll_joint
+  position: -0.026364803314208984
+  velocity: -0.0061054229736328125
+  effort: 8.820510864257812
+  coil_temp: 45
+  motor_temp: 40
+  motor_vol: 52
+- name: left_hip_yaw_joint
+  position: -0.019078731536865234
+  velocity: 0.0061054229736328125
+  effort: -0.8498153686523438
+  coil_temp: 38
+  motor_temp: 34
+  motor_vol: 52
+- name: left_knee_joint
+  position: 0.5226006507873535
+  velocity: -0.0061054229736328125
+  effort: -12.395606994628906
+  coil_temp: 42
+  motor_temp: 38
+  motor_vol: 52
+- name: left_ankle_pitch_joint
+  position: -0.3285551071166992
+  velocity: 0.0061054229736328125
+  effort: 10.75457763671875
+  coil_temp: 49
+  motor_temp: 50
+  motor_vol: 52
+- name: left_ankle_roll_joint
+  position: 0.009874820709228516
+  velocity: 0.0061054229736328125
+  effort: -0.6739959716796875
+  coil_temp: 41
+  motor_temp: 37
+  motor_vol: 52
+- name: right_hip_pitch_joint
+  position: -0.2967252731323242
+  velocity: 0.0061054229736328125
+  effort: 9.75823974609375
+  coil_temp: 42
+  motor_temp: 39
+  motor_vol: 53
+- name: right_hip_roll_joint
+  position: 0.021379470825195312
+  velocity: -0.0061054229736328125
+  effort: -7.589744567871094
+  coil_temp: 43
+  motor_temp: 39
+  motor_vol: 53
+- name: right_hip_yaw_joint
+  position: -0.027515411376953125
+  velocity: 0.0061054229736328125
+  effort: 1.9633712768554688
+  coil_temp: 37
+  motor_temp: 34
+  motor_vol: 53
+- name: right_knee_joint
+  position: 0.4961400032043457
+  velocity: 0.0061054229736328125
+  effort: -1.26007080078125
+  coil_temp: 36
+  motor_temp: 34
+  motor_vol: 53
+- name: right_ankle_pitch_joint
+  position: -0.2733325958251953
+  velocity: -0.0061054229736328125
+  effort: 10.168502807617188
+  coil_temp: 46
+  motor_temp: 48
+  motor_vol: 52
+- name: right_ankle_roll_joint
+  position: -0.0025882720947265625
+  velocity: 0.0061054229736328125
+  effort: 0.08791351318359375
+  coil_temp: 41
+  motor_temp: 36
+  motor_vol: 52
+---
+
+TOPIC_ECHO_ONCE=/aima/hal/joint/waist/state
+header:
+  stamp:
+    sec: 1786496946
+    nanosec: 219132932
+  frame_id: x2_waist
+  sequence: 7505989
+  meas_stamp:
+    sec: 0
+    nanosec: 0
+state:
+  value: 0
+joints:
+- name: waist_yaw_joint
+  position: -0.0050811767578125
+  velocity: -0.0061054229736328125
+  effort: 0.14652252197265625
+  coil_temp: 47
+  motor_temp: 43
+  motor_vol: 52
+- name: waist_pitch_joint
+  position: -0.03536258587476616
+  velocity: 8.342240448966814e-06
+  effort: -0.9537669416828427
+  coil_temp: 54
+  motor_temp: 51
+  motor_vol: 52
+- name: waist_roll_joint
+  position: 0.006857841658206773
+  velocity: 0.00490709475583127
+  effort: 0.22038598664564862
+  coil_temp: 55
+  motor_temp: 51
+  motor_vol: 52
+---
+
+### PASSIVE_STATIC_CAPTURE
+CAPTURE_TOPICS=/aima/hal/joint/{arm,head,leg,waist}/state,/aima/hal/imu/{chest,torso}/state
+CAPTURE_IS_SUBSCRIPTION_ONLY=1
+ROBOT_MUST_REMAIN_IN_ITS_CURRENT_SAFE_STATIC_STATE=1
+PHASE2B_SCHEMA  {"JointStateArray":{"module":"aimdk_msgs.msg._joint_state_array","class":"JointStateArray","fields":{"header":"aimdk_msgs/MessageHeader","state":"aimdk_msgs/DomainErrorState","joints":"sequence<aimdk_msgs/JointState>"}},"JointState":{"module":"aimdk_msgs.msg._joint_state","class":"JointState","fields":{"name":"string","position":"double","velocity":"double","effort":"double","coil_temp":"uint8","motor_temp":"uint8","motor_vol":"uint8"}},"MessageHeader":{"module":"aimdk_msgs.msg._message_header","class":"MessageHeader","fields":{"stamp":"builtin_interfaces/Time","frame_id":"string","sequence":"uint32","meas_stamp":"builtin_interfaces/Time"}},"DomainErrorState":{"module":"aimdk_msgs.msg._domain_error_state","class":"DomainErrorState","fields":{"value":"uint8"}}}
+ssh.exe : Traceback (most recent call last):
+At C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\run_x2_phase2b_readonly.ps1:28
+char:12
++ $payload | & ssh $Target "bash -s" 2>&1 | Tee-Object -Variable captur ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+  File "<stdin>", line 95, in <module>
+  File "<stdin>", line 65, in __init__
+AttributeError: can't set attribute 'subscriptions'
+
+### COMPLETION
+PHASE2B_READ_ONLY_CAPTURE_COMPLETED=1
+NO_COMMAND_WAS_SENT=1
+REMOTE_FILES_WRITTEN=0
+bash: line 437: $'\r': command not found
+Evidence saved locally: C:\Users\xinga\Documents\Codex\2026-08-11\master-mujoco-agibot-x2-ultra-mujoco\work\x2_phase2b_readonly_capture.txt
+SSH/script exit code: 127
+PS C:\Users\xinga>

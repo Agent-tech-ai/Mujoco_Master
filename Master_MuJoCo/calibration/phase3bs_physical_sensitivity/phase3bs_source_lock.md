@@ -1,0 +1,51 @@
+# Phase 3B-S source and physical baseline lock
+
+## Scope lock
+
+- Controller: independently validated arm tracking + Phase 3A-X safety shell + Phase 3A-Y motion-conditioned response, frozen by SHA-256 below.
+- MJCF/scenes: `ff_master_ultra.xml`, `ff_master_ultra_x2_limits.xml`, `scene_x2_fixed.xml`, and `scene_x2_free.xml`, all read-only and SHA-256 locked below.
+- Physical experiments: in-memory runtime overrides only; no source MJCF or calibrated MJCF was created.
+- Replay protocol: the frozen Phase 3A-Y 5 s pre-roll / 5 s post-roll window. The rejected 3 s protocol is preserved separately in `runs_protocol3_diagnostic_archive/` and excluded from formal metrics.
+- Fitting evidence: joint position/velocity and relative simulation base/contact response only.
+- `reported_effort`: not loaded. Absolute IMU quaternion: not used. Robot connection/control: none.
+- Gear, actuator force/ctrl limits, hardware mapping, and controller settings: frozen and asserted unchanged in every run summary.
+
+## SHA-256 manifest
+
+| path | bytes | sha256 |
+|---|---|---|
+| assets\Master\ff_master_ultra.xml | 39960 | 89619295fcc372c57473224130865b2fe4f22e0741f72925fac243805f4353db |
+| assets\Master\ff_master_ultra_x2_limits.xml | 39842 | 6d5940490d93f89929af8983a0de900c9e6c0351839163463ae0881d1b9399dd |
+| assets\Master\scene_x2_fixed.xml | 1101 | 2dc116ce47d09a5105d01372a8456356b6e9881dee4c4947bc7c876757529a08 |
+| assets\Master\scene_x2_free.xml | 1025 | 88483553e15173d09d69f4fca32a466bb022d6dbb805f074ffa89447fc876d0b |
+| master_sim\controller.py | 8964 | eae1b320d4ace99fe79bd123d70398ff6ac1446b2c33191ae8a68f5a31691c6e |
+| master_sim\model.py | 5852 | eb723f10257a3e91901d452f881647822ebb9930204035c311a3535001c51b16 |
+| calibration\phase3ar_controller_redesign\phase3ar_core.py | 29122 | e3f126c8be4d34c1e0c1b78af90ca600cf04fe08aa8432b0456ea4b183efa435 |
+| calibration\phase3ay_motion_conditioned_balance\phase3ay_core.py | 13434 | 09a21d7a40b3d9a531ebb59a32f5fbcb2977bb9bdc335b01587af697f18204a2 |
+| calibration\phase3ay_motion_conditioned_balance\run_phase3ay_candidate_smoke.py | 1602 | dff8e2a5b9ae793e4edd532e5702ff479f0a4d20c1587b1c9dfb9548f37f6772 |
+| calibration\phase3ay_motion_conditioned_balance\simulation_motion_conditioned_balance_candidate.json | 3614 | 53a693e8a02a34034c1a4124544ab87085c822e8835edbfb9998edd9e728f9ad |
+| calibration\phase3ay_motion_conditioned_balance\phase3ay_final_validation.json | 72759 | ca1e9b2143c37c9fd817e13b5c17148a7ec88c94884532bb625f9a9ed8033b67 |
+| calibration\phase3ay_motion_conditioned_balance\phase3ay_perturbation_results.csv | 1854 | be567fcf4fb843d41ce518f7214dd09727b7fba4e732c33244827a5777b63e99 |
+| calibration\phase3ax_constraint_balance\phase3ax_core.py | 41362 | 7a1aef562fcf40ca376a8a79e111ca3bb4688a6a95773d7834a5fa85d1b37d00 |
+| calibration\phase3ax_constraint_balance\simulation_constraint_aware_controller_candidate.json | 2422 | 2c3f9b2dbb7150c1557c500d4b02bfcc679b327d7df4e4d54c26ca4837b92b40 |
+| calibration\phase3ax_constraint_balance\phase3ax_rehearsal_12_joint.csv | 1121 | 5992cad976f7a68660cc2a4d0ecdaf0f6d79d251a639ed9c7c466dcceea6ce71 |
+| calibration\phase3a_position_only\simulation_controller_alignment_candidate.json | 2297 | c351dea8131971e8c05e0a72bff350c8142fe913135d9d87b416080fb0dcd483 |
+| calibration\phase3a_position_only\run_phase3a_experiments.py | 50230 | 5ef5c215f8dbc73101183f43ae89aec1edceebe83142c21a9b5464b3d422d52a |
+| calibration\phase2e_replay\phase2e_heart_measured_reference.csv | 3803578 | bdb883357fab5c15948dc15404477b5d70f844371f0abdfa14d7f77514a3ce1b |
+| calibration\phase3av_validation\phase3av_measured_reference.csv | 3653152 | bd10471f360fd1eed64c63b8ddd5ee44b5e1ff1bd277af15431b628f8d3899b7 |
+| calibration\phase3bs_physical_sensitivity\phase3bs_core.py | 11746 | 288233bcdba015bda24e86991ab89eb7742cebeca39a64181a3c240ce654594d |
+| calibration\phase3bs_physical_sensitivity\run_phase3bs_experiments.py | 5313 | 2ea5f150d3107df3f9a50405a615efb94fe16cd8b83cc502af2d672ba65b0812 |
+| calibration\phase3bs_physical_sensitivity\run_phase3bs_candidate_safety.py | 7119 | e47b3b54b61a8f9e621d30a6a97b12cddc61ff85fad63cecb7dd26cd718bb372 |
+| calibration\phase3bs_physical_sensitivity\analyze_phase3bs.py | 37850 | 6a91d3af396c135c62af320e9da846a4afaef1f089d4c2b7a0904ad273f8a6c0 |
+
+## Compiled physical baseline inventory
+
+- Total compiled mass: **43.474796659 kg** across 32 inertial bodies.
+- Bodies/inertials: 32 rows; joints: 31 rows; floor/foot contact geoms: 1 rows; actuators: 30 rows.
+- Full immutable inventory: `phase3bs_physical_baseline.csv` (mass, inertia, inertial position, joint damping/armature/frictionloss, floor/foot contact, actuator gear and limits).
+- Baseline actuated joint damping values: [0.0].
+- Baseline actuated joint armature values: [0.0, 0.03].
+
+## Interpretation
+
+`PHYSICAL_SENSITIVITY_EXPERIMENT` means a local simulation perturbation. It is **NOT HARDWARE CALIBRATION** and does not identify a real X2 parameter.

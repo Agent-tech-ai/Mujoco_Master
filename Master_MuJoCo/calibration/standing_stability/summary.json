@@ -1,0 +1,2686 @@
+{
+  "safety": "LOCAL_SIMULATION_ONLY_NO_ROBOT_ACCESS",
+  "model_files_modified": [],
+  "controller_candidate": {
+    "pitch_kp": 200.0,
+    "pitch_kd": 30.0,
+    "roll_kp": 100.0,
+    "roll_kd": 20.0,
+    "friction_compensation_scale": 1.5,
+    "friction_error_width": 0.005
+  },
+  "initial": {
+    "base_qpos": [
+      0.0,
+      0.0,
+      0.68,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "base_qvel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "joint_state": {
+      "left_hip_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.010760911964819986,
+        "actuator_force": -0.010760911964819986
+      },
+      "left_hip_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.1415329513671928,
+        "actuator_force": 0.1415329513671928
+      },
+      "left_hip_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.0,
+        "actuator_force": 0.0
+      },
+      "left_knee_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.20759734523052,
+        "actuator_force": -0.20759734523052
+      },
+      "left_ankle_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.4214878903960201,
+        "actuator_force": -0.4214878903960201
+      },
+      "left_ankle_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.0002492156924998046,
+        "actuator_force": 0.0002492156924998046
+      },
+      "right_hip_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.007981130332799957,
+        "actuator_force": -0.007981130332799957
+      },
+      "right_hip_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.1371826752495231,
+        "actuator_force": -0.1371826752495231
+      },
+      "right_hip_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.0,
+        "actuator_force": 0.0
+      },
+      "right_knee_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.2068202130993,
+        "actuator_force": -0.2068202130993
+      },
+      "right_ankle_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.42149901697649994,
+        "actuator_force": -0.42149901697649994
+      },
+      "right_ankle_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.0002492156924998046,
+        "actuator_force": 0.0002492156924998046
+      },
+      "waist_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.0,
+        "actuator_force": 0.0
+      },
+      "waist_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -2.4764454055230547,
+        "actuator_force": -2.4764454055230547
+      },
+      "waist_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.08525818673694971,
+        "actuator_force": 0.08525818673694971
+      },
+      "head_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.0,
+        "actuator_force": 0.0
+      },
+      "left_shoulder_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -1.0269282391790637,
+        "actuator_force": -1.0269282391790637
+      },
+      "left_shoulder_roll_joint": {
+        "qpos_rad": 0.1,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.1,
+        "target_error_rad": 0.0,
+        "actuator_command": 2.3555950034690234,
+        "actuator_force": 2.3555950034690234
+      },
+      "left_shoulder_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.2984025047292181,
+        "actuator_force": 0.2984025047292181
+      },
+      "left_elbow_joint": {
+        "qpos_rad": -0.35,
+        "qvel_rad_s": 0.0,
+        "target_rad": -0.35,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.6671640751443851,
+        "actuator_force": -0.6671640751443851
+      },
+      "left_wrist_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.004991464567189685,
+        "actuator_force": 0.004991464567189685
+      },
+      "left_wrist_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.11746594068844984,
+        "actuator_force": -0.11746594068844984
+      },
+      "left_wrist_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": 0.07118456432627362,
+        "actuator_force": 0.07118456432627362
+      },
+      "right_shoulder_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.9855526939083759,
+        "actuator_force": -0.9855526939083759
+      },
+      "right_shoulder_roll_joint": {
+        "qpos_rad": -0.1,
+        "qvel_rad_s": 0.0,
+        "target_rad": -0.1,
+        "target_error_rad": 0.0,
+        "actuator_command": -2.356155935452641,
+        "actuator_force": -2.356155935452641
+      },
+      "right_shoulder_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.2997921512596608,
+        "actuator_force": -0.2997921512596608
+      },
+      "right_elbow_joint": {
+        "qpos_rad": -0.35,
+        "qvel_rad_s": 0.0,
+        "target_rad": -0.35,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.6558894170992056,
+        "actuator_force": -0.6558894170992056
+      },
+      "right_wrist_yaw_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.0037654932186471646,
+        "actuator_force": -0.0037654932186471646
+      },
+      "right_wrist_pitch_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.1167648422685994,
+        "actuator_force": -0.1167648422685994
+      },
+      "right_wrist_roll_joint": {
+        "qpos_rad": 0.0,
+        "qvel_rad_s": 0.0,
+        "target_rad": 0.0,
+        "target_error_rad": 0.0,
+        "actuator_command": -0.07147739318775281,
+        "actuator_force": -0.07147739318775281
+      }
+    },
+    "left_lowest_geom_z_m": 0.005050000000000003,
+    "right_lowest_geom_z_m": 0.005050000000000003,
+    "foot_geoms": [
+      {
+        "side": "left",
+        "geom_id": 15,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.05,
+          0.05,
+          -0.068
+        ],
+        "world_pos": [
+          -0.06941,
+          0.18715008900000002,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 16,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.065,
+          0.025,
+          -0.068
+        ],
+        "world_pos": [
+          -0.08441000000000001,
+          0.162150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 17,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.05,
+          -0.05,
+          -0.068
+        ],
+        "world_pos": [
+          -0.06941,
+          0.087150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 18,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.065,
+          -0.025,
+          -0.068
+        ],
+        "world_pos": [
+          -0.08441000000000001,
+          0.11215008900000001,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 19,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.11,
+          0.05,
+          -0.068
+        ],
+        "world_pos": [
+          0.09059,
+          0.18715008900000002,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 20,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.11,
+          -0.05,
+          -0.068
+        ],
+        "world_pos": [
+          0.09059,
+          0.087150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 21,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.02,
+          -0.06,
+          -0.068
+        ],
+        "world_pos": [
+          -0.03941,
+          0.077150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 22,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.02,
+          0.06,
+          -0.068
+        ],
+        "world_pos": [
+          -0.03941,
+          0.197150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 23,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.07,
+          -0.06,
+          -0.068
+        ],
+        "world_pos": [
+          0.05059,
+          0.077150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 24,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.07,
+          0.06,
+          -0.068
+        ],
+        "world_pos": [
+          0.05059,
+          0.197150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 25,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.139,
+          0.0,
+          -0.066
+        ],
+        "world_pos": [
+          0.11959,
+          0.137150089,
+          0.012050000000000005
+        ],
+        "surface_z": 0.007050000000000005,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "left",
+        "geom_id": 26,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.128,
+          0.0,
+          -0.02
+        ],
+        "world_pos": [
+          0.10858999999999999,
+          0.137150089,
+          0.058050000000000004
+        ],
+        "surface_z": 0.05305000000000001,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 38,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.05,
+          0.05,
+          -0.068
+        ],
+        "world_pos": [
+          -0.06941,
+          -0.087150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 39,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.065,
+          0.025,
+          -0.068
+        ],
+        "world_pos": [
+          -0.08441000000000001,
+          -0.11215008900000001,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 40,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.05,
+          -0.05,
+          -0.068
+        ],
+        "world_pos": [
+          -0.06941,
+          -0.18715008900000002,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 41,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.065,
+          -0.025,
+          -0.068
+        ],
+        "world_pos": [
+          -0.08441000000000001,
+          -0.162150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 42,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.11,
+          0.05,
+          -0.068
+        ],
+        "world_pos": [
+          0.09059,
+          -0.087150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 43,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.11,
+          -0.05,
+          -0.068
+        ],
+        "world_pos": [
+          0.09059,
+          -0.18715008900000002,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 44,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.02,
+          -0.06,
+          -0.068
+        ],
+        "world_pos": [
+          -0.03941,
+          -0.197150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 45,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          -0.02,
+          0.06,
+          -0.068
+        ],
+        "world_pos": [
+          -0.03941,
+          -0.077150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 46,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.07,
+          -0.06,
+          -0.068
+        ],
+        "world_pos": [
+          0.05059,
+          -0.197150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 47,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.07,
+          0.06,
+          -0.068
+        ],
+        "world_pos": [
+          0.05059,
+          -0.077150089,
+          0.010050000000000003
+        ],
+        "surface_z": 0.005050000000000003,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 48,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.139,
+          0.0,
+          -0.066
+        ],
+        "world_pos": [
+          0.11959,
+          -0.137150089,
+          0.012050000000000005
+        ],
+        "surface_z": 0.007050000000000005,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      },
+      {
+        "side": "right",
+        "geom_id": 49,
+        "type": 2,
+        "size": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "local_pos": [
+          0.128,
+          0.0,
+          -0.02
+        ],
+        "world_pos": [
+          0.10858999999999999,
+          -0.137150089,
+          0.058050000000000004
+        ],
+        "surface_z": 0.05305000000000001,
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "contype": 1,
+        "conaffinity": 1,
+        "solref": [
+          0.02,
+          1.0
+        ],
+        "solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ]
+      }
+    ]
+  },
+  "com": {
+    "xyz_m": [
+      0.005621692662336757,
+      0.00025176609100720427,
+      0.7124937672722609
+    ],
+    "left_polygon_xy_m": [
+      [
+        -0.08441000000000001,
+        0.11215008900000001
+      ],
+      [
+        -0.06941,
+        0.087150089
+      ],
+      [
+        -0.03941,
+        0.077150089
+      ],
+      [
+        0.05059,
+        0.077150089
+      ],
+      [
+        0.09059,
+        0.087150089
+      ],
+      [
+        0.11959,
+        0.137150089
+      ],
+      [
+        0.09059,
+        0.18715008900000002
+      ],
+      [
+        0.05059,
+        0.197150089
+      ],
+      [
+        -0.03941,
+        0.197150089
+      ],
+      [
+        -0.06941,
+        0.18715008900000002
+      ],
+      [
+        -0.08441000000000001,
+        0.162150089
+      ]
+    ],
+    "right_polygon_xy_m": [
+      [
+        -0.08441000000000001,
+        -0.162150089
+      ],
+      [
+        -0.06941,
+        -0.18715008900000002
+      ],
+      [
+        -0.03941,
+        -0.197150089
+      ],
+      [
+        0.05059,
+        -0.197150089
+      ],
+      [
+        0.09059,
+        -0.18715008900000002
+      ],
+      [
+        0.11959,
+        -0.137150089
+      ],
+      [
+        0.09059,
+        -0.087150089
+      ],
+      [
+        0.05059,
+        -0.077150089
+      ],
+      [
+        -0.03941,
+        -0.077150089
+      ],
+      [
+        -0.06941,
+        -0.087150089
+      ],
+      [
+        -0.08441000000000001,
+        -0.11215008900000001
+      ]
+    ],
+    "combined_polygon_xy_m": [
+      [
+        -0.08441000000000001,
+        -0.162150089
+      ],
+      [
+        -0.06941,
+        -0.18715008900000002
+      ],
+      [
+        -0.03941,
+        -0.197150089
+      ],
+      [
+        0.05059,
+        -0.197150089
+      ],
+      [
+        0.09059,
+        -0.18715008900000002
+      ],
+      [
+        0.11959,
+        -0.137150089
+      ],
+      [
+        0.11959,
+        0.137150089
+      ],
+      [
+        0.09059,
+        0.18715008900000002
+      ],
+      [
+        0.05059,
+        0.197150089
+      ],
+      [
+        -0.03941,
+        0.197150089
+      ],
+      [
+        -0.06941,
+        0.18715008900000002
+      ],
+      [
+        -0.08441000000000001,
+        0.162150089
+      ]
+    ],
+    "inside": true,
+    "rear_margin_m": 0.09003169266233677,
+    "front_margin_m": 0.11396830733766325,
+    "right_margin_m": 0.19740185509100722,
+    "left_margin_m": 0.19689832290899278,
+    "minimum_margin_m": 0.09003169266233677,
+    "method": "convex hull of foot collision-sphere centers whose surfaces are within 3 mm of the lowest sole surface"
+  },
+  "mass": {
+    "total_kg": 43.474796659272606,
+    "left_kg": 12.268144,
+    "right_kg": 12.250455,
+    "left_right_difference_kg": 0.017688999999998956,
+    "central_fraction": 0.43602728743826097,
+    "arms_fraction": 0.18106676982745679,
+    "legs_fraction": 0.3829059427342822,
+    "flagged_bodies": [],
+    "body_audit": [
+      {
+        "body": "pelvis",
+        "mass_kg": 5.031810659272607,
+        "inertia": [
+          0.013855276755432468,
+          0.013244213751023456,
+          0.01076214023708627
+        ],
+        "inertial_pos": [
+          -0.001526673215738653,
+          0.00012932923078004942,
+          0.0028983587565822306
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.68
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_hip_pitch_link",
+        "mass_kg": 1.39968,
+        "inertia": [
+          0.00807979,
+          0.007409,
+          0.00155421
+        ],
+        "inertial_pos": [
+          0.00791,
+          0.064136,
+          0.000116
+        ],
+        "body_pos": [
+          0.0,
+          0.07135,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_hip_roll_link",
+        "mass_kg": 1.5848,
+        "inertia": [
+          0.0181021,
+          0.0176713,
+          0.00251468
+        ],
+        "inertial_pos": [
+          4.7e-05,
+          0.000231,
+          -0.093505
+        ],
+        "body_pos": [
+          -0.000575,
+          0.0657,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_hip_yaw_link",
+        "mass_kg": 2.01055,
+        "inertia": [
+          0.0526993,
+          0.0519961,
+          0.0023845
+        ],
+        "inertial_pos": [
+          -0.002375,
+          0.003914,
+          -0.144276
+        ],
+        "body_pos": [
+          0.000575,
+          0.0,
+          -0.13685
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_knee_link",
+        "mass_kg": 1.56821,
+        "inertia": [
+          0.031041,
+          0.0309424,
+          0.00193262
+        ],
+        "inertial_pos": [
+          -0.002655,
+          0.003681,
+          -0.122697
+        ],
+        "body_pos": [
+          -0.00766,
+          0.000225,
+          -0.1831
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_ankle_pitch_link",
+        "mass_kg": 0.747802,
+        "inertia": [
+          0.00117429,
+          0.000984841,
+          0.000709871
+        ],
+        "inertial_pos": [
+          0.011691,
+          -0.000181,
+          0.003548
+        ],
+        "body_pos": [
+          -0.01,
+          -0.000124911,
+          -0.282
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_ankle_roll_link",
+        "mass_kg": 1.01617,
+        "inertia": [
+          0.007937,
+          0.0068711,
+          0.0025949
+        ],
+        "inertial_pos": [
+          0.035428,
+          2.5e-05,
+          -0.049572
+        ],
+        "body_pos": [
+          -0.00175,
+          0.0,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_hip_pitch_link",
+        "mass_kg": 1.40023,
+        "inertia": [
+          0.00808102,
+          0.007409,
+          0.00155498
+        ],
+        "inertial_pos": [
+          0.007909,
+          -0.064114,
+          0.000131
+        ],
+        "body_pos": [
+          0.0,
+          -0.07135,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_hip_roll_link",
+        "mass_kg": 1.58508,
+        "inertia": [
+          0.0181161,
+          0.017694,
+          0.00251594
+        ],
+        "inertial_pos": [
+          -0.000586,
+          -0.000228,
+          -0.093568
+        ],
+        "body_pos": [
+          0.0,
+          -0.0657,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_hip_yaw_link",
+        "mass_kg": 2.00262,
+        "inertia": [
+          0.0525579,
+          0.0518558,
+          0.0023773
+        ],
+        "inertial_pos": [
+          -0.002444,
+          -0.003935,
+          -0.144335
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          -0.13685
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_knee_link",
+        "mass_kg": 1.56588,
+        "inertia": [
+          0.0308703,
+          0.0307718,
+          0.00192491
+        ],
+        "inertial_pos": [
+          -0.002699,
+          -0.003794,
+          -0.122288
+        ],
+        "body_pos": [
+          -0.00766,
+          -0.000225,
+          -0.1831
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_ankle_pitch_link",
+        "mass_kg": 0.749566,
+        "inertia": [
+          0.00122381,
+          0.00103716,
+          0.000713034
+        ],
+        "inertial_pos": [
+          0.011665,
+          0.000937,
+          0.00394
+        ],
+        "body_pos": [
+          -0.01,
+          0.000124911,
+          -0.282
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_ankle_roll_link",
+        "mass_kg": 1.01617,
+        "inertia": [
+          0.007937,
+          0.0068711,
+          0.0025949
+        ],
+        "inertial_pos": [
+          0.035428,
+          2.5e-05,
+          -0.049572
+        ],
+        "body_pos": [
+          -0.00175,
+          0.0,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "waist_yaw_link",
+        "mass_kg": 1.66854,
+        "inertia": [
+          0.00503206,
+          0.00499998,
+          0.00283196
+        ],
+        "inertial_pos": [
+          -0.001359,
+          4.7e-05,
+          0.041703
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.06706
+        ],
+        "flags": []
+      },
+      {
+        "body": "waist_pitch_link",
+        "mass_kg": 0.392413,
+        "inertia": [
+          0.00023,
+          0.000133,
+          0.000133
+        ],
+        "inertial_pos": [
+          0.008967,
+          -1e-06,
+          0.0
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.0880106
+        ],
+        "flags": []
+      },
+      {
+        "body": "torso_link",
+        "mass_kg": 10.1441,
+        "inertia": [
+          0.479863,
+          0.455999,
+          0.0666413
+        ],
+        "inertial_pos": [
+          -0.000188,
+          0.000605,
+          0.191827
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_shoulder_pitch_link",
+        "mass_kg": 0.885896,
+        "inertia": [
+          0.00303104,
+          0.00292896,
+          0.000676999
+        ],
+        "inertial_pos": [
+          0.003007,
+          0.050014,
+          6.2e-05
+        ],
+        "body_pos": [
+          0.00329907,
+          0.143032,
+          0.241648
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_shoulder_roll_link",
+        "mass_kg": 0.706556,
+        "inertia": [
+          0.00549904,
+          0.00540092,
+          0.000539037
+        ],
+        "inertial_pos": [
+          0.000621,
+          -0.000183,
+          -0.078842
+        ],
+        "body_pos": [
+          -0.000499991,
+          0.0495,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_shoulder_yaw_link",
+        "mass_kg": 0.704662,
+        "inertia": [
+          0.00438693,
+          0.00436694,
+          0.00044713
+        ],
+        "inertial_pos": [
+          0.010005,
+          0.000179,
+          -0.069477
+        ],
+        "body_pos": [
+          0.00122424,
+          0.0,
+          -0.121195
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_elbow_link",
+        "mass_kg": 0.688008,
+        "inertia": [
+          0.0054008,
+          0.00531735,
+          0.000446844
+        ],
+        "inertial_pos": [
+          -0.013174,
+          0.003788,
+          -0.080203
+        ],
+        "body_pos": [
+          0.014,
+          0.000199986,
+          -0.08295
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_wrist_yaw_link",
+        "mass_kg": 0.360708,
+        "inertia": [
+          0.000612057,
+          0.000527003,
+          0.00018794
+        ],
+        "inertial_pos": [
+          7.6e-05,
+          0.007263,
+          -0.030679
+        ],
+        "body_pos": [
+          -0.0132797,
+          -9.75488e-05,
+          -0.120576
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_wrist_pitch_link",
+        "mass_kg": 0.292062,
+        "inertia": [
+          0.000178433,
+          0.000138482,
+          9.10855e-05
+        ],
+        "inertial_pos": [
+          0.011479,
+          0.002282,
+          0.001703
+        ],
+        "body_pos": [
+          0.000490001,
+          0.0,
+          -0.0819985
+        ],
+        "flags": []
+      },
+      {
+        "body": "left_wrist_roll_link",
+        "mass_kg": 0.30304,
+        "inertia": [
+          0.00278114,
+          0.00266331,
+          0.000205545
+        ],
+        "inertial_pos": [
+          0.002935,
+          -0.001499,
+          -0.083026
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_shoulder_pitch_link",
+        "mass_kg": 0.885544,
+        "inertia": [
+          0.00303743,
+          0.00294899,
+          0.00067458
+        ],
+        "inertial_pos": [
+          0.002721,
+          -0.050304,
+          3.4e-05
+        ],
+        "body_pos": [
+          0.00330094,
+          -0.143031,
+          0.241648
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_shoulder_roll_link",
+        "mass_kg": 0.696963,
+        "inertia": [
+          0.00548904,
+          0.0054003,
+          0.000529664
+        ],
+        "inertial_pos": [
+          0.000598,
+          0.000185,
+          -0.079928
+        ],
+        "body_pos": [
+          -0.0005,
+          -0.0495,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_shoulder_yaw_link",
+        "mass_kg": 0.704661,
+        "inertia": [
+          0.00438849,
+          0.00436595,
+          0.000445562
+        ],
+        "inertial_pos": [
+          0.010082,
+          -0.000178,
+          -0.069484
+        ],
+        "body_pos": [
+          0.0005,
+          0.0,
+          -0.1212
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_elbow_link",
+        "mass_kg": 0.687932,
+        "inertia": [
+          0.00542019,
+          0.00534355,
+          0.000444255
+        ],
+        "inertial_pos": [
+          -0.013517,
+          -0.003463,
+          -0.080438
+        ],
+        "body_pos": [
+          0.014,
+          -0.0002,
+          -0.08295
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_wrist_yaw_link",
+        "mass_kg": 0.372787,
+        "inertia": [
+          0.00069604,
+          0.000598539,
+          0.000202421
+        ],
+        "inertial_pos": [
+          0.000153,
+          -0.006979,
+          -0.032069
+        ],
+        "body_pos": [
+          -0.014,
+          9.75261e-05,
+          -0.120694
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_wrist_pitch_link",
+        "mass_kg": 0.279175,
+        "inertia": [
+          0.000171965,
+          0.00013308,
+          8.19541e-05
+        ],
+        "inertial_pos": [
+          0.012092,
+          -0.002544,
+          0.001781
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          -0.0818
+        ],
+        "flags": []
+      },
+      {
+        "body": "right_wrist_roll_link",
+        "mass_kg": 0.303847,
+        "inertia": [
+          0.002781,
+          0.00266288,
+          0.000206121
+        ],
+        "inertial_pos": [
+          0.003056,
+          0.00138,
+          -0.082799
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "flags": []
+      },
+      {
+        "body": "head_yaw_link",
+        "mass_kg": 0.720047,
+        "inertia": [
+          0.0038613,
+          0.00323157,
+          0.00110213
+        ],
+        "inertial_pos": [
+          -0.003139,
+          0.001399,
+          0.051838
+        ],
+        "body_pos": [
+          0.00834773,
+          0.0,
+          0.309397
+        ],
+        "flags": []
+      },
+      {
+        "body": "head_pitch_link",
+        "mass_kg": 0.999287,
+        "inertia": [
+          0.0035988,
+          0.00298179,
+          0.00259841
+        ],
+        "inertial_pos": [
+          0.003033,
+          -6e-05,
+          0.004395
+        ],
+        "body_pos": [
+          0.0,
+          0.0,
+          0.0889
+        ],
+        "flags": []
+      }
+    ]
+  },
+  "runs": {
+    "free_zero": {
+      "label": "free_zero",
+      "free_base": true,
+      "controller_kind": "zero",
+      "duration_s": 10.0,
+      "timestep_s": 0.001,
+      "integrator": 0,
+      "solver": 2,
+      "iterations": 100,
+      "tolerance": 1e-08,
+      "friction_scale": 1.0,
+      "gain_scale": 1.0,
+      "damping_scale": 1.0,
+      "initial_base_z_shift_m": 0.0,
+      "foot_box_experiment": false,
+      "initial_qpos": [
+        0.0,
+        0.0,
+        0.68,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_base_xyz": [
+        0.0,
+        0.0,
+        0.68
+      ],
+      "initial_base_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_max_joint_target_error_deg": 0.0,
+      "final_base_xyz": [
+        0.012993446398207173,
+        -0.23947985794789184,
+        0.21070873910076562
+      ],
+      "base_displacement_m": 0.5270234525791417,
+      "max_abs_roll_deg": 179.99645766914358,
+      "max_abs_pitch_deg": 89.83952437900074,
+      "max_tilt_deg": 200.69789347976032,
+      "max_joint_error_deg": 143.01181729742396,
+      "max_saturation_fraction": 0.0,
+      "saturation_ratio": 0.0,
+      "left_foot_slip_m": 0.11898896902661692,
+      "right_foot_slip_m": 0.15899154960237438,
+      "any_foot_contact_fraction": 0.9736,
+      "both_feet_contact_fraction": 0.9315,
+      "contact_count_transitions": 1041,
+      "maximum_penetration_m": 0.016018624598775177,
+      "fall_time_s": 2.8249999999998,
+      "csv": "calibration\\standing_stability\\data\\free_zero.csv",
+      "contact_csv": "calibration\\standing_stability\\data\\free_zero_contacts.csv"
+    },
+    "free_default": {
+      "label": "free_default",
+      "free_base": true,
+      "controller_kind": "default",
+      "duration_s": 10.0,
+      "timestep_s": 0.001,
+      "integrator": 0,
+      "solver": 2,
+      "iterations": 100,
+      "tolerance": 1e-08,
+      "friction_scale": 1.0,
+      "gain_scale": 1.0,
+      "damping_scale": 1.0,
+      "initial_base_z_shift_m": 0.0,
+      "foot_box_experiment": false,
+      "initial_qpos": [
+        0.0,
+        0.0,
+        0.68,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_base_xyz": [
+        0.0,
+        0.0,
+        0.68
+      ],
+      "initial_base_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_max_joint_target_error_deg": 0.0,
+      "final_base_xyz": [
+        0.9435419295773859,
+        0.003725701678707336,
+        0.06454151939247321
+      ],
+      "base_displacement_m": 1.1265320213271084,
+      "max_abs_roll_deg": 9.072172294020842,
+      "max_abs_pitch_deg": 86.63119032787921,
+      "max_tilt_deg": 86.63741485285104,
+      "max_joint_error_deg": 24.285387727289145,
+      "max_saturation_fraction": 1.0,
+      "saturation_ratio": 0.0221,
+      "left_foot_slip_m": 0.36523750617689016,
+      "right_foot_slip_m": 0.36503028864519516,
+      "any_foot_contact_fraction": 0.9716,
+      "both_feet_contact_fraction": 0.9613,
+      "contact_count_transitions": 130,
+      "maximum_penetration_m": 0.018071783341448933,
+      "fall_time_s": 1.605999999999934,
+      "csv": "calibration\\standing_stability\\data\\free_default.csv",
+      "contact_csv": "calibration\\standing_stability\\data\\free_default_contacts.csv"
+    },
+    "fixed_default": {
+      "label": "fixed_default",
+      "free_base": false,
+      "controller_kind": "default",
+      "duration_s": 10.0,
+      "timestep_s": 0.001,
+      "integrator": 0,
+      "solver": 2,
+      "iterations": 100,
+      "tolerance": 1e-08,
+      "friction_scale": 1.0,
+      "gain_scale": 1.0,
+      "damping_scale": 1.0,
+      "initial_base_z_shift_m": 0.0,
+      "foot_box_experiment": false,
+      "initial_qpos": [
+        0.0,
+        0.0,
+        0.68,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_base_xyz": [
+        0.0,
+        0.0,
+        0.68
+      ],
+      "initial_base_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_max_joint_target_error_deg": 0.0,
+      "final_base_xyz": [
+        0.0006481181950335458,
+        2.9025690112675055e-05,
+        0.6795177584746275
+      ],
+      "base_displacement_m": 0.0008083666087943789,
+      "max_abs_roll_deg": 0.003523715281454884,
+      "max_abs_pitch_deg": 0.07778708346709862,
+      "max_tilt_deg": 0.0778668538192094,
+      "max_joint_error_deg": 0.01213460447727163,
+      "max_saturation_fraction": 0.06552486814793396,
+      "saturation_ratio": 0.0,
+      "left_foot_slip_m": 7.447160236727615e-05,
+      "right_foot_slip_m": 7.447719835687819e-05,
+      "any_foot_contact_fraction": 0.0,
+      "both_feet_contact_fraction": 0.0,
+      "contact_count_transitions": 0,
+      "maximum_penetration_m": 0.0,
+      "fall_time_s": null,
+      "csv": "calibration\\standing_stability\\data\\fixed_default.csv",
+      "contact_csv": "calibration\\standing_stability\\data\\fixed_default_contacts.csv"
+    },
+    "free_cleanup": {
+      "label": "free_cleanup",
+      "free_base": true,
+      "controller_kind": "cleanup",
+      "duration_s": 10.0,
+      "timestep_s": 0.001,
+      "integrator": 0,
+      "solver": 2,
+      "iterations": 100,
+      "tolerance": 1e-08,
+      "friction_scale": 1.0,
+      "gain_scale": 1.0,
+      "damping_scale": 1.0,
+      "initial_base_z_shift_m": 0.0,
+      "foot_box_experiment": false,
+      "initial_qpos": [
+        0.0,
+        0.0,
+        0.68,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_base_xyz": [
+        0.0,
+        0.0,
+        0.68
+      ],
+      "initial_base_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_max_joint_target_error_deg": 0.0,
+      "final_base_xyz": [
+        0.013239394408583745,
+        6.692287132292435e-06,
+        0.6741747567698644
+      ],
+      "base_displacement_m": 0.014464268657038523,
+      "max_abs_roll_deg": 0.0008158485715934213,
+      "max_abs_pitch_deg": 2.099814596953554,
+      "max_tilt_deg": 2.099814606055324,
+      "max_joint_error_deg": 1.2849754910748747,
+      "max_saturation_fraction": 0.24679390910963914,
+      "saturation_ratio": 0.0,
+      "left_foot_slip_m": 0.00014684256966926223,
+      "right_foot_slip_m": 0.00012914469404620485,
+      "any_foot_contact_fraction": 0.9968,
+      "both_feet_contact_fraction": 0.9968,
+      "contact_count_transitions": 3,
+      "maximum_penetration_m": 0.002267589820409861,
+      "fall_time_s": null,
+      "csv": "calibration\\standing_stability\\data\\free_cleanup.csv",
+      "contact_csv": "calibration\\standing_stability\\data\\free_cleanup_contacts.csv"
+    }
+  },
+  "rehearsal": {
+    "settled_after": 12
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mujoco_version": "3.10.0",
+  "scene": "assets\\Master\\scene_x2_free.xml",
+  "scene_sha256": "88483553e15173d09d69f4fca32a466bb022d6dbb805f074ffa89447fc876d0b",
+  "included_model": "assets/Master/ff_master_ultra_x2_limits.xml",
+  "included_model_sha256": "6d5940490d93f89929af8983a0de900c9e6c0351839163463ae0881d1b9399dd",
+  "controller": "master_sim.controller.SimulationStabilityController",
+  "controller_source_sha256": "eae1b320d4ace99fe79bd123d70398ff6ac1446b2c33191ae8a68f5a31691c6e",
+  "parameters_modified_for_replay": false,
+  "dynamics_modified": false,
+  "gain_modified": false,
+  "friction_modified": false,
+  "mapping_modified": false
+}

@@ -1,0 +1,6 @@
+experiment_id,family,dataset,mode,stable_no_fall,fall_time_s,contact_safety_pass,pelvis_hip_contact_samples,minimum_positive_precontact_distance_m,maximum_pelvis_hip_penetration_m,limit_management_pass,minimum_limit_margin_rad,saturation_management_pass,persistent_saturation_fraction,max_consecutive_saturation_s,minimum_com_support_margin_m,arm_tracking_retained,balance_shape_score,safety_pass
+phase3ax_final_candidate,AX-G_COMBINED,heart,standing,True,,True,0,0.0028970396736576532,0.0,True,0.04814412699056945,True,0.0,0.0,0.04803359757602926,True,,True
+phase3ax_final_candidate,AX-G_COMBINED,wave,standing,True,,True,0,0.0011336375878556453,0.0,True,0.04623039898068503,True,0.0,0.0,0.06281711062713635,True,,True
+phase3ax_final_candidate,AX-G_COMBINED,heart,arm_only,True,,True,0,0.0028970396736576532,0.0,True,0.047952596802620547,True,0.0,0.0,0.029830770430116504,True,1.456503092671615,True
+phase3ax_final_candidate,AX-G_COMBINED,wave,arm_only,True,,True,0,0.0011336375878556453,0.0,True,0.04623039898068503,True,0.0,0.0,0.027905873842035078,True,0.9676592858865247,True
+phase3ax_final_candidate,AX-G_COMBINED,wave,whole_body,True,,True,0,0.0011336375878556453,0.0,True,0.04623039898068503,True,0.0,0.0,0.03799056225151545,True,1.1094472759642011,True

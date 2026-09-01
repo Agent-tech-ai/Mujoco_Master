@@ -1,0 +1,56 @@
+[
+  {
+    "joint_name": "head_yaw_joint",
+    "samples": 300,
+    "correlation_real_sim": -0.9746256261207795,
+    "zero_offset_candidate_rad": -0.011988316265886388,
+    "position_scale_candidate": -0.9714647033407499,
+    "real_observed_min_rad": -0.15516425340802675,
+    "real_observed_max_rad": 0.1551784152943144,
+    "sim_observed_min_rad": -0.15517590544481605,
+    "sim_observed_max_rad": 0.15516389482943144,
+    "real_response_delay_s": 0.07023411371237454,
+    "sim_response_delay_s": 0.02006688963210701,
+    "response_delay_difference_s": 0.050167224080267525,
+    "flags": [
+      "POSSIBLE_SIGN_MISMATCH: strong negative position correlation; verify hardware sign",
+      "POSSIBLE_RESPONSE_DELAY: real and simulation command-response delays differ by +0.0502 s"
+    ]
+  },
+  {
+    "joint_name": "left_knee_joint",
+    "samples": 300,
+    "correlation_real_sim": 0.9869198685216661,
+    "zero_offset_candidate_rad": 0.2460686660434782,
+    "position_scale_candidate": 1.2640676720506345,
+    "real_observed_min_rad": 0.329542553,
+    "real_observed_max_rad": 1.1985291623846155,
+    "sim_observed_min_rad": 0.21058292108361204,
+    "sim_observed_max_rad": 0.8894731066755852,
+    "real_response_delay_s": 0.07023411371237454,
+    "sim_response_delay_s": 0.02006688963210701,
+    "response_delay_difference_s": 0.050167224080267525,
+    "flags": [
+      "POSSIBLE_ZERO_OFFSET_MISMATCH: median real-sim offset +0.2461 rad",
+      "POSSIBLE_POSITION_SCALE_MISMATCH: fitted real/sim scale 1.264",
+      "POSSIBLE_RESPONSE_DELAY: real and simulation command-response delays differ by +0.0502 s"
+    ]
+  },
+  {
+    "joint_name": "right_shoulder_roll_joint",
+    "samples": 300,
+    "correlation_real_sim": 0.9580401413300296,
+    "zero_offset_candidate_rad": 0.005091791921404659,
+    "position_scale_candidate": 0.9432222010319771,
+    "real_observed_min_rad": -0.742418023444816,
+    "real_observed_max_rad": -0.25755574525752506,
+    "sim_observed_min_rad": -0.7424201843645485,
+    "sim_observed_max_rad": -0.25756222726421407,
+    "real_response_delay_s": 0.07023411371237454,
+    "sim_response_delay_s": 0.02006688963210701,
+    "response_delay_difference_s": 0.050167224080267525,
+    "flags": [
+      "POSSIBLE_RESPONSE_DELAY: real and simulation command-response delays differ by +0.0502 s"
+    ]
+  }
+]

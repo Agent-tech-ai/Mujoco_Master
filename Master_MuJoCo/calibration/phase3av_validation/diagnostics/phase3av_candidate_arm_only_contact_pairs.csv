@@ -1,0 +1,2 @@
+body_1,geom_1,body_2,geom_2,sample_count,first_sim_time_s,last_sim_time_s,maximum_penetration_m
+left_hip_roll_link,geom_7,pelvis,geom_2,690,0.56,14.341,0.0012885963129362426

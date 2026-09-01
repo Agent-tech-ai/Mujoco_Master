@@ -1,0 +1,5 @@
+condition,mode,stable_no_fall,self_collision_samples,pelvis_hip_contact_samples,nonfoot_ground_contact_samples,max_contact_penetration_m,limit_violation_samples,persistent_saturation_fraction,max_saturation_fraction,max_foot_slip_m,max_abs_tilt_deg,absolute_safety_pass
+original,arm_only,True,28,0,0,0.0013099657600581,0,0.0,0.676618433765414,0.00796221614351685,4.071090210658697,False
+original,whole_body,True,27,0,0,0.0013099025762225,0,0.0,0.6751277670322307,0.00788754244152558,3.7108652001536373,False
+mass_direction,arm_only,True,28,0,0,0.0012885955471397,0,0.0,0.6706692728639813,0.007954268555258366,3.9447377805825234,False
+mass_direction,whole_body,True,27,0,0,0.0012893437470829,0,0.0,0.6700168521595401,0.007827655196666432,3.6141383421237165,False

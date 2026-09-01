@@ -1,0 +1,120 @@
+{
+  "phase": "3B-V",
+  "capture_dir": "C:\\Users\\xinga\\Documents\\Codex\\2026-08-11\\master-mujoco-agibot-x2-ultra-mujoco\\Master_MuJoCo\\calibration\\phase3bv_physical_direction_validation\\capture\\phase3bv_clap_001",
+  "selected_motion": "clap",
+  "preset_id": 3017,
+  "preset_area": 11,
+  "data_ready": true,
+  "motion_start_elapsed_seconds": 10.096456217,
+  "motion_end_elapsed_seconds": 15.539996987,
+  "motion_duration_seconds": 5.44354077,
+  "pre_roll_seconds": 9.849181495,
+  "post_roll_seconds": 6.048463515,
+  "quality": {
+    "/aima/hal/joint/arm/state": {
+      "messages": 1018,
+      "duration_seconds": 21.405767183000023,
+      "mean_rate_hz": 47.510560649640176,
+      "median_gap_seconds": 0.020931062999977712,
+      "max_gap_seconds": 0.032722949999993034,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_arm": 1018
+      },
+      "first_elapsed_seconds": 0.183713633,
+      "last_elapsed_seconds": 21.589480816
+    },
+    "/aima/hal/joint/head/state": {
+      "messages": 984,
+      "duration_seconds": 21.405222323000032,
+      "mean_rate_hz": 45.92337258481828,
+      "median_gap_seconds": 0.021383194000009098,
+      "max_gap_seconds": 0.03633798700002444,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_head": 984
+      },
+      "first_elapsed_seconds": 0.184880466,
+      "last_elapsed_seconds": 21.590102789
+    },
+    "/aima/hal/joint/leg/state": {
+      "messages": 1018,
+      "duration_seconds": 21.418725340000037,
+      "mean_rate_hz": 47.48181714159832,
+      "median_gap_seconds": 0.02102504599997701,
+      "max_gap_seconds": 0.030510532999983297,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_leg": 1018
+      },
+      "first_elapsed_seconds": 0.185512408,
+      "last_elapsed_seconds": 21.604237748
+    },
+    "/aima/hal/joint/waist/state": {
+      "messages": 1018,
+      "duration_seconds": 21.419747406,
+      "mean_rate_hz": 47.479551496257265,
+      "median_gap_seconds": 0.021007819000033123,
+      "max_gap_seconds": 0.031006579000006695,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "x2_waist": 1018
+      },
+      "first_elapsed_seconds": 0.186892352,
+      "last_elapsed_seconds": 21.606639758
+    },
+    "/aima/hal/imu/chest/state": {
+      "messages": 1015,
+      "duration_seconds": 21.381160968000017,
+      "mean_rate_hz": 47.42492708967473,
+      "median_gap_seconds": 0.02102301150000585,
+      "max_gap_seconds": 0.03259213199999067,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "base_link": 1015
+      },
+      "first_elapsed_seconds": 0.228174699,
+      "last_elapsed_seconds": 21.609335667
+    },
+    "/aima/hal/imu/torso/state": {
+      "messages": 1012,
+      "duration_seconds": 21.34118577999999,
+      "mean_rate_hz": 47.37318771422084,
+      "median_gap_seconds": 0.021041870999965795,
+      "max_gap_seconds": 0.03370881199998621,
+      "source_duplicate_count": 0,
+      "source_out_of_order_count": 0,
+      "frame_ids": {
+        "base_link": 1012
+      },
+      "first_elapsed_seconds": 0.247274722,
+      "last_elapsed_seconds": 21.588460502
+    }
+  },
+  "mc": {
+    "status": "EXPECTED_STANDING_MODE_CONFIRMED",
+    "messages_during_motion_window": 75,
+    "action_desc_values": [
+      "STAND_DEFAULT"
+    ],
+    "input_source_values": [
+      "app_proxy"
+    ],
+    "motion_status_values": [
+      "",
+      "3017"
+    ],
+    "player_state_values": [
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "reported_effort_loaded_for_validation": false,
+  "imu_transform": "PARTIAL"
+}
